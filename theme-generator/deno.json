@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "handlebars": "npm:handlebars@^4.7.6",
+    "polished": "npm:polished@^4.2.2"
+  }
+}
