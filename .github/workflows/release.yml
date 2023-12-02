@@ -42,7 +42,7 @@ jobs:
 
       - name: Generate Themes
         working-directory: ./theme-generator
-        run: deno run --allow-all ./theme-generator/main.ts
+        run: deno run --allow-all ./main.ts
 
       - name: Export Properties
         id: properties
