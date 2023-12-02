@@ -32,6 +32,21 @@ jobs:
         with:
           gradle-home-cache-cleanup: true
 
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Cache Deno
+        uses: actions/cache@v3
+        with:
+          key: ${{ hashFiles('theme-generator/deno.lock') }}
+          path: ${{ env.DENO_DIR }}
+
+      - name: Generate Themes
+        working-directory: ./theme-generator
+        run: deno run --allow-all ./theme-generator/main.ts
+
       - name: Export Properties
         id: properties
         shell: bash
@@ -158,6 +173,21 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           gradle-home-cache-cleanup: true
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Cache Deno
+        uses: actions/cache@v3
+        with:
+          key: ${{ hashFiles('theme-generator/deno.lock') }}
+          path: ${{ env.DENO_DIR }}
+
+      - name: Generate Themes
+        working-directory: ./theme-generator
+        run: deno run --allow-all ./theme-generator/main.ts
 
       - name: Setup Plugin Verifier IDEs Cache
         uses: actions/cache@v3
