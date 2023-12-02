@@ -2,6 +2,10 @@ import path from "node:path";
 import Handlebars from "handlebars";
 import { outputDirectory } from "./constants.ts";
 
+const createOutputDirectory = async (): Promise<void> => {
+  await Deno.mkdir(outputDirectory, { recursive: true });
+};
+
 const generateThemeJson = async (themeName: string): Promise<void> => {
   const templateString = await Deno.readTextFile("./template.theme.json");
 
@@ -33,6 +37,8 @@ const generateXml = async (themeName: string): Promise<void> => {
 };
 
 const main = async (): Promise<void> => {
+  await createOutputDirectory();
+
   for await (const { name: themeName } of Deno.readDir("./themes")) {
     await generateThemeJson(themeName);
     await generateXml(themeName);
