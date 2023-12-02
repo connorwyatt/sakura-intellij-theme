@@ -1,11 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.connorwyatt.sakuratheme</id>
-    <name>Themes</name>
+    <name>Sakura Theme</name>
     <vendor>Connor Wyatt</vendor>
     <version>@version@</version>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="com.github.connorwyatt.sakuratheme.test" path="/themes/sakura-night.theme.json" />
+    </extensions>
 </idea-plugin>
