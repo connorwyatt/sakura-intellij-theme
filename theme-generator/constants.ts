@@ -1,6 +1,11 @@
 import path from "node:path";
 
-export const outputDirectory = path.resolve(
+export const previewsOutputDirectory = path.resolve(
+  "..",
+  "previews",
+);
+
+export const themesOutputDirectory = path.resolve(
   "..",
   "src",
   "main",
