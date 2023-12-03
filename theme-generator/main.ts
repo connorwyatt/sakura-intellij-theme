@@ -1,24 +1,9 @@
 import path from "node:path";
 import Handlebars from "handlebars";
-import { previewsOutputDirectory, themesOutputDirectory } from "./constants.ts";
+import { themesOutputDirectory } from "./constants.ts";
 
-const createOutputDirectories = async (): Promise<void> => {
-  await Deno.mkdir(previewsOutputDirectory, { recursive: true });
+const createOutputDirectory = async (): Promise<void> => {
   await Deno.mkdir(themesOutputDirectory, { recursive: true });
-};
-
-const generatePreview = async (themeName: string): Promise<void> => {
-  const templateString = await Deno.readTextFile("./preview-template.svg");
-
-  const template = Handlebars.compile(templateString);
-
-  const variables = await import(`./themes/${themeName}/variables.ts`)
-    .then((module) => module.default);
-
-  await Deno.writeTextFile(
-    path.join(previewsOutputDirectory, `${themeName}.svg`),
-    template(variables),
-  );
 };
 
 const generateThemeJson = async (themeName: string): Promise<void> => {
@@ -52,14 +37,13 @@ const generateXml = async (themeName: string): Promise<void> => {
 };
 
 const main = async (): Promise<void> => {
-  await createOutputDirectories();
+  await createOutputDirectory();
 
   for await (
     const { name: themeName, isDirectory } of Deno.readDir("./themes")
   ) {
     if (!isDirectory) continue;
 
-    await generatePreview(themeName);
     await generateThemeJson(themeName);
     await generateXml(themeName);
   }
