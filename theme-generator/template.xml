@@ -130,6 +130,7 @@
         <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
         <option name="BAD_CHARACTER">
             <value>
+                <option name="FOREGROUND" value="{{editor.syntax.badCharacter.textColor}}"/>
                 <option name="EFFECT_COLOR" value="{{editor.syntax.badCharacter.effectColor}}"/>
                 <option name="EFFECT_TYPE" value="2"/>
             </value>
@@ -1211,6 +1212,7 @@
         </option>
         <option name="Unresolved reference access">
             <value>
+                <option name="FOREGROUND" value="{{editor.syntax.error.textColor}}"/>
                 <option name="EFFECT_COLOR" value="{{editor.syntax.error.effectColor}}"/>
                 <option name="ERROR_STRIPE_COLOR" value="{{editor.syntax.error.errorStripeColor}}"/>
                 <option name="EFFECT_TYPE" value="2"/>

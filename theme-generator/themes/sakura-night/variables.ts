@@ -8,6 +8,11 @@ const topBarBackgroundColor = palette.charcoal0;
 const editorBackgroundColor = palette.charcoal2;
 const textColor = lighten(0.6, editorBackgroundColor);
 
+const errorColor = palette.red0;
+const infoColor = palette.skyBlue0;
+const successColor = palette.green0;
+const warningColor = palette.yellow0;
+
 const mixWithBackground = (percentage: number, color: string): string =>
   mix(percentage, backgroundColor, color);
 
@@ -19,13 +24,118 @@ const mixWithEditorBackground = (percentage: number, color: string): string =>
 
 const guidelinesColor = mixWithEditorBackground(0.9, textColor);
 
-const punctuationColor = mix(
-  0.5,
-  textColor,
-  palette.pink0,
-);
+const constantColor = palette.purple0;
+const functionColor = palette.skyBlue0;
+const globalVariableColor = palette.yellow0;
+const keywordColor = palette.pink0;
+const metadataColor = palette.purple0;
+const numberColor = palette.purple0;
+const punctuationColor = mix(0.5, textColor, palette.pink0);
+const stringColor = palette.green0;
+const stringEscapeColor = palette.orange0;
+const todoColor = palette.orange0;
+const typeNameColor = palette.yellow0;
 
-const typeName = palette.purple0;
+const syntax = {
+  attribute: metadataColor,
+  badCharacter: { textColor: errorColor, effectColor: errorColor },
+  braces: punctuationColor,
+  brackets: punctuationColor,
+  className: typeNameColor,
+  classReference: typeNameColor,
+  color: numberColor,
+  comma: punctuationColor,
+  comment: {
+    textColor: mixWithEditorBackground(0.5, textColor),
+  },
+  constant: constantColor,
+  deprecation: {
+    effectColor: errorColor,
+  },
+  docs: {
+    comment: {
+      textColor: mixWithEditorBackground(0.25, stringColor),
+      tag: {
+        textColor: palette.pink0,
+        value: {
+          textColor: palette.yellow0,
+        },
+      },
+    },
+    markup: {
+      textColor: palette.skyBlue0,
+    },
+  },
+  dot: punctuationColor,
+  entity: stringEscapeColor,
+  error: {
+    textColor: errorColor,
+    effectColor: errorColor,
+    errorStripeColor: errorColor,
+  },
+  functionCall: functionColor,
+  functionDeclaration: functionColor,
+  globalVariable: globalVariableColor,
+  highlightedReference: {
+    textColor: textColor,
+    effectColor: textColor,
+  },
+  identifier: textColor,
+  instanceField: textColor,
+  instanceMethod: functionColor,
+  interfaceName: typeNameColor,
+  json: {
+    propertyKey: keywordColor,
+  },
+  label: metadataColor,
+  keyword: keywordColor,
+  metadata: metadataColor,
+  namedParameter: metadataColor,
+  number: numberColor,
+  operator: punctuationColor,
+  parameter: textColor,
+  primitiveTypes: typeNameColor,
+  semicolon: punctuationColor,
+  staticField: textColor,
+  staticMethod: functionColor,
+  string: stringColor,
+  stringEscape: {
+    invalid: { textColor: stringEscapeColor, effectColor: errorColor },
+    valid: { textColor: stringEscapeColor },
+  },
+  tag: punctuationColor,
+  todo: {
+    textColor: todoColor,
+    errorStripeColor: todoColor,
+  },
+  typeParameter: typeNameColor,
+  typo: {
+    effectColor: warningColor,
+    errorStripeColor: warningColor,
+  },
+  unusedElement: {
+    backgroundColor: null,
+    textColor: mixWithEditorBackground(0.5, textColor),
+    effectColor: mixWithEditorBackground(0.25, warningColor),
+  },
+  warning: {
+    effectColor: warningColor,
+    errorStripeColor: warningColor,
+  },
+  writeIdentifierUnderCaret: {
+    backgroundColor: mixWithEditorBackground(0.9, textColor),
+    errorStripeColor: mixWithEditorBackground(
+      0.5,
+      textColor,
+    ),
+  },
+  xml: {
+    nsPrefix: { textColor: palette.yellow0 },
+    attributeName: palette.yellow0,
+    attributeValue: palette.skyBlue0,
+    tagName: palette.pink0,
+  },
+};
 
 export default {
   name: themeName,
@@ -129,7 +239,7 @@ export default {
         pinkBright: lighten(0.05, saturate(0.2, palette.pink0)),
         cyanBright: lighten(0.05, saturate(0.2, palette.skyBlue0)),
         normal: textColor,
-        error: palette.red0,
+        error: errorColor,
         system: textColor,
         white: {
           textColor: textColor,
@@ -139,7 +249,7 @@ export default {
         user: textColor,
       },
     },
-    errorHint: palette.red0,
+    errorHint: errorColor,
     fileStatus: {
       added: palette.green0,
       copied: palette.green0,
@@ -155,8 +265,8 @@ export default {
       errorStripeColor: mixWithEditorBackground(0.75, palette.pink0),
     },
     info: {
-      effectColor: palette.skyBlue0,
-      errorStripeColor: palette.skyBlue0,
+      effectColor: infoColor,
+      errorStripeColor: infoColor,
     },
     indentGuideColor: mixWithEditorBackground(0.85, textColor),
     inlay: {
@@ -196,105 +306,7 @@ export default {
       backgroundColor: mixWithEditorBackground(0.75, palette.pink0),
       textColor: null,
     },
-    syntax: {
-      attribute: palette.purple0,
-      badCharacter: { effectColor: palette.red0 },
-      braces: punctuationColor,
-      brackets: punctuationColor,
-      className: typeName,
-      classReference: typeName,
-      color: palette.purple0,
-      comma: punctuationColor,
-      comment: {
-        textColor: mixWithEditorBackground(0.5, textColor),
-      },
-      constant: palette.skyBlue0,
-      deprecation: {
-        effectColor: palette.red0,
-      },
-      docs: {
-        comment: {
-          textColor: mixWithEditorBackground(0.25, palette.green0),
-          tag: {
-            textColor: palette.pink0,
-            value: {
-              textColor: palette.yellow0,
-            },
-          },
-        },
-        markup: {
-          textColor: palette.skyBlue0,
-        },
-      },
-      dot: punctuationColor,
-      entity: palette.skyBlue0,
-      error: {
-        effectColor: palette.red0,
-        errorStripeColor: palette.red0,
-      },
-      functionCall: palette.yellow0,
-      functionDeclaration: palette.yellow0,
-      globalVariable: palette.yellow0,
-      highlightedReference: {
-        textColor: textColor,
-        effectColor: textColor,
-      },
-      identifier: textColor,
-      instanceField: textColor,
-      instanceMethod: palette.yellow0,
-      interfaceName: typeName,
-      json: {
-        propertyKey: palette.yellow0,
-      },
-      label: palette.purple0,
-      keyword: palette.pink0,
-      metadata: palette.yellow0,
-      namedParameter: palette.yellow0,
-      number: palette.skyBlue0,
-      operator: punctuationColor,
-      parameter: textColor,
-      primitiveTypes: typeName,
-      semicolon: punctuationColor,
-      staticField: textColor,
-      staticMethod: palette.yellow0,
-      string: palette.green0,
-      stringEscape: {
-        invalid: { textColor: palette.skyBlue0, effectColor: palette.red0 },
-        valid: { textColor: palette.skyBlue0 },
-      },
-      tag: punctuationColor,
-      todo: {
-        textColor: palette.orange0,
-        errorStripeColor: palette.orange0,
-      },
-      typeParameter: typeName,
-      typo: {
-        effectColor: palette.yellow0,
-        errorStripeColor: palette.yellow0,
-      },
-      unusedElement: {
-        backgroundColor: null,
-        textColor: mixWithEditorBackground(0.5, textColor),
-        effectColor: mixWithEditorBackground(0.25, palette.yellow0),
-      },
-      warning: {
-        effectColor: palette.yellow0,
-        errorStripeColor: palette.yellow0,
-      },
-      writeIdentifierUnderCaret: {
-        backgroundColor: mixWithEditorBackground(0.9, textColor),
-        errorStripeColor: mixWithEditorBackground(
-          0.5,
-          textColor,
-        ),
-      },
-      xml: {
-        nsPrefix: { textColor: palette.yellow0 },
-        attributeName: palette.green0,
-        attributeValue: palette.skyBlue0,
-        tagName: palette.yellow0,
-      },
-    },
+    syntax,
     tab: {
       modifiedIconColor: palette.pink0,
     },
@@ -313,15 +325,15 @@ export default {
       iconColor: textColor,
     },
     error: {
-      focusColor: palette.red0,
+      focusColor: errorColor,
       inactive: {
-        focusColor: mixWithBackground(0.5, palette.red0),
+        focusColor: mixWithBackground(0.5, errorColor),
       },
     },
     warning: {
-      focusColor: palette.yellow0,
+      focusColor: warningColor,
       inactive: {
-        focusColor: mixWithBackground(0.5, palette.yellow0),
+        focusColor: mixWithBackground(0.5, warningColor),
       },
     },
   },
@@ -376,18 +388,18 @@ export default {
     borderColor: guidelinesColor,
     textColor,
     error: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.red0),
-      borderColor: palette.red0,
+      backgroundColor: mixWithEditorBackground(0.5, errorColor),
+      borderColor: errorColor,
       textColor: textColor,
     },
     info: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.skyBlue0),
-      borderColor: palette.skyBlue0,
+      backgroundColor: mixWithEditorBackground(0.5, infoColor),
+      borderColor: infoColor,
       textColor: textColor,
     },
     warning: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.yellow0),
-      borderColor: palette.yellow0,
+      backgroundColor: mixWithEditorBackground(0.5, warningColor),
+      borderColor: warningColor,
       textColor: textColor,
     },
   },
@@ -414,12 +426,12 @@ export default {
       startColor: palette.pink0,
       endColor: palette.pink2,
     },
-    failedColor: palette.red0,
-    failedEndColor: lighten(0.1, palette.red0),
-    warningColor: palette.yellow0,
-    warningEndColor: lighten(0.1, palette.yellow0),
-    passedColor: palette.green0,
-    passedEndColor: lighten(0.1, palette.green0),
+    failedColor: errorColor,
+    failedEndColor: lighten(0.1, errorColor),
+    warningColor: warningColor,
+    warningEndColor: lighten(0.1, warningColor),
+    passedColor: successColor,
+    passedEndColor: lighten(0.1, successColor),
   },
   scrollBar: {
     thumbColor: mixWithBackground(0.5, palette.pink0),
