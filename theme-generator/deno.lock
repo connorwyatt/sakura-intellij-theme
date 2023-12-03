@@ -2,6 +2,7 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:flat@^6.0.1": "npm:flat@6.0.1",
       "npm:handlebars@^4.7.6": "npm:handlebars@4.7.8",
       "npm:polished@^4.2.2": "npm:polished@4.2.2"
@@ -12,6 +13,10 @@
         "dependencies": {
           "regenerator-runtime": "regenerator-runtime@0.14.0"
         }
+      },
+      "@types/node@18.16.19": {
+        "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
+        "dependencies": {}
       },
       "flat@6.0.1": {
         "integrity": "sha512-/3FfIa8mbrg3xE7+wAhWeV+bd7L2Mof+xtZb5dRDKZ+wDvYJK4WDYeIOuOhre5Yv5aQObZrlbRmk3RTSiuQBtw==",

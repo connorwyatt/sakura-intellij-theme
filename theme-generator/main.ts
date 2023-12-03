@@ -12,7 +12,7 @@ const generateThemeJson = async (themeName: string): Promise<void> => {
   const template = Handlebars.compile(templateString);
 
   const variables = await import(`./themes/${themeName}/variables.ts`)
-    .then((module) => module.jsonVariables);
+    .then((module) => module.default);
 
   const theme = { ...JSON.parse(template(variables)), dark: variables.isDark };
 
@@ -28,7 +28,7 @@ const generateXml = async (themeName: string): Promise<void> => {
   const template = Handlebars.compile(templateString);
 
   const variables = await import(`./themes/${themeName}/variables.ts`)
-    .then((module) => module.xmlVariables);
+    .then((module) => module.default);
 
   await Deno.writeTextFile(
     path.join(outputDirectory, `${themeName}.xml`),
@@ -39,7 +39,11 @@ const generateXml = async (themeName: string): Promise<void> => {
 const main = async (): Promise<void> => {
   await createOutputDirectory();
 
-  for await (const { name: themeName } of Deno.readDir("./themes")) {
+  for await (
+    const { name: themeName, isDirectory } of Deno.readDir("./themes")
+  ) {
+    if (!isDirectory) continue;
+
     await generateThemeJson(themeName);
     await generateXml(themeName);
   }
