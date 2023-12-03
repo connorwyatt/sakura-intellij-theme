@@ -1,11 +1,11 @@
-import { darken, lighten, mix, saturate } from "polished";
+import { lighten, mix, saturate } from "polished";
 import { palette } from "./palette.ts";
 
 const themeName = "Sakura Night";
 
-const backgroundColor = palette.brown1;
-const topBarBackgroundColor = palette.brown0;
-const editorBackgroundColor = palette.brown2;
+const backgroundColor = palette.charcoal1;
+const topBarBackgroundColor = palette.charcoal0;
+const editorBackgroundColor = palette.charcoal2;
 const textColor = lighten(0.6, editorBackgroundColor);
 
 const mixWithBackground = (percentage: number, color: string): string =>
@@ -90,7 +90,7 @@ export const jsonVariables = {
     },
   },
   fileColors: {
-    blue: mixWithBackground(0.8, palette.blue0),
+    blue: mixWithBackground(0.8, palette.skyBlue0),
     gray: mixWithBackground(0.8, textColor),
     green: mixWithBackground(0.8, palette.green0),
     orange: mixWithBackground(0.8, palette.orange0),
@@ -145,8 +145,8 @@ export const jsonVariables = {
       textColor: textColor,
     },
     info: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.blue0),
-      borderColor: palette.blue0,
+      backgroundColor: mixWithEditorBackground(0.5, palette.skyBlue0),
+      borderColor: palette.skyBlue0,
       textColor: textColor,
     },
     warning: {
@@ -298,16 +298,16 @@ export const xmlVariables = {
       green: palette.green0,
       yellow: palette.yellow0,
       blue: palette.blue0,
-      pink0: palette.pink0,
-      cyan: palette.turquoise0,
+      pink: palette.pink0,
+      cyan: palette.skyBlue0,
       gray: mixWithEditorBackground(0.25, textColor),
       darkGray: mixWithEditorBackground(0.5, textColor),
       redBright: lighten(0.05, saturate(0.2, palette.red0)),
       greenBright: lighten(0.05, saturate(0.2, palette.green0)),
       yellowBright: lighten(0.05, saturate(0.2, palette.yellow0)),
       blueBright: lighten(0.05, saturate(0.2, palette.blue0)),
-      pink0Bright: lighten(0.05, saturate(0.2, palette.pink0)),
-      cyanBright: lighten(0.05, saturate(0.2, palette.turquoise0)),
+      pinkBright: lighten(0.05, saturate(0.2, palette.pink0)),
+      cyanBright: lighten(0.05, saturate(0.2, palette.skyBlue0)),
       normal: textColor,
       error: palette.red0,
       system: textColor,
@@ -324,7 +324,7 @@ export const xmlVariables = {
     added: palette.green0,
     copied: palette.green0,
     deleted: palette.red0,
-    modified: palette.blue0,
+    modified: palette.skyBlue0,
   },
   foldedText: {
     textColor: mixWithEditorBackground(0.5, textColor),
@@ -335,8 +335,8 @@ export const xmlVariables = {
     errorStripeColor: mixWithEditorBackground(0.75, palette.pink0),
   },
   info: {
-    effectColor: palette.blue0,
-    errorStripeColor: palette.blue0,
+    effectColor: palette.skyBlue0,
+    errorStripeColor: palette.skyBlue0,
   },
   indentGuideColor: mixWithEditorBackground(0.85, textColor),
   inlay: {
@@ -388,7 +388,7 @@ export const xmlVariables = {
     comment: {
       textColor: mixWithEditorBackground(0.5, textColor),
     },
-    constant: palette.turquoise0,
+    constant: palette.skyBlue0,
     deprecation: {
       effectColor: palette.red0,
     },
@@ -398,22 +398,22 @@ export const xmlVariables = {
         tag: {
           textColor: palette.pink0,
           value: {
-            textColor: palette.blue0,
+            textColor: palette.yellow0,
           },
         },
       },
       markup: {
-        textColor: palette.yellow0,
+        textColor: palette.skyBlue0,
       },
     },
     dot: punctuationColor,
-    entity: palette.yellow0,
+    entity: palette.skyBlue0,
     error: {
       effectColor: palette.red0,
       errorStripeColor: palette.red0,
     },
-    functionCall: palette.blue0,
-    functionDeclaration: palette.blue0,
+    functionCall: palette.yellow0,
+    functionDeclaration: palette.yellow0,
     globalVariable: palette.yellow0,
     highlightedReference: {
       textColor: textColor,
@@ -421,31 +421,31 @@ export const xmlVariables = {
     },
     identifier: textColor,
     instanceField: textColor,
-    instanceMethod: palette.blue0,
+    instanceMethod: palette.yellow0,
     interfaceName: typeName,
     json: {
-      propertyKey: palette.blue0,
+      propertyKey: palette.yellow0,
     },
     label: palette.purple0,
     keyword: palette.pink0,
-    metadata: palette.blue0,
-    namedParameter: palette.blue0,
-    number: palette.green0,
+    metadata: palette.yellow0,
+    namedParameter: palette.yellow0,
+    number: palette.skyBlue0,
     operator: punctuationColor,
     parameter: textColor,
     primitiveTypes: typeName,
     semicolon: punctuationColor,
     staticField: textColor,
-    staticMethod: palette.blue0,
-    string: palette.yellow0,
+    staticMethod: palette.yellow0,
+    string: palette.green0,
     stringEscape: {
-      invalid: { textColor: palette.yellow0, effectColor: palette.red0 },
-      valid: { textColor: palette.yellow0 },
+      invalid: { textColor: palette.skyBlue0, effectColor: palette.red0 },
+      valid: { textColor: palette.skyBlue0 },
     },
     tag: punctuationColor,
     todo: {
-      textColor: palette.yellow0,
-      errorStripeColor: palette.yellow0,
+      textColor: palette.orange0,
+      errorStripeColor: palette.orange0,
     },
     typeParameter: typeName,
     typo: {
@@ -469,10 +469,10 @@ export const xmlVariables = {
       ),
     },
     xml: {
-      nsPrefix: { textColor: palette.blue0 },
+      nsPrefix: { textColor: palette.yellow0 },
       attributeName: palette.green0,
-      attributeValue: palette.yellow0,
-      tagName: palette.blue0,
+      attributeValue: palette.skyBlue0,
+      tagName: palette.yellow0,
     },
   },
   tab: {
