@@ -43,7 +43,7 @@ const syntax = {
   brackets: punctuationColor,
   className: typeNameColor,
   classReference: typeNameColor,
-  color: numberColor,
+  color: stringEscapeColor,
   comma: punctuationColor,
   comment: {
     textColor: mixWithEditorBackground(0.5, textColor),
