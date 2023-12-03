@@ -1,5 +1,5 @@
 import { lighten, mix, saturate } from "polished";
-import { palette } from "./palette.ts";
+import { palette } from "../palette.ts";
 
 const themeName = "Sakura Night";
 
@@ -23,7 +23,7 @@ export const jsonVariables = {
   name: themeName,
   isDark: true,
   editorScheme: "/themes/sakura-night.xml",
-  backgroundColor: backgroundColor,
+  backgroundColor,
   bordersColor: guidelinesColor,
   actionButtons: {
     hover: {
