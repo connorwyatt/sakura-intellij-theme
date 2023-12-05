@@ -225,5 +225,36 @@
       "hash": "{{tree.hash}}",
       "paintLines": true
     }
+  },
+  "icons": {
+    "ColorPalette": {
+      "Actions.Yellow": "#ffff00",
+      "Actions.Blue": "#0000ff",
+      "Actions.Red": "#ff0000",
+      "Checkbox.Background.Default": "{{checkbox.unselected.backgroundColor}}",
+      "Checkbox.Background.Default.Dark": "{{checkbox.unselected.backgroundColor}}",
+      "Checkbox.Background.Selected": "{{checkbox.selected.backgroundColor}}",
+      "Checkbox.Background.Selected.Dark": "{{checkbox.selected.backgroundColor}}",
+      "Checkbox.Background.Disabled": "{{checkbox.disabled.backgroundColor}}",
+      "Checkbox.Background.Disabled.Dark": "{{checkbox.disabled.backgroundColor}}",
+      "Checkbox.Border.Default": "{{checkbox.unselected.borderColor}}",
+      "Checkbox.Border.Default.Dark": "{{checkbox.unselected.borderColor}}",
+      "Checkbox.Border.Selected": "{{checkbox.selected.borderColor}}",
+      "Checkbox.Border.Selected.Dark": "{{checkbox.selected.borderColor}}",
+      "Checkbox.Border.Disabled": "{{checkbox.disabled.borderColor}}",
+      "Checkbox.Border.Disabled.Dark": "{{checkbox.disabled.borderColor}}",
+      "Checkbox.Foreground.Selected": "{{checkbox.selected.tickColor}}",
+      "Checkbox.Foreground.Selected.Dark": "{{checkbox.selected.tickColor}}",
+      "Checkbox.Foreground.Disabled": "{{checkbox.disabled.tickColor}}",
+      "Checkbox.Foreground.Disabled.Dark": "{{checkbox.disabled.tickColor}}",
+      "Checkbox.Focus.Thin.Default": "{{checkbox.unselected.focusColor}}",
+      "Checkbox.Focus.Thin.Default.Dark": "{{checkbox.unselected.focusColor}}",
+      "Checkbox.Focus.Thin.Selected": "{{checkbox.selected.focusColor}}",
+      "Checkbox.Focus.Thin.Selected.Dark": "{{checkbox.selected.focusColor}}",
+      "Checkbox.Focus.Wide": "{{checkbox.unselected.focusColor}}",
+      "Checkbox.Focus.Wide.Dark": "{{checkbox.unselected.focusColor}}",
+      "Objects.Blue": "#0000ff",
+      "Tree.iconColor": "{{tree.iconColor}}"
+    }
   }
 }

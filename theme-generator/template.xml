@@ -7,7 +7,7 @@
         <option name="BREADCRUMBS_BORDER_COLOR" value="{{editor.borderColor}}"/>
         <option name="CARET_COLOR" value="{{editor.caret.color}}"/>
         <option name="CARET_ROW_COLOR" value="{{editor.caret.rowBackgroundColor}}"/>
-        <option name="CHANGED_LINES_POPUP" value="#00ff00"/>
+        <option name="CHANGED_LINES_POPUP" value="{{editor.vcs.changedLinesPopup.backgroundColor}}"/>
         <option name="CONSOLE_BACKGROUND_KEY" value="{{editor.backgroundColor}}"/>
         <option name="DELETED_LINES_COLOR" value="{{editor.vcs.gutter.deletedLines}}"/>
         <!--<option name="DIAGRAM_ANNOTATION_EDGE" value="ffffff" />-->
@@ -65,7 +65,7 @@
         <option name="FILESTATUS_changelistConflict" value=""/>
         <option name="FILESTATUS_modifiedOutside" value="{{editor.fileStatus.modified}}"/>
         <option name="FOLDED_TEXT_BORDER_COLOR" value=""/>
-        <option name="GUTTER_BACKGROUND" value="{{editor.backgroundColor}}"/>
+        <option name="GUTTER_BACKGROUND" value="{{editor.gutter.backgroundColor}}"/>
         <option name="HINT_BORDER" value="{{editor.hint.borderColor}}"/>
         <option name="HTML_TAG_TREE_LEVEL0" value=""/>
         <option name="HTML_TAG_TREE_LEVEL1" value=""/>
@@ -99,7 +99,7 @@
         <option name="READONLY_BACKGROUND" value="#ff00ff"/>
         <option name="READONLY_FRAGMENT_BACKGROUND" value="#00ffff"/>
         <option name="RECENT_LOCATIONS_SELECTION" value=""/>
-        <option name="RIGHT_MARGIN_COLOR" value=""/>
+        <option name="RIGHT_MARGIN_COLOR" value="{{editor.rightMarginColor}}"/>
         <option name="SELECTED_INDENT_GUIDE" value="{{editor.indentGuide.selected.color}}"/>
         <option name="SELECTED_TEARLINE_COLOR" value=""/>
         <option name="SELECTION_BACKGROUND" value="{{editor.selection.backgroundColor}}"/>
@@ -139,13 +139,10 @@
         <option name="BASH.FUNCTION_DEF_NAME" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
         <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT"/>
         <option name="BOOKMARKS_ATTRIBUTES">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="BACKGROUND" value="{{editor.bookmark.lineBackgroundColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.bookmark.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="BREADCRUMBS_CURRENT">
             <value>
@@ -172,13 +169,10 @@
             </value>
         </option>
         <option name="BREAKPOINT_ATTRIBUTES">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="BACKGROUND" value="{{editor.breakpoint.lineBackgroundColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.breakpoint.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="CODE_LENS_BORDER_COLOR">
             <value>

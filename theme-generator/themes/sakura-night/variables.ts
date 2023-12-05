@@ -176,7 +176,23 @@ export default {
   checkbox: {
     backgroundColor,
     textColor,
-    selectedColor: palette.pink0,
+    selectedColor: "#ff0000",
+    selected: {
+      backgroundColor: mixWithBackground(0.25, palette.pink0),
+      borderColor: mixWithBackground(0.25, palette.pink0),
+      focusColor: mixWithBackground(0.75, palette.pink0),
+      tickColor: textColor,
+    },
+    unselected: {
+      backgroundColor,
+      borderColor: guidelinesColor,
+      focusColor: mixWithBackground(0.75, palette.pink0),
+    },
+    disabled: {
+      backgroundColor: mixWithBackground(0.75, palette.pink0),
+      borderColor: mixWithBackground(0.75, palette.pink0),
+      tickColor: mixWithBackground(0.25, textColor),
+    },
   },
   completionPopup: {
     match: {
@@ -192,6 +208,10 @@ export default {
     backgroundColor: editorBackgroundColor,
     borderColor: guidelinesColor,
     textColor,
+    bookmark: {
+      lineBackgroundColor: mixWithEditorBackground(0.75, palette.pink0),
+      errorStripeColor: mixWithEditorBackground(0.75, palette.pink0),
+    },
     breadcrumbs: {
       current: {
         backgroundColor: mix(
@@ -220,6 +240,10 @@ export default {
         backgroundColor: editorBackgroundColor,
         textColor: mixWithEditorBackground(0.5, textColor),
       },
+    },
+    breakpoint: {
+      lineBackgroundColor: mixWithEditorBackground(0.75, palette.red0),
+      errorStripeColor: mixWithEditorBackground(0.75, palette.red0),
     },
     caret: {
       color: palette.pink0,
@@ -369,6 +393,7 @@ export default {
     notification: {
       backgroundColor: mixWithEditorBackground(0.5, palette.pink0),
     },
+    rightMarginColor: guidelinesColor,
     search: {
       searchResult: {
         backgroundColor: mixWithEditorBackground(0.5, palette.blue0),
@@ -404,12 +429,16 @@ export default {
         color4: mixWithEditorBackground(0.75, palette.pink0),
         color5: mixWithEditorBackground(0.9, palette.pink0),
       },
+      changedLinesPopup: {
+        backgroundColor,
+      },
       gutter: {
         addedLines: palette.green0,
         modifiedLines: palette.blue0,
         removedLines: palette.red0,
       },
     },
+    visualIndentGuideColor: "#ffff00",
   },
   field: {
     disabled: {
@@ -587,5 +616,6 @@ export default {
   tree: {
     rowHeight: 28,
     hash: guidelinesColor,
+    iconColor: textColor,
   },
 };
