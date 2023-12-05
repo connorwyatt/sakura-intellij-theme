@@ -1,13 +1,11 @@
-import { darken, lighten } from "polished";
+import { Polished } from "../deps.ts";
+
+const { darken } = Polished;
 
 const charcoal3 = "#3a3a3c";
 const charcoal2 = darken(0.025, charcoal3);
 const charcoal1 = darken(0.05, charcoal3);
 const charcoal0 = darken(0.1, charcoal3);
-
-const pink0 = "#fb9ebf";
-const pink1 = lighten(0.075, pink0);
-const pink2 = lighten(0.15, pink0);
 
 export const palette = {
   charcoal0,
@@ -16,13 +14,11 @@ export const palette = {
   charcoal3,
   white0: "#f2f5f7",
   red0: "#ce7474",
-  orange0: "#d9926d",
+  orange0: "#d99e6d",
   yellow0: "#dabe71",
   green0: "#a7c785",
-  skyBlue0: "#7dbcc7",
-  blue0: "#8ca0d2",
+  turquoise0: "#7dc7b9",
+  blue0: "#7db1c7",
   purple0: "#b89cd5",
-  pink0,
-  pink1,
-  pink2,
+  pink0: "#e0adc0",
 };

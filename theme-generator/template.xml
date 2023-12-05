@@ -1,15 +1,15 @@
 <scheme name="{{name}}" version="142" parent_scheme="Darcula">
     <colors>
-        <option name="ADDED_LINES_COLOR" value=""/>
-        <option name="ANNOTATIONS_COLOR" value="#ff00ff"/>
-        <!--<option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="ffffff" />-->
-        <!--<option name="BORDER_LINES_COLOR" value="ffffff" />-->
-        <!--<option name="BREADCRUMBS_BORDER_COLOR" value="ffffff" />-->
+        <option name="ADDED_LINES_COLOR" value="{{editor.vcs.gutter.addedLines}}"/>
+        <option name="ANNOTATIONS_COLOR" value="{{editor.vcs.annotation.textColor}}"/>
+        <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="{{editor.vcs.annotation.lastCommit.textColor}}"/>
+        <option name="BORDER_LINES_COLOR" value="{{editor.borderColor}}"/>
+        <option name="BREADCRUMBS_BORDER_COLOR" value="{{editor.borderColor}}"/>
         <option name="CARET_COLOR" value="{{editor.caret.color}}"/>
         <option name="CARET_ROW_COLOR" value="{{editor.caret.rowBackgroundColor}}"/>
-        <!--<option name="CHANGED_LINES_POPUP" value="ffffff" />-->
+        <option name="CHANGED_LINES_POPUP" value="#00ff00"/>
         <option name="CONSOLE_BACKGROUND_KEY" value="{{editor.backgroundColor}}"/>
-        <option name="DELETED_LINES_COLOR" value=""/>
+        <option name="DELETED_LINES_COLOR" value="{{editor.vcs.gutter.deletedLines}}"/>
         <!--<option name="DIAGRAM_ANNOTATION_EDGE" value="ffffff" />-->
         <!--<option name="DIAGRAM_BAD_EDGE" value="ffffff" />-->
         <!--<option name="DIAGRAM_BEND" value="ffffff" />-->
@@ -34,30 +34,30 @@
         <!--<option name="DIAGRAM_SELECTION_BOX_BACKGROUND" value="ffffff" />-->
         <!--<option name="DIAGRAM_SELECTION_BOX_BORDER" value="ffffff" />-->
         <!--<option name="DIAGRAM_SNAPPING_LINES" value="ffffff" />-->
-        <!--<option name="DIFF_SEPARATOR_WAVE" value="ffffff" />-->
-        <option name="DIFF_SEPARATORS_BACKGROUND" value=""/>
+        <option name="DIFF_SEPARATOR_WAVE" value="{{editor.diff.separatorWave}}"/>
+        <option name="DIFF_SEPARATORS_BACKGROUND" value="#00ff00"/>
         <option name="DOCUMENTATION_COLOR" value=""/>
         <!--<option name="DOC_COMMENT_GUIDE" value="ffffff" />-->
         <option name="DOC_COMMENT_LINK" value=""/>
-        <!--<option name="EDITOR_GUTTER_BACKGROUND" value="ffffff" />-->
-        <option name="ERROR_HINT" value="#00ff00"/>
+        <option name="EDITOR_GUTTER_BACKGROUND" value="{{editor.gutter.backgroundColor}}"/>
+        <option name="ERROR_HINT" value="{{editor.hint.error}}"/>
         <option name="FILESTATUS_ADDED" value="{{editor.fileStatus.added}}"/>
         <option name="FILESTATUS_COPIED" value="{{editor.fileStatus.copied}}"/>
         <option name="FILESTATUS_DELETED" value="{{editor.fileStatus.deleted}}"/>
         <option name="FILESTATUS_HIJACKED" value=""/>
         <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value=""/>
-        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value=""/>
+        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{{editor.fileStatus.ignored}}"/>
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value=""/>
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value=""/>
         <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value=""/>
         <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value=""/>
-        <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value=""/>
+        <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="{{editor.fileStatus.ignored}}"/>
         <option name="FILESTATUS_MERGED" value=""/>
         <option name="FILESTATUS_MODIFIED" value="{{editor.fileStatus.modified}}"/>
         <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
         <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value=""/>
         <option name="FILESTATUS_OBSOLETE" value=""/>
-        <option name="FILESTATUS_RENAMED" value=""/>
+        <option name="FILESTATUS_RENAMED" value="{{editor.fileStatus.modified}}"/>
         <option name="FILESTATUS_SUPPRESSED" value=""/>
         <option name="FILESTATUS_SWITCHED" value=""/>
         <option name="FILESTATUS_UNKNOWN" value=""/>
@@ -66,64 +66,64 @@
         <option name="FILESTATUS_modifiedOutside" value="{{editor.fileStatus.modified}}"/>
         <option name="FOLDED_TEXT_BORDER_COLOR" value=""/>
         <option name="GUTTER_BACKGROUND" value="{{editor.backgroundColor}}"/>
-        <!--<option name="HINT_BORDER" value="ffffff" />-->
+        <option name="HINT_BORDER" value="{{editor.hint.borderColor}}"/>
         <option name="HTML_TAG_TREE_LEVEL0" value=""/>
         <option name="HTML_TAG_TREE_LEVEL1" value=""/>
         <option name="HTML_TAG_TREE_LEVEL2" value=""/>
         <option name="HTML_TAG_TREE_LEVEL3" value=""/>
         <option name="HTML_TAG_TREE_LEVEL4" value=""/>
         <option name="HTML_TAG_TREE_LEVEL5" value=""/>
-        <!--<option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="ffffff" />-->
-        <!--<option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="ffffff" />-->
-        <!--<option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="ffffff" />-->
+        <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="{{editor.vcs.gutter.addedLines}}"/>
+        <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="{{editor.vcs.gutter.deletedLines}}"/>
+        <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="{{editor.vcs.gutter.modified}}"/>
         <!--<option name="IMAGES_BACKGROUND" value="ffffff" />-->
         <!--<option name="IMAGES_GRID_LINE_COLOR" value="ffffff" />-->
         <!--<option name="IMAGES_WHITE_CELL_COLOR" value="ffffff" />-->
-        <option name="INDENT_GUIDE" value="{{editor.indentGuideColor}}"/>
-        <option name="INFORMATION_HINT" value=""/>
+        <option name="INDENT_GUIDE" value="{{editor.indentGuide.normal.color}}"/>
+        <option name="INFORMATION_HINT" value="{{editor.hint.info}}"/>
         <option name="INLINE_REFACTORING_SETTINGS_DEFAULT" value=""/>
         <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value=""/>
         <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value=""/>
         <option name="LINE_NUMBERS_COLOR" value="{{editor.lineNumbers.normal.textColor}}"/>
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{{editor.lineNumbers.caretRow.textColor}}"/>
-        <option name="LOOKUP_COLOR" value=""/>
-        <!--<option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="ffffff" />-->
-        <option name="METHOD_SEPARATORS_COLOR" value=""/>
-        <option name="MODIFIED_LINES_COLOR" value=""/>
+        <option name="LOOKUP_COLOR" value="{{editor.lookupColor}}"/>
+        <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value=""/>
+        <option name="METHOD_SEPARATORS_COLOR" value="{{editor.methodSeparators}}"/>
+        <option name="MODIFIED_LINES_COLOR" value="{{editor.vcs.gutter.modifiedLines}}"/>
         <option name="MODIFIED_TAB_ICON" value="{{editor.tab.modifiedIconColor}}"/>
-        <option name="NOTIFICATION_BACKGROUND" value=""/>
-        <!--<option name="PREVIEW_BACKGROUND" value="ffffff" />-->
-        <!--<option name="PREVIEW_BORDER_COLOR" value="ffffff" />-->
-        <option name="PROMOTION_PANE" value=""/>
-        <option name="QUESTION_HINT" value=""/>
-        <!--<option name="READONLY_BACKGROUND" value="ffffff" />-->
-        <!--<option name="READONLY_FRAGMENT_BACKGROUND" value="ffffff" />-->
+        <option name="NOTIFICATION_BACKGROUND" value="{{editor.notification.backgroundColor}}"/>
+        <option name="PREVIEW_BACKGROUND" value="#ff0000"/>
+        <option name="PREVIEW_BORDER_COLOR" value="#00ff00"/>
+        <option name="PROMOTION_PANE" value="#0000ff"/>
+        <option name="QUESTION_HINT" value="{{editor.hint.question}}"/>
+        <option name="READONLY_BACKGROUND" value="#ff00ff"/>
+        <option name="READONLY_FRAGMENT_BACKGROUND" value="#00ffff"/>
         <option name="RECENT_LOCATIONS_SELECTION" value=""/>
         <option name="RIGHT_MARGIN_COLOR" value=""/>
-        <option name="SELECTED_INDENT_GUIDE" value=""/>
+        <option name="SELECTED_INDENT_GUIDE" value="{{editor.indentGuide.selected.color}}"/>
         <option name="SELECTED_TEARLINE_COLOR" value=""/>
         <option name="SELECTION_BACKGROUND" value="{{editor.selection.backgroundColor}}"/>
         <option name="SELECTION_FOREGROUND" value="{{editor.selection.textColor}}"/>
-        <option name="SEPARATOR_BELOW_COLOR" value=""/>
-        <!--<option name="SOFT_WRAP_SIGN_COLOR" value="ffffff" />-->
-        <option name="ScrollBar.Mac.hoverThumbColor" value=""/>
-        <option name="ScrollBar.Mac.thumbColor" value=""/>
-        <option name="ScrollBar.hoverThumbColor" value=""/>
-        <option name="ScrollBar.thumbColor" value=""/>
-        <!--<option name="TABS" value="ffffff"/>-->
+        <option name="SEPARATOR_BELOW_COLOR" value="#ff00ff"/>
+        <option name="SOFT_WRAP_SIGN_COLOR" value="{{editor.softWrapSign}}"/>
+        <option name="ScrollBar.Mac.hoverThumbColor" value="{{scrollBar.hover.thumbColor}}"/>
+        <option name="ScrollBar.Mac.thumbColor" value="{{scrollBar.thumbColor}}"/>
+        <option name="ScrollBar.hoverThumbColor" value="{{scrollBar.hover.thumbColor}}"/>
+        <option name="ScrollBar.thumbColor" value="{{scrollBar.thumbColor}}"/>
+        <option name="TABS" value="{{editor.syntax.tabs}}"/>
         <option name="TAB_UNDERLINE" value=""/>
         <option name="TAB_UNDERLINE_INACTIVE" value=""/>
-        <option name="TEARLINE_COLOR" value=""/>
-        <!--<option name="TOOLTIP" value="ffffff" />-->
-        <option name="VCS_ANNOTATIONS_COLOR_1" value=""/>
-        <option name="VCS_ANNOTATIONS_COLOR_2" value=""/>
-        <option name="VCS_ANNOTATIONS_COLOR_3" value=""/>
-        <option name="VCS_ANNOTATIONS_COLOR_4" value=""/>
-        <option name="VCS_ANNOTATIONS_COLOR_5" value=""/>
+        <option name="TEARLINE_COLOR" value="00ffff"/>
+        <option name="TOOLTIP" value="#00ffff"/>
+        <option name="VCS_ANNOTATIONS_COLOR_1" value="{{editor.vcs.annotation.color1}}"/>
+        <option name="VCS_ANNOTATIONS_COLOR_2" value="{{editor.vcs.annotation.color2}}"/>
+        <option name="VCS_ANNOTATIONS_COLOR_3" value="{{editor.vcs.annotation.color3}}"/>
+        <option name="VCS_ANNOTATIONS_COLOR_4" value="{{editor.vcs.annotation.color4}}"/>
+        <option name="VCS_ANNOTATIONS_COLOR_5" value="{{editor.vcs.annotation.color5}}"/>
         <option name="VISUAL_INDENT_GUIDE" value="{{editor.visualIndentGuideColor}}"/>
-        <!--<option name="WARNING_HINT" value="ffffff" />-->
-        <option name="WHITESPACES" value="{{editor.whitespacesColor}}"/>
-        <option name="WHITESPACES_MODIFIED_LINES_COLOR" value=""/>
+        <option name="WARNING_HINT" value="{{editor.hint.warning}}"/>
+        <option name="WHITESPACES" value="{{editor.syntax.whitespaces}}"/>
+        <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="{{editor.vcs.gutter.modifiedLines}}"/>
     </colors>
     <attributes>
         <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA"/>
@@ -181,13 +181,9 @@
             <!--</value>-->
         </option>
         <option name="CODE_LENS_BORDER_COLOR">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="EFFECT_COLOR" value="{{editor.codeLens.borderColor}}"/>
+            </value>
         </option>
         <!-- Terminal colors -->
         <!-- ANSI Color 00 -->
@@ -323,14 +319,11 @@
             </value>
         </option>
         <option name="CTRL_CLICKABLE">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--<option name="EFFECT_TYPE" value="1" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.ctrlClickable.textColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.ctrlClickable.effectColor}}"/>
+                <option name="EFFECT_TYPE" value="1"/>
+            </value>
         </option>
         <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
             <!--<value>-->
@@ -560,10 +553,10 @@
         </option>
         <option name="DEFAULT_HIGHLIGHTED_REFERENCE">
             <value>
-            <option name="FOREGROUND" value="{{editor.syntax.highlightedReference.textColor}}" />
-            <option name="FONT_TYPE" value="2" />
-            <option name="EFFECT_COLOR" value="{{editor.syntax.highlightedReference.effectColor}}" />
-            <option name="EFFECT_TYPE" value="1" />
+                <option name="FOREGROUND" value="{{editor.syntax.highlightedReference.textColor}}"/>
+                <option name="FONT_TYPE" value="2"/>
+                <option name="EFFECT_COLOR" value="{{editor.syntax.highlightedReference.effectColor}}"/>
+                <option name="EFFECT_TYPE" value="1"/>
             </value>
         </option>
         <option name="DEFAULT_IDENTIFIER">
@@ -685,52 +678,44 @@
             </value>
         </option>
         <option name="DELETED_TEXT_ATTRIBUTES">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--<option name="EFFECT_TYPE" value="1" />-->
-            <!--</value>-->
+            <value>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.vcs.gutter.deletedLines}}"/>
+            </value>
         </option>
         <option name="DEPRECATED_ATTRIBUTES">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="FONT_TYPE" value="3" />-->
-            <!--<option name="EFFECT_COLOR" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--<option name="EFFECT_TYPE" value="3" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.syntax.deprecation.textColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.syntax.deprecation.effectColor}}"/>
+                <option name="EFFECT_TYPE" value="3"/>
+            </value>
         </option>
         <option name="DIFF_CONFLICT">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.diff.conflict.ignoredColor}}"/>
+                <option name="BACKGROUND" value="{{editor.diff.conflict.importantColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.diff.conflict.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="DIFF_DELETED">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.diff.deleted.ignoredColor}}"/>
+                <option name="BACKGROUND" value="{{editor.diff.deleted.importantColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.diff.deleted.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="DIFF_INSERTED">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.diff.inserted.ignoredColor}}"/>
+                <option name="BACKGROUND" value="{{editor.diff.inserted.importantColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.diff.inserted.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="DIFF_MODIFIED">
-            <!--<value>-->
-            <!--<option name="FOREGROUND" value="ffffff" />-->
-            <!--<option name="BACKGROUND" value="ffffff" />-->
-            <!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-            <!--</value>-->
+            <value>
+                <option name="FOREGROUND" value="{{editor.diff.modified.ignoredColor}}"/>
+                <option name="BACKGROUND" value="{{editor.diff.modified.importantColor}}"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.diff.modified.errorStripeColor}}"/>
+            </value>
         </option>
         <option name="DUPLICATE_FROM_SERVER">
             <!--<value>-->
@@ -777,9 +762,9 @@
         </option>
         <option name="FOLDED_TEXT_ATTRIBUTES">
             <value>
-            <option name="FOREGROUND" value="{{editor.foldedText.textColor}}" />
-            <option name="BACKGROUND" value="{{editor.foldedText.backgroundColor}}" />
-            <option name="FONT_TYPE" value="2" />
+                <option name="FOREGROUND" value="{{editor.foldedText.textColor}}"/>
+                <option name="BACKGROUND" value="{{editor.foldedText.backgroundColor}}"/>
+                <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
         <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
@@ -879,9 +864,10 @@
         </option>
         <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{{editor.identifierUnderCaret.effectColor}}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{{editor.identifierUnderCaret.errorStripeColor}}"/>
+                <option name="BACKGROUND" value="{{editor.identifierUnderCaret.standard.backgroundColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.identifierUnderCaret.standard.effectColor}}"/>
                 <option name="EFFECT_TYPE" value="0"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.identifierUnderCaret.standard.errorStripeColor}}"/>
             </value>
         </option>
         <option name="IGNORE.BRACKET">
@@ -1040,36 +1026,22 @@
             <value/>
         </option>
         <option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
-            <value>
-                <option name="FOREGROUND" value="{{editor.maroon}}"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_CONSTRUCTOR">
-            <value>
-                <option name="FOREGROUND" value="{{editor.peach}}"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
-            <value>
-                <option name="FOREGROUND" value="{{editor.sky}}"/>
-                <option name="FONT_TYPE" value="2"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
-            <value>
-                <option name="FOREGROUND" value="{{editor.maroon}}"/>
-                <option name="FONT_TYPE" value="2"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_ENUM_ENTRY">
-            <value>
-                <option name="FOREGROUND" value="{{editor.peach}}"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_EXCLEXCL">
-            <value>
-                <option name="FOREGROUND" value="{{editor.sky}}"/>
-            </value>
+            <value/>
         </option>
         <option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
             <value>
@@ -1113,7 +1085,8 @@
         </option>
         <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
             <value>
-                <option name="EFFECT_COLOR" value="{{editor.syntax.deprecation.effectColor}}"/>
+                <option name="FOREGROUND" value="{{editor.syntax.markedForRemoval.textColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.syntax.markedForRemoval.effectColor}}"/>
                 <option name="EFFECT_TYPE" value="3"/>
             </value>
         </option>
@@ -1137,6 +1110,12 @@
         <option name="PROPERTIES.KEY" baseAttributes="DEFAULT_KEYWORD"/>
         <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN"/>
         <option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+        <option name="SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="{{editor.search.searchResult.backgroundColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.search.searchResult.effectColor}}"/>
+            </value>
+        </option>
         <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_METHOD"/>
         <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_FIELD"/>
         <option name="STATIC_FINAL_FIELD_ATTRIBUTES" baseAttributes="STATIC_FIELD_ATTRIBUTES"/>
@@ -1163,6 +1142,12 @@
             <value>
                 <option name="BACKGROUND" value="{{editor.backgroundColor}}"/>
                 <option name="FOREGROUND" value="{{editor.textColor}}"/>
+            </value>
+        </option>
+        <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="{{editor.search.textSearchResult.backgroundColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.search.textSearchResult.effectColor}}"/>
             </value>
         </option>
         <option name="TODO_DEFAULT_ATTRIBUTES">
@@ -1227,9 +1212,16 @@
         </option>
         <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
             <value>
-                <option name="BACKGROUND" value="{{editor.syntax.writeIdentifierUnderCaret.backgroundColor}}"/>
-                <option name="ERROR_STRIPE_COLOR" value="{{editor.syntax.writeIdentifierUnderCaret.errorStripeColor}}"/>
+                <option name="BACKGROUND" value="{{editor.identifierUnderCaret.write.backgroundColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.identifierUnderCaret.write.effectColor}}"/>
                 <option name="EFFECT_TYPE" value="1"/>
+                <option name="ERROR_STRIPE_COLOR" value="{{editor.identifierUnderCaret.write.errorStripeColor}}"/>
+            </value>
+        </option>
+        <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
+            <value>
+                <option name="BACKGROUND" value="{{editor.search.writeSearchResult.backgroundColor}}"/>
+                <option name="EFFECT_COLOR" value="{{editor.search.writeSearchResult.effectColor}}"/>
             </value>
         </option>
         <option name="WRONG_REFERENCES_ATTRIBUTES">

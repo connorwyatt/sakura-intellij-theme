@@ -1,6 +1,6 @@
 import path from "node:path";
-import Handlebars from "handlebars";
 import { themesOutputDirectory } from "./constants.ts";
+import { Handlebars } from "./deps.ts";
 
 const createOutputDirectory = async (): Promise<void> => {
   await Deno.mkdir(themesOutputDirectory, { recursive: true });
