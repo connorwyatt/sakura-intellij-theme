@@ -49,8 +49,8 @@
       "focusedBorderColor": "{{buttons.focused.borderColor}}",
       "Split": {
         "default": {
-          "iconColor": "{{buttons.split.iconColor}}",
-          "separatorColor": "{{buttons.split.separatorColor}}"
+          "iconColor": "{{buttons.split.primary.iconColor}}",
+          "separatorColor": "{{buttons.split.primary.separatorColor}}"
         }
       }
     },

@@ -194,24 +194,20 @@ export default {
   },
   banner: {
     error: {
-      backgroundColor: "#ff0000",
-      // backgroundColor: mixWithBackground(0.5, palette.red0),
-      borderColor: palette.red0,
+      backgroundColor: mixWithBackground(0.75, palette.red0),
+      borderColor: mixWithBackground(0.5, palette.red0),
     },
     info: {
-      backgroundColor: "#0000ff",
-      // backgroundColor: mixWithBackground(0.5, palette.blue0),
-      borderColor: palette.blue0,
+      backgroundColor: mixWithBackground(0.75, palette.blue0),
+      borderColor: mixWithBackground(0.5, palette.blue0),
     },
     success: {
-      backgroundColor: "#00ff00",
-      // backgroundColor: mixWithBackground(0.5, palette.green0),
-      borderColor: palette.green0,
+      backgroundColor: mixWithBackground(0.75, palette.green0),
+      borderColor: mixWithBackground(0.5, palette.green0),
     },
     warning: {
-      backgroundColor: "#ffff00",
-      // backgroundColor: mixWithBackground(0.5, palette.yellow0),
-      borderColor: palette.yellow0,
+      backgroundColor: mixWithBackground(0.75, palette.yellow0),
+      borderColor: mixWithBackground(0.5, palette.yellow0),
     },
   },
   buttons: {
