@@ -94,10 +94,10 @@
         <option name="NOTIFICATION_BACKGROUND" value="{{editor.notification.backgroundColor}}"/>
         <option name="PREVIEW_BACKGROUND" value="#ff0000"/>
         <option name="PREVIEW_BORDER_COLOR" value="#00ff00"/>
-        <option name="PROMOTION_PANE" value="#0000ff"/>
+        <option name="PROMOTION_PANE" value="{{editor.notification.backgroundColor}}"/>
         <option name="QUESTION_HINT" value="{{editor.hint.question}}"/>
-        <option name="READONLY_BACKGROUND" value="#ff00ff"/>
-        <option name="READONLY_FRAGMENT_BACKGROUND" value="#00ffff"/>
+        <option name="READONLY_BACKGROUND" value="{{editor.readonly.background}}"/>
+        <option name="READONLY_FRAGMENT_BACKGROUND" value="{{editor.readonly.fragmentBackground}}"/>
         <option name="RECENT_LOCATIONS_SELECTION" value=""/>
         <option name="RIGHT_MARGIN_COLOR" value="{{editor.rightMarginColor}}"/>
         <option name="SELECTED_INDENT_GUIDE" value="{{editor.indentGuide.selected.color}}"/>
@@ -113,8 +113,8 @@
         <option name="TABS" value="{{editor.syntax.tabs}}"/>
         <option name="TAB_UNDERLINE" value=""/>
         <option name="TAB_UNDERLINE_INACTIVE" value=""/>
-        <option name="TEARLINE_COLOR" value="00ffff"/>
-        <option name="TOOLTIP" value="#00ffff"/>
+        <option name="TEARLINE_COLOR" value="ff00ff"/>
+        <option name="TOOLTIP" value="{{backgroundColor}}"/>
         <option name="VCS_ANNOTATIONS_COLOR_1" value="{{editor.vcs.annotation.color1}}"/>
         <option name="VCS_ANNOTATIONS_COLOR_2" value="{{editor.vcs.annotation.color2}}"/>
         <option name="VCS_ANNOTATIONS_COLOR_3" value="{{editor.vcs.annotation.color3}}"/>

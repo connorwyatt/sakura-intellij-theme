@@ -5,7 +5,8 @@
       "npm:@types/node": "npm:@types/node@18.16.19",
       "npm:flat@^6.0.1": "npm:flat@6.0.1",
       "npm:handlebars@^4.7.6": "npm:handlebars@4.7.8",
-      "npm:polished@^4.2.2": "npm:polished@4.2.2"
+      "npm:polished@^4.2.2": "npm:polished@4.2.2",
+      "npm:rgb2hex@^0.2.5": "npm:rgb2hex@0.2.5"
     },
     "npm": {
       "@babel/runtime@7.23.4": {
@@ -48,6 +49,10 @@
       },
       "regenerator-runtime@0.14.0": {
         "integrity": "sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==",
+        "dependencies": {}
+      },
+      "rgb2hex@0.2.5": {
+        "integrity": "sha512-22MOP1Rh7sAo1BZpDG6R5RFYzR2lYEgwq7HEmyW2qcsOqR2lQKmn+O//xV3YG/0rrhMC6KVX2hU+ZXuaw9a5bw==",
         "dependencies": {}
       },
       "source-map@0.6.1": {
