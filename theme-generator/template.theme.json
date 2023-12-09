@@ -421,7 +421,7 @@
         }
       },
       "RefLabel": {
-        "backgroundBase": "#ffff00",
+        "backgroundBase": "#00ffff",
         "backgroundBrightness": 0.5,
         "foreground": "#ff00ff"
       },
@@ -464,16 +464,16 @@
       "Checkbox.Focus.Thin.Selected.Dark": "{{checkbox.selected.focusColor}}",
       "Checkbox.Focus.Wide": "{{checkbox.unselected.focusColor}}",
       "Checkbox.Focus.Wide.Dark": "{{checkbox.unselected.focusColor}}",
-      "Objects.Blue": "#0000ff",
-      "Objects.BlackText": "#000000",
-      "Objects.Green": "#00ff00",
-      "Objects.Grey": "#808080",
-      "Objects.Pink": "#ff00ff",
-      "Objects.Purple": "#800080",
-      "Objects.Red": "#ff0000",
-      "Objects.RedStatus": "#ff0000",
-      "Objects.Yellow": "#ffff00",
-      "Objects.YellowDark": "#ffff00",
+      "Objects.Blue": "{{objects.blue}}",
+      "Objects.BlackText": "{{objects.blackText}}",
+      "Objects.Green": "{{objects.green}}",
+      "Objects.Grey": "{{objects.grey}}",
+      "Objects.Pink": "{{objects.pink}}",
+      "Objects.Purple": "{{objects.purple}}",
+      "Objects.Red": "{{objects.red}}",
+      "Objects.RedStatus": "{{objects.redStatus}}",
+      "Objects.Yellow": "{{objects.yellow}}",
+      "Objects.YellowDark": "{{objects.yellowDark}}",
       "Tree.iconColor": "{{tree.iconColor}}"
     }
   }

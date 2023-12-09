@@ -2,7 +2,7 @@ import { Polished } from "../../deps.ts";
 import { palette } from "../palette.ts";
 import { rgbaToHex } from "../../utilities.ts";
 
-const { desaturate, lighten, mix, saturate, transparentize } = Polished;
+const { darken, desaturate, lighten, mix, saturate, transparentize } = Polished;
 
 const themeName = "Sakura Night";
 
@@ -190,7 +190,7 @@ export default {
     greyInline: "#ff00ff",
     greyInlineDark: textColor,
     red: "#ff0000",
-    yellow: "#ffff00",
+    yellow: palette.yellow0,
   },
   banner: {
     error: {
@@ -589,7 +589,7 @@ export default {
     backgroundColor: "#ff0000",
     textColor,
     disabled: {
-      textColor: "#ffff00",
+      textColor: mixWithBackground(0.5, textColor),
     },
   },
   link: {
@@ -645,6 +645,18 @@ export default {
       textColor,
     },
   },
+  objects: {
+    blue: palette.blue0,
+    blackText: palette.charcoal0,
+    green: palette.green0,
+    grey: palette.charcoal3,
+    pink: palette.pink0,
+    purple: palette.purple0,
+    red: palette.red0,
+    redStatus: palette.red0,
+    yellow: palette.yellow0,
+    yellowDark: darken(0.2, palette.yellow0),
+  },
   panel: {
     backgroundColor,
     foregroundColor: textColor,
@@ -673,13 +685,13 @@ export default {
     },
     button: {
       install: {
-        backgroundColor: buttonPrimaryBackgroundColor,
-        borderColor: buttonPrimaryBackgroundColor,
-        textColor: buttonPrimaryTextColor,
-        fillBackgroundColor: buttonPrimaryBackgroundColor,
-        fillTextColor: buttonPrimaryTextColor,
+        backgroundColor: buttonSecondaryBackgroundColor,
+        borderColor: buttonSecondaryBackgroundColor,
+        textColor: buttonSecondaryTextColor,
+        fillBackgroundColor: buttonSecondaryBackgroundColor,
+        fillTextColor: buttonSecondaryTextColor,
         focused: {
-          backgroundColor: buttonPrimaryBackgroundColor,
+          backgroundColor: buttonSecondaryBackgroundColor,
         },
       },
       update: {
@@ -855,7 +867,6 @@ export default {
         },
       },
       icon: {
-        // TODO: Review colors
         head: palette.pink0,
         localBranch: palette.blue0,
         remoteBranch: palette.green0,
