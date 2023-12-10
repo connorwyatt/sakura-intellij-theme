@@ -22,5 +22,3 @@ export const palette = {
   purple0: saturate(0.2, "#b89cd5"),
   pink0: saturate(0.2, "#e0adc0"),
 };
-
-console.log(palette);

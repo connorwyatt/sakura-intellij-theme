@@ -26,7 +26,7 @@
     },
     "Borders": {
       "color": "{{bordersColor}}",
-      "ContrastBorderColor": "#00ff00"
+      "ContrastBorderColor": "{{bordersColor}}"
     },
     "Button": {
       "default": {

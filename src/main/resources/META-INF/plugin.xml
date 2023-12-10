@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.connorwyatt.sakuratheme</id>
+    <id>com.github.connorwyatt.sakuraintellijtheme</id>
     <name>Sakura Theme</name>
     <vendor>Connor Wyatt</vendor>
     <version>@version@</version>
@@ -8,6 +8,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="com.github.connorwyatt.sakuratheme.test" path="/themes/sakura-night.theme.json" />
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuranight" path="/themes/sakura-night.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuranight.colorScheme" path="/themes/sakura-night"/>
     </extensions>
 </idea-plugin>

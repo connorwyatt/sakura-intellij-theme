@@ -185,11 +185,11 @@ export default {
   },
   actions: {
     blue: palette.blue0,
-    green: "#00ff00",
+    green: palette.green0,
     grey: textColor,
     greyInline: "#ff00ff",
     greyInlineDark: textColor,
-    red: "#ff0000",
+    red: palette.red0,
     yellow: palette.yellow0,
   },
   banner: {
@@ -591,6 +591,15 @@ export default {
     disabled: {
       textColor: mixWithBackground(0.5, textColor),
     },
+    error: {
+      textColor: errorColor,
+    },
+    info: {
+      textColor: infoColor,
+    },
+    success: {
+      textColor: successColor,
+    },
   },
   link: {
     active: { textColor: palette.blue0 },
@@ -615,6 +624,7 @@ export default {
   },
   menu: {
     backgroundColor: editorBackgroundColor,
+    textColor,
   },
   menuItem: {
     backgroundColor,
