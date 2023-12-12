@@ -1,24 +1,26 @@
 import { Polished } from "../deps.ts";
 
-const { darken, saturate } = Polished;
+const { darken } = Polished;
 
-const charcoal3 = "#323b3f";
-const charcoal2 = darken(0.075, charcoal3);
-const charcoal1 = darken(0.1, charcoal3);
-const charcoal0 = darken(0.125, charcoal3);
+const charcoal = "#2b363b";
+const charcoalDarken050 = darken(0.05, charcoal);
+const charcoalDarken075 = darken(0.075, charcoal);
+const charcoalDarken100 = darken(0.1, charcoal);
+const charcoalDarken125 = darken(0.125, charcoal);
 
 export const palette = {
-  charcoal0,
-  charcoal1,
-  charcoal2,
-  charcoal3,
-  white0: "#f2f5f7",
-  red0: saturate(0.2, "#ce7474"),
-  orange0: saturate(0.2, "#d99e6d"),
-  yellow0: saturate(0.2, "#dabe71"),
-  green0: saturate(0.2, "#a7c785"),
-  turquoise0: saturate(0.2, "#7dc7b9"),
-  blue0: saturate(0.2, "#7db1c7"),
-  purple0: saturate(0.2, "#b89cd5"),
-  pink0: saturate(0.2, "#e0adc0"),
+  charcoalDarken125,
+  charcoalDarken100,
+  charcoalDarken075,
+  charcoalDarken050,
+  charcoal,
+  white: "#f2f5f7",
+  red: "#e16161",
+  orange: "#eb9c5b",
+  yellow: "#ecc65f",
+  green: "#a8d973",
+  turquoise: "#6adac5",
+  blue: "#72bcda",
+  purple: "#b88ee3",
+  pink: "#eba2bd",
 };

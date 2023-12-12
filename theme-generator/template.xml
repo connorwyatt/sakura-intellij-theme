@@ -1022,17 +1022,17 @@
 		<option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
 			<value/>
 		</option>
-		<option name="KOTLIN_CONSTRUCTOR">
+		<option name="KOTLIN_CONSTRUCTOR" baseAttributes="DEFAULT_FUNCTION_CALL">
 			<value/>
 		</option>
-		<option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
-			<value/>
-		</option>
+		<option name="KOTLIN_DYNAMIC_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
 		<option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
 			<value/>
 		</option>
 		<option name="KOTLIN_ENUM_ENTRY">
-			<value/>
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.enumCase}}"/>
+			</value>
 		</option>
 		<option name="KOTLIN_EXCLEXCL">
 			<value/>

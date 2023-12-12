@@ -123,13 +123,23 @@
       "hoverBackground": "{{tab.hover.backgroundColor}}",
       "inactiveUnderlineColor": "{{tab.active.unfocused.underlineColor}}",
       "underlineColor": "{{tab.active.focused.underlineColor}}",
-      "underlinedTabBackground": "{{tab.active.backgroundColor}}"
+      "underlinedTabBackground": "{{tab.active.backgroundColor}}",
+      "underlinedTabForeground": "{{tab.active.textColor}}"
     },
     "DragAndDrop": {
       "borderColor": "{{dragAndDrop.borderColor}}",
       "areaBackground": "{{dragAndDrop.area.backgroundColor}}",
       "areaForeground": "{{dragAndDrop.area.foregroundColor}}",
       "rowBackground": "{{dragAndDrop.row.backgroundColor}}"
+    },
+    "Editor": {
+      "background": "{{editor.backgroundColor}}",
+      "foreground": "{{editor.textColor}}",
+      "shortcutForeground": "{{editor.shortcutForeground}}",
+      "SearchField": {
+        "background": "{{editor.searchField.backgroundColor}}"
+      },
+      "Toolbar": { "borderColor": "{{editor.toolbar.borderColor}}" }
     },
     "FileColor": {
       "Blue": "{{fileColors.blue}}",
@@ -176,12 +186,12 @@
     },
     "MainWindow": {
       "Tab": {
-        "background": "{{mainToolbar.backgroundColor}}",
-        "foreground": "{{mainToolbar.inactive.textColor}}",
-        "selectedBackground": "{{backgroundColor}}",
-        "separatorColor": "{{bordersColor}}",
-        "hoverForeground": "#ff0000",
-        "hoverBackground": "#00ff00"
+        "background": "{{mainToolbar.tab.inactive.backgroundColor}}",
+        "foreground": "{{mainToolbar.tab.inactive.textColor}}",
+        "selectedBackground": "{{mainToolbar.tab.selected.backgroundColor}}",
+        "separatorColor": "{{mainToolbar.tab.separatorColor}}",
+        "hoverBackground": "{{mainToolbar.tab.hover.backgroundColor}}",
+        "hoverForeground": "{{mainToolbar.tab.hover.textColor}}"
       }
     },
     "Menu": {
@@ -220,9 +230,18 @@
         "warningForeground": "{{notification.warning.textColor}}"
       }
     },
+    "NotificationsToolwindow": {
+      "newNotification": {
+        "background": "{{notification.backgroundColor}}",
+        "hoverBackground": "{{notification.hover.backgroundColor}}"
+      },
+      "Notification": {
+        "hoverBackground": "{{notification.hover.backgroundColor}}"
+      }
+    },
     "Panel": {
       "background": "{{panel.backgroundColor}}",
-      "foreground": "{{panel.foregroundColor}}"
+      "foreground": "{{panel.textColor}}"
     },
     "Plugins": {
       "background": "{{plugins.list.backgroundColor}}",
@@ -269,11 +288,15 @@
       "borderColor": "{{popup.borderColor}}",
       "paintBorder": true,
       "Advertiser": {
-        "foreground": "#ff0000"
+        "background": "{{popup.advertiser.backgroundColor}}",
+        "borderColor": "{{popup.advertiser.borderColor}}",
+        "foreground": "{{popup.advertiser.textColor}}"
       },
       "Header": {
-        "activeForeground": "#ffff00",
-        "inactiveForeground": "#ff00ff"
+        "activeBackground": "{{popup.header.active.backgroundColor}}",
+        "activeForeground": "{{popup.header.active.textColor}}",
+        "inactiveBackground": "{{popup.header.inactive.backgroundColor}}",
+        "inactiveForeground": "{{popup.header.inactive.textColor}}"
       }
     },
     "PopupMenu": {
@@ -431,6 +454,36 @@
           "background": "{{vcs.markerPopup.toolbar.backgroundColor}}"
         }
       }
+    },
+    "WelcomeScreen": {
+      "background": "{{welcomeScreen.backgroundColor}}",
+      "borderColor": "{{welcomeScreen.borderColor}}",
+      "captionBackground": "{{welcomeScreen.caption.backgroundColor}}",
+      "captionForeground": "{{welcomeScreen.caption.textColor}}",
+      "Details": {
+        "background": "{{welcomeScreen.details.backgroundColor}}"
+      },
+      "footerBackground": "{{welcomeScreen.footer.backgroundColor}}",
+      "footerForeground": "{{welcomeScreen.footer.textColor}}",
+      "groupIconBorderColor": "{{welcomeScreen.groupIcon.borderColor}}",
+      "headerBackground": "{{welcomeScreen.header.backgroundColor}}",
+      "headerForeground": "{{welcomeScreen.header.textColor}}",
+      "LearnTab": {
+        "CourseCard": {
+          "hover": "{{welcomeScreen.learnTab.courseCard.hoverColor}}"
+        }
+      },
+      "Projects": {
+        "background": "{{welcomeScreen.projects.backgroundColor}}",
+        "actions": {
+          "background": "{{welcomeScreen.projects.actions.backgroundColor}}",
+          "selectionBackground": "{{welcomeScreen.projects.actions.selection.backgroundColor}}",
+          "selectionBorderColor": "{{welcomeScreen.projects.actions.selection.borderColor}}"
+        },
+        "selectionBackground": "{{welcomeScreen.projects.selection.active.backgroundColor}}",
+        "selectionInactiveBackground": "{{welcomeScreen.projects.selection.inactive.backgroundColor}}"
+      },
+      "separatorColor": "{{welcomeScreen.separatorColor}}"
     }
   },
   "icons": {
