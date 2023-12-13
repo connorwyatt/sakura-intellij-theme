@@ -155,6 +155,9 @@ const syntax = {
   label: metadataColor,
   localVariable: localVariableColor,
   keyword: keywordColor,
+  kotlin: {
+    colon: punctuationColor,
+  },
   markedForRemoval: {
     effectColor: errorColor,
     textColor: mixWithEditorBackground(0.5, errorColor),
