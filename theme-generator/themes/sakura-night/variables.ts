@@ -27,11 +27,14 @@ const fieldBackgroundColor = mixWithBackground(
   0.925,
   lighten(0.15, palette.pink),
 );
-const fieldBorderColor = palette.pinkSaturated250;
+const fieldBorderColor = mixWithBackground(0.5, palette.pinkSaturated250);
 const fieldTextColor = textColor;
 
 const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
 const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
+
+const checkboxBackgroundColor = palette.pinkSaturated250;
+const checkboxTickColor = palette.white;
 
 const buttonPrimaryBackgroundColor = palette.pinkSaturated250;
 const buttonPrimaryBorderColor = buttonPrimaryBackgroundColor;
@@ -189,7 +192,7 @@ const syntax = {
     effectColor: warningColor,
     errorStripeColor: warningColor,
   },
-  whitespace: mixWithEditorBackground(0.5, punctuationColor),
+  whitespace: editorGuidelinesColor,
   xml: {
     nsPrefix: { textColor: palette.yellow },
     attributeName: palette.yellow,
@@ -277,20 +280,20 @@ export default {
     textColor,
     selectedColor: "#ff0000",
     selected: {
-      backgroundColor: fieldBorderColor,
-      borderColor: fieldBorderColor,
+      backgroundColor: checkboxBackgroundColor,
+      borderColor: checkboxBackgroundColor,
       focusColor: fieldFocusColor,
-      tickColor: palette.white,
+      tickColor: checkboxTickColor,
     },
     unselected: {
       backgroundColor,
-      borderColor: fieldBorderColor,
+      borderColor: checkboxBackgroundColor,
       focusColor: fieldFocusColor,
     },
     disabled: {
-      backgroundColor: mixWithBackground(0.5, fieldBackgroundColor),
-      borderColor: mixWithBackground(0.5, fieldBorderColor),
-      tickColor: mixWithBackground(0.5, fieldTextColor),
+      backgroundColor,
+      borderColor: mixWithBackground(0.5, checkboxBackgroundColor),
+      tickColor: mixWithBackground(0.5, checkboxTickColor),
     },
   },
   comboBox: {
@@ -322,7 +325,7 @@ export default {
   },
   completionPopup: {
     match: {
-      textColor: palette.pink,
+      textColor: palette.pinkSaturated250,
     },
     textColor,
   },
@@ -353,8 +356,11 @@ export default {
       borderColor: guidelinesColor,
     },
     bookmark: {
-      lineBackgroundColor: mixWithEditorBackground(0.75, palette.pink),
-      errorStripeColor: mixWithEditorBackground(0.75, palette.pink),
+      lineBackgroundColor: mixWithEditorBackground(
+        0.75,
+        palette.pinkSaturated250,
+      ),
+      errorStripeColor: mixWithEditorBackground(0.75, palette.pinkSaturated250),
     },
     breadcrumbs: {
       current: {
@@ -506,8 +512,8 @@ export default {
     },
     inlay: {
       default: {
-        backgroundColor: palette.pink,
-        textColor: palette.white,
+        backgroundColor: badgeBackgroundColor,
+        textColor: badgeTextColor,
       },
       noBackground: {
         textColor,
@@ -532,11 +538,11 @@ export default {
     },
     lineNumbers: {
       normal: { textColor },
-      caretRow: { textColor: palette.pink },
+      caretRow: { textColor: palette.pinkSaturated250 },
     },
     matchedBracesIndentGuideColor: editorSelectionColor,
     matchingElement: {
-      effectColor: palette.pink,
+      effectColor: palette.pinkSaturated250,
     },
     methodSeparators: editorGuidelinesColor,
     notification: {
@@ -580,7 +586,7 @@ export default {
         active: {
           backgroundColor: null,
         },
-        modifiedIconColor: palette.pink,
+        modifiedIconColor: palette.pinkSaturated250,
       },
     },
     vcs: {
@@ -589,11 +595,11 @@ export default {
         lastCommit: {
           textColor,
         },
-        color1: mixWithEditorBackground(0.3, palette.pink),
-        color2: mixWithEditorBackground(0.45, palette.pink),
-        color3: mixWithEditorBackground(0.6, palette.pink),
-        color4: mixWithEditorBackground(0.75, palette.pink),
-        color5: mixWithEditorBackground(0.9, palette.pink),
+        color1: mixWithEditorBackground(0.3, palette.pinkSaturated250),
+        color2: mixWithEditorBackground(0.45, palette.pinkSaturated250),
+        color3: mixWithEditorBackground(0.6, palette.pinkSaturated250),
+        color4: mixWithEditorBackground(0.75, palette.pinkSaturated250),
+        color5: mixWithEditorBackground(0.9, palette.pinkSaturated250),
       },
       changedLinesPopup: {
         backgroundColor,
