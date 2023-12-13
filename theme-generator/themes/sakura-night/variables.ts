@@ -7,7 +7,7 @@ const { darken, desaturate, lighten, mix, saturate, transparentize } = Polished;
 const themeName = "Sakura Night";
 
 const backgroundColor = palette.charcoalDarken075;
-const overlayBackgroundColor = palette.charcoalDarken050;
+const overlayBackgroundColor = palette.charcoalDarken075;
 const topBarBackgroundColor = palette.charcoalDarken100;
 const editorBackgroundColor = palette.charcoalDarken100;
 
