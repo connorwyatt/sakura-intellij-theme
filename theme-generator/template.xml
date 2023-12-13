@@ -87,7 +87,7 @@
 		<option name="LINE_NUMBERS_COLOR" value="{{editor.lineNumbers.normal.textColor}}"/>
 		<option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="{{editor.lineNumbers.caretRow.textColor}}"/>
 		<option name="LOOKUP_COLOR" value="{{editor.lookupColor}}"/>
-		<option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value=""/>
+		<option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="{{editor.matchedBracesIndentGuideColor}}"/>
 		<option name="METHOD_SEPARATORS_COLOR" value="{{editor.methodSeparators}}"/>
 		<option name="MODIFIED_LINES_COLOR" value="{{editor.vcs.gutter.modifiedLines}}"/>
 		<option name="MODIFIED_TAB_ICON" value="{{editor.tabs.tab.modifiedIconColor}}"/>

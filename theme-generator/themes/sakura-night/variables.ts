@@ -20,8 +20,8 @@ const mixWithTopBarBackground = (percentage: number, color: string): string =>
 const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
-const textColor = lighten(0.6, backgroundColor);
-const editorTextColor = desaturate(0.5, palette.white);
+const textColor = palette.white;
+const editorTextColor = palette.white;
 
 const fieldBackgroundColor = mixWithBackground(
   0.925,
@@ -60,7 +60,11 @@ const guidelinesColor = mixWithBackground(0.95, palette.white);
 const treeLinesColor = mixWithBackground(0.8, palette.white);
 const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.white);
 
-const selectionColor = mixWithEditorBackground(0.75, palette.pinkSaturated250);
+const selectionColor = mixWithBackground(0.25, palette.pinkSaturated250);
+const editorSelectionColor = mixWithEditorBackground(
+  0.75,
+  palette.pinkSaturated250,
+);
 
 const badgeBackgroundColor = palette.pinkSaturated250;
 const badgeTextColor = palette.white;
@@ -202,12 +206,12 @@ export default {
   bordersColor: guidelinesColor,
   actionButtons: {
     hover: {
-      backgroundColor: mixWithBackground(0.75, palette.pink),
-      borderColor: mixWithBackground(0.5, palette.pink),
+      backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
+      borderColor: mixWithBackground(0.25, palette.pinkSaturated250),
     },
     pressed: {
-      backgroundColor: mixWithBackground(0.65, palette.pink),
-      borderColor: mixWithBackground(0.4, palette.pink),
+      backgroundColor: mixWithBackground(0.4, palette.pinkSaturated250),
+      borderColor: mixWithBackground(0.25, palette.pinkSaturated250),
     },
     separatorColor: guidelinesColor,
   },
@@ -299,7 +303,7 @@ export default {
       textColor: mix(0.5, palette.pink, fieldTextColor),
     },
     selected: {
-      backgroundColor: mixWithBackground(0.5, palette.pink),
+      backgroundColor: selectionColor,
       textColor,
     },
     nonEditable: {
@@ -470,19 +474,25 @@ export default {
     },
     identifierUnderCaret: {
       standard: {
-        backgroundColor: mixWithEditorBackground(0.75, palette.pink),
-        effectColor: mixWithEditorBackground(0.5, palette.pink),
+        backgroundColor: mixWithEditorBackground(
+          0.75,
+          palette.pinkSaturated250,
+        ),
+        effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
         errorStripeColor: mixWithEditorBackground(
           0.5,
-          palette.pink,
+          palette.pinkSaturated250,
         ),
       },
       write: {
-        backgroundColor: mixWithEditorBackground(0.75, palette.pink),
-        effectColor: mixWithEditorBackground(0.5, palette.pink),
+        backgroundColor: mixWithEditorBackground(
+          0.75,
+          palette.pinkSaturated250,
+        ),
+        effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
         errorStripeColor: mixWithEditorBackground(
           0.5,
-          palette.pink,
+          palette.pinkSaturated250,
         ),
       },
     },
@@ -492,7 +502,7 @@ export default {
     },
     indentGuide: {
       normal: { color: editorGuidelinesColor },
-      selected: { color: mixWithEditorBackground(0.5, palette.pink) },
+      selected: { color: editorSelectionColor },
     },
     inlay: {
       default: {
@@ -524,6 +534,7 @@ export default {
       normal: { textColor },
       caretRow: { textColor: palette.pink },
     },
+    matchedBracesIndentGuideColor: editorSelectionColor,
     matchingElement: {
       effectColor: palette.pink,
     },
@@ -536,8 +547,11 @@ export default {
       borderColor: editorGuidelinesColor,
     },
     readonly: {
-      background: mixWithEditorBackground(0.95, palette.pink),
-      fragmentBackground: mixWithEditorBackground(0.95, palette.pink),
+      background: mixWithEditorBackground(0.95, palette.pinkSaturated250),
+      fragmentBackground: mixWithEditorBackground(
+        0.95,
+        palette.pinkSaturated250,
+      ),
     },
     rightMarginColor: editorGuidelinesColor,
     search: {
@@ -555,7 +569,7 @@ export default {
       },
     },
     selection: {
-      backgroundColor: selectionColor,
+      backgroundColor: editorSelectionColor,
       textColor: null,
     },
     softWrapSign: guidelinesColor,
@@ -586,6 +600,7 @@ export default {
       },
       gutter: {
         addedLines: palette.green,
+        deletedLines: palette.red,
         modifiedLines: palette.blue,
         removedLines: palette.red,
       },
@@ -740,7 +755,7 @@ export default {
         textColor: mixWithBackground(0.5, textColor),
       },
       selected: {
-        backgroundColor: mixWithBackground(0.75, palette.pink),
+        backgroundColor: selectionColor,
       },
     },
     description: {
@@ -837,11 +852,11 @@ export default {
     pressed: { overlayColor: rgbaToHex(transparentize(0.8, backgroundColor)) },
   },
   scrollBar: {
-    thumbColor: mixWithBackground(0.5, palette.pink),
-    thumbBorderColor: mixWithBackground(0.25, palette.pink),
+    thumbColor: mixWithBackground(0.75, palette.pinkSaturated250),
+    thumbBorderColor: mixWithBackground(0.5, palette.pinkSaturated250),
     hover: {
-      thumbColor: mixWithBackground(0.25, palette.pink),
-      thumbBorderColor: palette.pink,
+      thumbColor: mixWithBackground(0.5, palette.pinkSaturated250),
+      thumbBorderColor: mixWithBackground(0.25, palette.pinkSaturated250),
     },
   },
   segmentedButton: {
@@ -860,12 +875,12 @@ export default {
   },
   selection: {
     active: {
-      backgroundColor: mixWithBackground(0.5, palette.pink),
+      backgroundColor: selectionColor,
     },
     inactive: {
-      backgroundColor: mixWithBackground(0.75, palette.pink),
+      backgroundColor: mixWithBackground(0.5, selectionColor),
     },
-    textColor: lighten(0.15, palette.pink),
+    textColor: palette.white,
   },
   tab: {
     active: {
@@ -902,10 +917,12 @@ export default {
     backgroundColor,
     button: {
       selected: {
-        backgroundColor: mixWithBackground(0.5, palette.pink),
+        backgroundColor: mixWithBackground(0.25, palette.pinkSaturated250),
         iconColor: textColor,
       },
-      hover: { backgroundColor: mixWithBackground(0.5, palette.pink) },
+      hover: {
+        backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
+      },
     },
     header: {
       backgroundColor,

@@ -5,6 +5,7 @@
 ## [Unreleased]
 ### Added
 - Added plugin icon.
+- Added more theming.
 
 ### Changed
 - Changed caret color.
