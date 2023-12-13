@@ -463,9 +463,14 @@ export default {
     },
     fileStatus: {
       added: palette.green,
+      conflicts: palette.orange,
       copied: palette.green,
       deleted: palette.red,
+      merged: palette.purple,
       modified: palette.blue,
+      switched: palette.purple,
+      unknown: palette.orange,
+      warning: palette.yellow,
     },
     foldedText: {
       textColor: mixWithEditorBackground(0.5, textColor),

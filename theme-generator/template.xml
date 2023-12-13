@@ -44,25 +44,25 @@
 		<option name="FILESTATUS_ADDED" value="{{editor.fileStatus.added}}"/>
 		<option name="FILESTATUS_COPIED" value="{{editor.fileStatus.copied}}"/>
 		<option name="FILESTATUS_DELETED" value="{{editor.fileStatus.deleted}}"/>
-		<option name="FILESTATUS_HIJACKED" value=""/>
-		<option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value=""/>
+		<option name="FILESTATUS_HIJACKED" value="{{editor.fileStatus.warning}}"/>
+		<option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{{editor.fileStatus.deleted}}"/>
 		<option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="{{editor.fileStatus.ignored}}"/>
-		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value=""/>
-		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value=""/>
-		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value=""/>
-		<option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value=""/>
+		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{{editor.fileStatus.conflicts}}"/>
+		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{{editor.fileStatus.conflicts}}"/>
+		<option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{{editor.fileStatus.conflicts}}"/>
+		<option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{{editor.fileStatus.added}}"/>
 		<option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="{{editor.fileStatus.ignored}}"/>
-		<option name="FILESTATUS_MERGED" value=""/>
+		<option name="FILESTATUS_MERGED" value="{{editor.fileStatus.merged}}"/>
 		<option name="FILESTATUS_MODIFIED" value="{{editor.fileStatus.modified}}"/>
 		<option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value=""/>
 		<option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value=""/>
 		<option name="FILESTATUS_OBSOLETE" value=""/>
 		<option name="FILESTATUS_RENAMED" value="{{editor.fileStatus.modified}}"/>
-		<option name="FILESTATUS_SUPPRESSED" value=""/>
-		<option name="FILESTATUS_SWITCHED" value=""/>
-		<option name="FILESTATUS_UNKNOWN" value=""/>
+		<option name="FILESTATUS_SUPPRESSED" value="{{editor.fileStatus.ignored}}"/>
+		<option name="FILESTATUS_SWITCHED" value="{{editor.fileStatus.switched}}"/>
+		<option name="FILESTATUS_UNKNOWN" value="{{editor.fileStatus.unknown}}"/>
 		<option name="FILESTATUS_addedOutside" value="{{editor.fileStatus.added}}"/>
-		<option name="FILESTATUS_changelistConflict" value=""/>
+		<option name="FILESTATUS_changelistConflict" value="{{editor.fileStatus.conflicts}}"/>
 		<option name="FILESTATUS_modifiedOutside" value="{{editor.fileStatus.modified}}"/>
 		<option name="FOLDED_TEXT_BORDER_COLOR" value=""/>
 		<option name="GUTTER_BACKGROUND" value="{{editor.gutter.backgroundColor}}"/>
