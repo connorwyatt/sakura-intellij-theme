@@ -449,9 +449,9 @@
         }
       },
       "RefLabel": {
-        "backgroundBase": "#00ffff",
-        "backgroundBrightness": 0.5,
-        "foreground": "#ff00ff"
+        "backgroundBase": "{{vcs.refLabel.backgroundColor}}",
+        "backgroundBrightness": 0,
+        "foreground": "{{vcs.refLabel.textColor}}"
       },
       "MarkerPopup": {
         "borderColor": "{{vcs.markerPopup.borderColor}}",

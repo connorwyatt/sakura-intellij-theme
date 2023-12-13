@@ -9,6 +9,7 @@
 
 ### Changed
 - Changed caret color.
+- Make file colors less muddy.
 
 ### Fixed
 - Fixed drag and drop colors.

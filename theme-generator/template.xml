@@ -98,7 +98,7 @@
 		<option name="QUESTION_HINT" value="{{editor.hint.question}}"/>
 		<option name="READONLY_BACKGROUND" value="{{editor.readonly.background}}"/>
 		<option name="READONLY_FRAGMENT_BACKGROUND" value="{{editor.readonly.fragmentBackground}}"/>
-		<option name="RECENT_LOCATIONS_SELECTION" value=""/>
+		<option name="RECENT_LOCATIONS_SELECTION" value="{{editor.recentLocations.selection.backgroundColor}}"/>
 		<option name="RIGHT_MARGIN_COLOR" value="{{editor.rightMarginColor}}"/>
 		<option name="SELECTED_INDENT_GUIDE" value="{{editor.indentGuide.selected.color}}"/>
 		<option name="SELECTED_TEARLINE_COLOR" value=""/>
@@ -286,7 +286,7 @@
 		</option>
 		<option name="CONSOLE_RANGE_TO_EXECUTE">
 			<value>
-				<option name="EFFECT_COLOR" value="#ff00ff"/>
+				<option name="EFFECT_COLOR" value="{{editor.console.rangeToExecute.effectColor}}"/>
 			</value>
 		</option>
 		<option name="CONSOLE_SYSTEM_OUTPUT">

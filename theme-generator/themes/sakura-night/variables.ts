@@ -430,6 +430,9 @@ export default {
       input: {
         user: textColor,
       },
+      rangeToExecute: {
+        effectColor: palette.pinkSaturated250,
+      },
     },
     ctrlClickable: {
       textColor: linkColor,
@@ -481,7 +484,7 @@ export default {
     identifierUnderCaret: {
       standard: {
         backgroundColor: mixWithEditorBackground(
-          0.75,
+          0.9,
           palette.pinkSaturated250,
         ),
         effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
@@ -492,7 +495,7 @@ export default {
       },
       write: {
         backgroundColor: mixWithEditorBackground(
-          0.75,
+          0.9,
           palette.pinkSaturated250,
         ),
         effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
@@ -546,7 +549,7 @@ export default {
     },
     methodSeparators: editorGuidelinesColor,
     notification: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.pink),
+      backgroundColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
     },
     preview: {
       backgroundColor: editorBackgroundColor,
@@ -558,6 +561,11 @@ export default {
         0.95,
         palette.pinkSaturated250,
       ),
+    },
+    recentLocations: {
+      selection: {
+        backgroundColor: editorSelectionColor,
+      },
     },
     rightMarginColor: editorGuidelinesColor,
     search: {
@@ -639,13 +647,13 @@ export default {
     },
   },
   fileColors: {
-    blue: mixWithBackground(0.75, desaturate(0.1, palette.blue)),
-    gray: mixWithBackground(0.75, desaturate(0.1, textColor)),
-    green: mixWithBackground(0.75, desaturate(0.1, palette.green)),
-    orange: mixWithBackground(0.75, desaturate(0.1, palette.orange)),
-    rose: mixWithBackground(0.75, desaturate(0.1, palette.red)),
-    violet: mixWithBackground(0.75, desaturate(0.1, palette.purple)),
-    yellow: mixWithBackground(0.75, desaturate(0.1, palette.yellow)),
+    blue: mixWithBackground(0.9, saturate(0.5, palette.blue)),
+    gray: mixWithBackground(0.9, saturate(0.5, textColor)),
+    green: mixWithBackground(0.9, saturate(0.5, palette.green)),
+    orange: mixWithBackground(0.9, saturate(0.5, palette.orange)),
+    rose: mixWithBackground(0.9, saturate(0.5, palette.red)),
+    violet: mixWithBackground(0.9, saturate(0.5, palette.purple)),
+    yellow: mixWithBackground(0.9, saturate(0.5, palette.yellow)),
   },
   group: {
     separatorColor: guidelinesColor,
@@ -987,6 +995,10 @@ export default {
       toolbar: {
         backgroundColor: overlayBackgroundColor,
       },
+    },
+    refLabel: {
+      backgroundColor: null,
+      textColor,
     },
   },
   welcomeScreen: {
