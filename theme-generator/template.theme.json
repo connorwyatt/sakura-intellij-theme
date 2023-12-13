@@ -141,6 +141,10 @@
       },
       "Toolbar": { "borderColor": "{{editor.toolbar.borderColor}}" }
     },
+    "EditorTabs": {
+      "background": "{{editor.tabs.tab.inactive.backgroundColor}}",
+      "underlinedTabBackground": "{{editor.tabs.tab.active.backgroundColor}}"
+    },
     "FileColor": {
       "Blue": "{{fileColors.blue}}",
       "Gray": "{{fileColors.gray}}",
@@ -168,7 +172,8 @@
       "activeForeground": "{{link.active.textColor}}",
       "hoverForeground": "{{link.hover.textColor}}",
       "visitedForeground": "{{link.visited.textColor}}",
-      "pressedForeground": "{{link.pressed.textColor}}"
+      "pressedForeground": "{{link.pressed.textColor}}",
+      "secondaryForeground": "{{link.secondary.textColor}}"
     },
     "List": {
       "background": "{{backgroundColor}}",
