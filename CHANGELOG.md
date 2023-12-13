@@ -6,6 +6,9 @@
 ### Added
 - Added plugin icon.
 
+### Changed
+- Changed caret color.
+
 ### Fixed
 - Fixed drag and drop colors.
 

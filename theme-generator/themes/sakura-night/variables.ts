@@ -49,7 +49,7 @@ const fieldFocusColor = mix(
   buttonPrimaryBackgroundColor,
 );
 
-const caretColor = palette.pink;
+const caretColor = palette.pinkSaturated250;
 
 const errorColor = palette.red;
 const infoColor = palette.blue;
