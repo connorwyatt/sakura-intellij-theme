@@ -531,6 +531,10 @@ export default {
     notification: {
       backgroundColor: mixWithEditorBackground(0.5, palette.pink),
     },
+    preview: {
+      backgroundColor: editorBackgroundColor,
+      borderColor: editorGuidelinesColor,
+    },
     readonly: {
       background: mixWithEditorBackground(0.95, palette.pink),
       fragmentBackground: mixWithEditorBackground(0.95, palette.pink),

@@ -92,8 +92,8 @@
 		<option name="MODIFIED_LINES_COLOR" value="{{editor.vcs.gutter.modifiedLines}}"/>
 		<option name="MODIFIED_TAB_ICON" value="{{editor.tabs.tab.modifiedIconColor}}"/>
 		<option name="NOTIFICATION_BACKGROUND" value="{{editor.notification.backgroundColor}}"/>
-		<option name="PREVIEW_BACKGROUND" value="#ff0000"/>
-		<option name="PREVIEW_BORDER_COLOR" value="#00ff00"/>
+		<option name="PREVIEW_BACKGROUND" value="{{editor.preview.backgroundColor}}"/>
+		<option name="PREVIEW_BORDER_COLOR" value="{{editor.preview.borderColor}}"/>
 		<option name="PROMOTION_PANE" value="{{editor.notification.backgroundColor}}"/>
 		<option name="QUESTION_HINT" value="{{editor.hint.question}}"/>
 		<option name="READONLY_BACKGROUND" value="{{editor.readonly.background}}"/>
