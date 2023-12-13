@@ -446,7 +446,7 @@ export default {
         ignoredColor: mixWithEditorBackground(0.8, palette.blue),
         errorStripeColor: mixWithEditorBackground(0.5, palette.blue),
       },
-      separatorWave: mixWithEditorBackground(0.25, palette.pink),
+      separatorWave: mixWithEditorBackground(0.25, palette.pinkSaturated250),
     },
     fileStatus: {
       added: palette.green,
@@ -590,7 +590,7 @@ export default {
         removedLines: palette.red,
       },
     },
-    visualIndentGuideColor: "#ffff00",
+    visualIndentGuideColor: editorGuidelinesColor,
   },
   field: {
     disabled: {
