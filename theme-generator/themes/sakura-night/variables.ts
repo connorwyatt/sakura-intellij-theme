@@ -328,12 +328,14 @@ export default {
     textColor: badgeTextColor,
   },
   dragAndDrop: {
-    borderColor: "#ff0000",
+    borderColor: mixWithBackground(0.5, palette.pinkSaturated250),
     area: {
-      backgroundColor: mixWithBackground(0.75, palette.pink),
-      foregroundColor: mixWithBackground(0.75, palette.pink),
+      backgroundColor,
+      foregroundColor: textColor,
     },
-    row: { backgroundColor: "#ff00ff" },
+    row: {
+      backgroundColor: rgbaToHex(transparentize(0.9, palette.pinkSaturated250)),
+    },
   },
   editor: {
     backgroundColor: editorBackgroundColor,
