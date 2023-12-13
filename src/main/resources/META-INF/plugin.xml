@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.connorwyatt.sakuraintellijtheme</id>
     <name>Sakura Theme</name>
-    <vendor>Connor Wyatt</vendor>
+    <vendor url="https://github.com/connorwyatt">Connor Wyatt</vendor>
     <version>@version@</version>
 
     <depends>com.intellij.modules.platform</depends>
