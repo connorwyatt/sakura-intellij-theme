@@ -141,6 +141,10 @@ const syntax = {
     textColor: stringColor,
     effectColor: stringColor,
   },
+  hyperlinks: {
+    textColor: linkColor,
+    effectColor: linkColor,
+  },
   identifier: editorTextColor,
   instanceField: editorTextColor,
   instanceMethod: functionColor,
@@ -175,7 +179,7 @@ const syntax = {
     backgroundColor: templateLanguageBackgroundColor,
   },
   todo: {
-    textColor: editorTextColor,
+    textColor: todoColor,
     errorStripeColor: todoColor,
   },
   typeParameter: typeNameColor,

@@ -759,14 +759,11 @@
 			</value>
 		</option>
 		<option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--<option name="EFFECT_TYPE" value="1" />-->
-			<!--</value>-->
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.hyperlinks.textColor}}"/>
+				<option name="EFFECT_COLOR" value="{{editor.syntax.hyperlinks.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="1"/>
+			</value>
 		</option>
 		<option name="GENERIC_SERVER_ERROR_OR_WARNING">
 			<!--<value>-->
@@ -844,14 +841,11 @@
 			<!--</value>-->
 		</option>
 		<option name="HYPERLINK_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--<option name="EFFECT_TYPE" value="1" />-->
-			<!--</value>-->
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.hyperlinks.textColor}}"/>
+				<option name="EFFECT_COLOR" value="{{editor.syntax.hyperlinks.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="1"/>
+			</value>
 		</option>
 		<option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
 			<value>
@@ -944,14 +938,11 @@
 		</option>
 		<option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
 		<option name="INACTIVE_HYPERLINK_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--<option name="EFFECT_TYPE" value="1" />-->
-			<!--</value>-->
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.hyperlinks.textColor}}"/>
+				<option name="EFFECT_COLOR" value="{{editor.syntax.hyperlinks.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="1"/>
+			</value>
 		</option>
 		<option name="INFO_ATTRIBUTES">
 			<value>

@@ -15,6 +15,7 @@
 - Fixed drag and drop colors.
 - Fixed editor preview colors.
 - Fix visual indent guides color.
+- Fix todo color.
 
 ## [0.2.0] - 2023-12-13
 ### Changed
