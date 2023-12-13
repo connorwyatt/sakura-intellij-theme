@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added plugin icon.
 
 ## [0.2.0] - 2023-12-13
 ### Changed
