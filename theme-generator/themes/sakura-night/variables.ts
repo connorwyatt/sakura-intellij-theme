@@ -441,25 +441,25 @@ export default {
     diff: {
       conflict: {
         importantColor: mixWithEditorBackground(0.75, palette.yellow),
-        ignoredColor: mixWithEditorBackground(0.9, palette.yellow),
+        ignoredColor: mixWithEditorBackground(0.875, palette.yellow),
         errorStripeColor: mixWithEditorBackground(0.5, palette.yellow),
       },
       deleted: {
         importantColor: mixWithEditorBackground(0.75, palette.red),
-        ignoredColor: mixWithEditorBackground(0.9, palette.red),
+        ignoredColor: mixWithEditorBackground(0.875, palette.red),
         errorStripeColor: mixWithEditorBackground(0.5, palette.red),
       },
       inserted: {
         importantColor: mixWithEditorBackground(0.75, palette.green),
-        ignoredColor: mixWithEditorBackground(0.9, palette.green),
+        ignoredColor: mixWithEditorBackground(0.875, palette.green),
         errorStripeColor: mixWithEditorBackground(0.5, palette.green),
       },
       modified: {
-        importantColor: mixWithEditorBackground(0.5, palette.blue),
-        ignoredColor: mixWithEditorBackground(0.8, palette.blue),
+        importantColor: mixWithEditorBackground(0.75, palette.blue),
+        ignoredColor: mixWithEditorBackground(0.875, palette.blue),
         errorStripeColor: mixWithEditorBackground(0.5, palette.blue),
       },
-      separatorWave: mixWithEditorBackground(0.25, palette.pinkSaturated250),
+      separatorWave: mixWithEditorBackground(0.5, palette.pinkSaturated250),
     },
     fileStatus: {
       added: palette.green,
@@ -962,16 +962,16 @@ export default {
       commit: {
         rowHeight: 28,
         currentBranch: {
-          backgroundColor: mixWithBackground(0.9, palette.pink),
+          backgroundColor: mixWithBackground(0.9, palette.pinkSaturated250),
         },
         hover: {
-          backgroundColor: mixWithBackground(0.8, palette.pink),
+          backgroundColor: mixWithBackground(0.8, palette.pinkSaturated250),
         },
         selected: {
-          backgroundColor: mixWithBackground(0.5, palette.pink),
+          backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
           textColor: palette.white,
           inactive: {
-            backgroundColor: mixWithBackground(0.75, palette.pink),
+            backgroundColor: mixWithBackground(0.75, palette.pinkSaturated250),
             textColor,
           },
         },
