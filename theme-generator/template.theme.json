@@ -255,7 +255,7 @@
       "disabledForeground": "{{plugins.list.disabled.textColor}}",
       "eapTagBackground": "#ff00ff",
       "lightSelectionBackground": "{{plugins.list.selected.backgroundColor}}",
-      "suggestedLabelBackground": "#ff0000",
+      "suggestedLabelBackground": "{{plugins.description.suggestedLabel.backgroundColor}}",
       "tagBackground": "{{plugins.description.tag.backgroundColor}}",
       "tagForeground": "{{plugins.description.tag.textColor}}",
       "Button": {

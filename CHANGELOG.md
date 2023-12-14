@@ -3,6 +3,9 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added more theming.
+
 ### Changed
 - Updated plugin icon.
 

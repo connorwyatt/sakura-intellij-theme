@@ -137,6 +137,10 @@ const syntax = {
   functionCall: functionColor,
   functionDeclaration: functionColor,
   globalVariable: globalVariableColor,
+  grammarError: {
+    effectColor: warningColor,
+    errorStripeColor: warningColor,
+  },
   highlightedReference: {
     textColor: stringColor,
     effectColor: stringColor,
@@ -493,6 +497,14 @@ export default {
       question: mixWithBackground(0.5, palette.purple),
       warning: mixWithBackground(0.5, palette.yellow),
     },
+    htmlTagTreeLevels: {
+      level0: palette.pink,
+      level1: palette.purple,
+      level2: palette.blue,
+      level3: palette.green,
+      level4: palette.yellow,
+      level5: palette.orange,
+    },
     identifierUnderCaret: {
       standard: {
         backgroundColor: mixWithEditorBackground(
@@ -516,6 +528,11 @@ export default {
           palette.pinkSaturated250,
         ),
       },
+    },
+    images: {
+      backgroundColor: editorBackgroundColor,
+      alternateBackgroundColor: backgroundColor,
+      gridLineColor: editorGuidelinesColor,
     },
     info: {
       effectColor: infoColor,
@@ -791,6 +808,9 @@ export default {
       },
       pagination: {
         current: palette.pink,
+      },
+      suggestedLabel: {
+        backgroundColor: overlayBackgroundColor,
       },
     },
     button: {
