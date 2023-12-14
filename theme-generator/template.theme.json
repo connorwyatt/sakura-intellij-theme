@@ -24,10 +24,15 @@
       "warningBackground": "{{banner.warning.backgroundColor}}",
       "warningBorderColor": "{{banner.warning.borderColor}}"
     },
+    "BigSpinner": {
+      "background": "#00ff00"
+    },
+    "Bookmark": {},
     "Borders": {
       "color": "{{bordersColor}}",
       "ContrastBorderColor": "{{bordersColor}}"
     },
+    "Breakpoint": {},
     "Button": {
       "default": {
         "endBackground": "{{buttons.primary.backgroundColor}}",
@@ -118,6 +123,9 @@
       "background": "{{counter.backgroundColor}}",
       "foreground": "{{counter.textColor}}"
     },
+    "Debugger": {},
+    "DebuggerPopup": {},
+    "DebuggerTabs": {},
     "DefaultTabs": {
       "background": "{{tab.inactive.backgroundColor}}",
       "hoverBackground": "{{tab.hover.backgroundColor}}",
@@ -139,8 +147,11 @@
       "SearchField": {
         "background": "{{editor.searchField.backgroundColor}}"
       },
-      "Toolbar": { "borderColor": "{{editor.toolbar.borderColor}}" }
+      "Toolbar": {
+        "borderColor": "{{editor.toolbar.borderColor}}"
+      }
     },
+    "EditorPane": {},
     "EditorTabs": {
       "background": "{{editor.tabs.tab.inactive.backgroundColor}}",
       "underlinedTabBackground": "{{editor.tabs.tab.active.backgroundColor}}"
@@ -154,10 +165,17 @@
       "Violet": "{{fileColors.violet}}",
       "Yellow": "{{fileColors.yellow}}"
     },
+    "FormattedTextField": {},
+    "GotItTooltip": {},
     "Group": {
       "separatorColor": "{{group.separatorColor}}",
       "disabledSeparatorColor": "{{group.disabled.separatorColor}}"
     },
+    "GutterTooltip": {},
+    "HelpTooltip": {},
+    "IconBadge": {},
+    "InformationHint": {},
+    "InplaceRefactoringPopup": {},
     "Label": {
       "background": "{{label.backgroundColor}}",
       "foreground": "{{label.textColor}}",
@@ -168,6 +186,8 @@
       "infoForeground": "{{label.info.textColor}}",
       "successForeground": "{{label.success.textColor}}"
     },
+    "Lesson": {},
+    "LineProfiler": {},
     "Link": {
       "activeForeground": "{{link.active.textColor}}",
       "hoverForeground": "{{link.hover.textColor}}",
@@ -185,6 +205,7 @@
       "hoverBackground": "{{list.hover.backgroundColor}}",
       "hoverInactiveBackground": "{{list.hover.inactive.backgroundColor}}"
     },
+    "MainMenu": {},
     "MainToolbar": {
       "background": "{{mainToolbar.backgroundColor}}",
       "separatorColor": "{{bordersColor}}"
@@ -199,6 +220,7 @@
         "hoverForeground": "{{mainToolbar.tab.hover.textColor}}"
       }
     },
+    "MemoryIndicator": {},
     "Menu": {
       "foreground": "{{menu.textColor}}",
       "background": "{{menu.backgroundColor}}",
@@ -216,6 +238,8 @@
       "selectionForeground": "{{selection.textColor}}",
       "selectionBackground": "{{selection.active.backgroundColor}}"
     },
+    "NavBar": {},
+    "NewUiOnboarding": {},
     "Notification": {
       "background": "{{notification.backgroundColor}}",
       "borderColor": "{{notification.borderColor}}",
@@ -244,10 +268,15 @@
         "hoverBackground": "{{notification.hover.backgroundColor}}"
       }
     },
+    "OnePixelDivider": {},
+    "OptionButton": {},
+    "OptionPane": {},
     "Panel": {
       "background": "{{panel.backgroundColor}}",
       "foreground": "{{panel.textColor}}"
     },
+    "ParameterInfo": {},
+    "PasswordField": {},
     "Plugins": {
       "background": "{{plugins.list.backgroundColor}}",
       "hoverBackground": "{{plugins.list.hover.backgroundColor}}",
@@ -310,6 +339,9 @@
       "selectionForeground": "{{selection.textColor}}",
       "selectionBackground": "{{selection.active.backgroundColor}}"
     },
+    "PopupMenuSeparator": {},
+    "PresentationAssistant": {},
+    "ProblemsView": {},
     "ProgressBar": {
       "background": "{{progressBar.backgroundColor}}",
       "foreground": "{{progressBar.foregroundColor}}",
@@ -325,6 +357,10 @@
       "passedColor": "{{progressBar.passedColor}}",
       "passedEndColor": "{{progressBar.passedEndColor}}"
     },
+    "RadioButton": {},
+    "RadioButtonMenuItem": {},
+    "Review": {},
+    "RunToolbar": {},
     "RunWidget": {
       "iconColor": "{{runWidget.iconColor}}",
       "foreground": "{{runWidget.textColor}}",
@@ -357,21 +393,38 @@
       "background": "#ff0000",
       "foreground": "#00ffff"
     },
+    "SearchEverywhere": {},
+    "SearchField": {},
+    "SearchMatch": {},
+    "SearchOption": {},
     "SegmentedButton": {
       "focusedSelectedButtonColor": "{{segmentedButton.focused.selected.backgroundColor}}",
       "selectedButtonColor": "{{segmentedButton.selected.backgroundColor}}",
       "selectedStartBorderColor": "{{segmentedButton.selected.borderColor.start}}",
       "selectedEndBorderColor": "{{segmentedButton.selected.borderColor.end}}"
     },
+    "Separator": {},
+    "Settings": {},
     "SettingsTree": {
       "rowHeight": "{{tree.rowHeight}}"
     },
     "SidePanel": {
       "background": "{{backgroundColor}}"
     },
+    "Slider": {},
+    "SpeedSearch": {},
+    "Spinner": {},
+    "SplitPane": {},
+    "SplitPaneDivider": {},
+    "StatusBar": {},
     "TabbedPane": {
       "underlineColor": "{{tabbedPane.underlineColor}}"
     },
+    "Table": {},
+    "TableHeader": {},
+    "Tag": {},
+    "TextArea": {},
+    "TextComponent": {},
     "TextField": {
       "background": "{{textField.backgroundColor}}",
       "foreground": "{{textField.textColor}}",
@@ -382,6 +435,8 @@
       "highlight": "{{textField.highlightColor}}",
       "inactiveForeground": "{{textField.inactive.textColor}}"
     },
+    "TextPane": {},
+    "TipOfTheDay": {},
     "TitledBorder": {
       "titleColor": "#ff00ff"
     },
@@ -391,10 +446,12 @@
         "hoverBackground": "#ffff00"
       }
     },
+    "ToggleButton": {},
     "ToolBar": {
       "background": "#ff0000",
       "foreground": "#00ff00"
     },
+    "ToolTip": {},
     "ToolWindow": {
       "background": "{{toolWindow.backgroundColor}}",
       "Header": {
@@ -420,6 +477,8 @@
       "hash": "{{tree.hash}}",
       "paintLines": true
     },
+    "UiDesigner": {},
+    "ValidationTooltip": {},
     "VersionControl": {
       "GitLog": {
         "headIconColor": "{{vcs.log.icon.head}}",
@@ -460,6 +519,7 @@
         }
       }
     },
+    "Viewport": {},
     "WelcomeScreen": {
       "background": "{{welcomeScreen.backgroundColor}}",
       "borderColor": "{{welcomeScreen.borderColor}}",
@@ -489,7 +549,8 @@
         "selectionInactiveBackground": "{{welcomeScreen.projects.selection.inactive.backgroundColor}}"
       },
       "separatorColor": "{{welcomeScreen.separatorColor}}"
-    }
+    },
+    "Window": {}
   },
   "icons": {
     "ColorPalette": {
