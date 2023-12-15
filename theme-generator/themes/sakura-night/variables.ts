@@ -20,8 +20,8 @@ const mixWithTopBarBackground = (percentage: number, color: string): string =>
 const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
-const textColor = palette.chefsHat;
-const editorTextColor = palette.chefsHat;
+const textColor = palette.brooklet;
+const editorTextColor = palette.brooklet;
 
 const fieldBackgroundColor = mixWithBackground(
   0.925,
@@ -34,11 +34,11 @@ const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
 const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
 
 const checkboxBackgroundColor = palette.sairaRed;
-const checkboxTickColor = palette.chefsHat;
+const checkboxTickColor = palette.brooklet;
 
 const buttonPrimaryBackgroundColor = palette.sairaRed;
 const buttonPrimaryBorderColor = buttonPrimaryBackgroundColor;
-const buttonPrimaryTextColor = palette.chefsHat;
+const buttonPrimaryTextColor = palette.brooklet;
 
 const buttonSecondaryBackgroundColor = fieldBackgroundColor;
 const buttonSecondaryBorderColor = fieldBorderColor;
@@ -59,9 +59,9 @@ const infoColor = palette.pacificHarbour;
 const successColor = palette.liveryGreen;
 const warningColor = palette.overjoy;
 
-const guidelinesColor = mixWithBackground(0.95, palette.chefsHat);
-const treeLinesColor = mixWithBackground(0.8, palette.chefsHat);
-const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.chefsHat);
+const guidelinesColor = mixWithBackground(0.95, palette.brooklet);
+const treeLinesColor = mixWithBackground(0.8, palette.brooklet);
+const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.brooklet);
 
 const selectionColor = mixWithBackground(0.25, palette.sairaRed);
 const editorSelectionColor = mixWithEditorBackground(
@@ -70,14 +70,14 @@ const editorSelectionColor = mixWithEditorBackground(
 );
 
 const badgeBackgroundColor = palette.sairaRed;
-const badgeTextColor = palette.chefsHat;
+const badgeTextColor = palette.brooklet;
 
 const tabs = {
   hoverColor: rgbaToHex(transparentize(0.9, palette.sairaRed)),
   underlineColor: palette.sairaRed,
 };
 
-const commentColor = mixWithEditorBackground(0.25, palette.chefsHat);
+const commentColor = mixWithEditorBackground(0.25, palette.brooklet);
 const constantColor = palette.brightLavender;
 const enumCaseColor = palette.brightLavender;
 const functionColor = palette.pacificHarbour;
@@ -841,7 +841,7 @@ export default {
   },
   objects: {
     blue: palette.pacificHarbour,
-    blackText: palette.chefsHat,
+    blackText: palette.brooklet,
     green: palette.liveryGreen,
     grey: mixWithBackground(0.5, textColor),
     pink: palette.pepto,
@@ -871,7 +871,7 @@ export default {
     description: {
       tag: {
         backgroundColor: mixWithBackground(0.25, palette.pacificHarbour),
-        textColor: palette.chefsHat,
+        textColor: palette.brooklet,
       },
       pagination: {
         current: palette.pepto,
@@ -940,7 +940,7 @@ export default {
   },
   problemsView: {
     projectAnalysisButton: {
-      backgroundColor: mixWithBackground(0.5, palette.chefsHat),
+      backgroundColor: mixWithBackground(0.5, palette.brooklet),
     },
   },
   progressBar: {
@@ -967,7 +967,7 @@ export default {
   runWidget: {
     iconColor: textColor,
     textColor,
-    runningIconColor: palette.chefsHat,
+    runningIconColor: palette.brooklet,
     running: {
       backgroundColor: desaturate(0.3, darken(0.2, palette.liveryGreen)),
     },
@@ -1011,7 +1011,7 @@ export default {
     inactive: {
       backgroundColor: mixWithBackground(0.5, selectionColor),
     },
-    textColor: palette.chefsHat,
+    textColor: palette.brooklet,
   },
   separatorColor: guidelinesColor,
   settings: {
@@ -1150,7 +1150,7 @@ export default {
   toggleButton: {
     backgroundColor,
     textColor: "#00ffff",
-    borderColor: mix(0.25, palette.chefsHat, guidelinesColor),
+    borderColor: mix(0.25, palette.brooklet, guidelinesColor),
     buttonColor: palette.liveryGreen,
     disabledTextColor: "#0000ff",
     off: {
@@ -1218,7 +1218,7 @@ export default {
         },
         selected: {
           backgroundColor: mixWithBackground(0.5, palette.sairaRed),
-          textColor: palette.chefsHat,
+          textColor: palette.brooklet,
           inactive: {
             backgroundColor: mixWithBackground(0.75, palette.sairaRed),
             textColor,
