@@ -1147,6 +1147,11 @@ export default {
       textColor: mixWithBackground(0.5, fieldTextColor),
     },
   },
+  tipOfTheDay: {
+    image: {
+      borderColor: guidelinesColor,
+    },
+  },
   toggleButton: {
     backgroundColor,
     textColor: "#00ffff",
