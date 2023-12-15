@@ -7,7 +7,7 @@ const { darken, desaturate, lighten, mix, saturate, transparentize } = Polished;
 const themeName = "Sakura Night";
 
 const backgroundColor = palette.charcoalDarken075;
-const overlayBackgroundColor = palette.charcoalDarken075;
+const overlayBackgroundColor = palette.charcoalDarken050;
 const topBarBackgroundColor = palette.charcoalDarken100;
 const editorBackgroundColor = palette.charcoalDarken100;
 
@@ -72,6 +72,11 @@ const editorSelectionColor = mixWithEditorBackground(
 const badgeBackgroundColor = palette.pinkSaturated250;
 const badgeTextColor = palette.white;
 
+const tabs = {
+  hoverColor: rgbaToHex(transparentize(0.9, palette.pinkSaturated250)),
+  underlineColor: palette.pinkSaturated250,
+};
+
 const commentColor = mixWithEditorBackground(0.25, palette.white);
 const constantColor = palette.purple;
 const enumCaseColor = palette.purple;
@@ -108,6 +113,12 @@ const syntax = {
     textColor: commentColor,
   },
   constant: constantColor,
+  custom: {
+    keyword1: keywordColor,
+    keyword2: keywordColor,
+    keyword3: keywordColor,
+    keyword4: keywordColor,
+  },
   deprecation: {
     effectColor: mixWithEditorBackground(0.5, editorTextColor),
     textColor: mixWithEditorBackground(0.5, editorTextColor),
@@ -127,6 +138,10 @@ const syntax = {
     },
   },
   dot: punctuationColor,
+  duplicateFromServer: {
+    backgroundColor: mixWithEditorBackground(0.75, warningColor),
+    errorStripeColor: warningColor,
+  },
   entity: stringEscapeColor,
   enumCase: enumCaseColor,
   error: {
@@ -138,6 +153,10 @@ const syntax = {
   functionDeclaration: functionColor,
   globalVariable: globalVariableColor,
   grammarError: {
+    effectColor: warningColor,
+    errorStripeColor: warningColor,
+  },
+  genericServerError: {
     effectColor: warningColor,
     errorStripeColor: warningColor,
   },
@@ -218,6 +237,7 @@ export default {
   editorScheme: "/themes/sakura-night.xml",
   backgroundColor,
   bordersColor: guidelinesColor,
+  textColor,
   actionButtons: {
     hover: {
       backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
@@ -233,7 +253,7 @@ export default {
     blue: palette.blue,
     green: palette.green,
     grey: textColor,
-    greyInline: "#ff00ff",
+    greyInline: textColor,
     greyInlineDark: textColor,
     red: palette.red,
     yellow: palette.yellow,
@@ -255,6 +275,9 @@ export default {
       backgroundColor: mixWithBackground(0.75, palette.yellow),
       borderColor: mixWithBackground(0.5, palette.yellow),
     },
+  },
+  bigSpinner: {
+    backgroundColor,
   },
   buttons: {
     primary: {
@@ -345,6 +368,21 @@ export default {
     backgroundColor: badgeBackgroundColor,
     textColor: badgeTextColor,
   },
+  debugger: {
+    evaluateExpression: {
+      backgroundColor: fieldBackgroundColor,
+    },
+    variables: {
+      changedValue: { textColor: "#ffff00" },
+      collectingData: { textColor: "#ff0000" },
+      errorMessage: { textColor: "#ff00ff" },
+      evaluatingExpression: { textColor: "#00ffff" },
+      exception: { textColor: "#00ff00" },
+      modifyingValue: { textColor: "#ffff00" },
+      type: { textColor: typeNameColor },
+      value: { textColor },
+    },
+  },
   dragAndDrop: {
     borderColor: mixWithBackground(0.5, palette.pinkSaturated250),
     area: {
@@ -387,12 +425,12 @@ export default {
       },
       hovered: (() => {
         const color = mixWithEditorBackground(
-          0.9,
+          0.95,
           textColor,
         );
         return ({
           backgroundColor: color,
-          textColor: mix(0.5, color, textColor),
+          textColor,
         });
       })(),
       inactive: {
@@ -422,7 +460,7 @@ export default {
         yellow: palette.yellow,
         blue: palette.blue,
         pink: palette.pink,
-        cyan: palette.blue,
+        cyan: palette.turquoise,
         gray: mixWithEditorBackground(0.25, textColor),
         darkGray: mixWithEditorBackground(0.5, textColor),
         redBright: lighten(0.05, saturate(0.2, palette.red)),
@@ -430,7 +468,7 @@ export default {
         yellowBright: lighten(0.05, saturate(0.2, palette.yellow)),
         blueBright: lighten(0.05, saturate(0.2, palette.blue)),
         pinkBright: lighten(0.05, saturate(0.2, palette.pink)),
-        cyanBright: lighten(0.05, saturate(0.2, palette.blue)),
+        cyanBright: lighten(0.05, saturate(0.2, palette.turquoise)),
         normal: textColor,
         error: errorColor,
         system: textColor,
@@ -448,6 +486,19 @@ export default {
     ctrlClickable: {
       textColor: linkColor,
       effectColor: linkColor,
+    },
+    debugger: {
+      inlineValue: {
+        executionLine: {
+          textColor: mix(0.5, palette.blue, commentColor),
+        },
+        modified: {
+          textColor: mix(0.5, palette.yellow, commentColor),
+        },
+        other: {
+          textColor: commentColor,
+        },
+      },
     },
     diff: {
       conflict: {
@@ -542,6 +593,9 @@ export default {
       normal: { color: editorGuidelinesColor },
       selected: { color: editorSelectionColor },
     },
+    injectedLanguageFragment: {
+      backgroundColor: mixWithEditorBackground(0.8, palette.orange),
+    },
     inlay: {
       default: {
         backgroundColor: badgeBackgroundColor,
@@ -579,6 +633,13 @@ export default {
     methodSeparators: editorGuidelinesColor,
     notification: {
       backgroundColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
+    },
+    pane: {
+      textColor,
+      selection: {
+        backgroundColor: selectionColor,
+        textColor,
+      },
     },
     preview: {
       backgroundColor: editorBackgroundColor,
@@ -674,6 +735,7 @@ export default {
         focusColor: mixWithBackground(0.5, warningColor),
       },
     },
+    infoTextColor: mixWithBackground(0.5, textColor),
   },
   fileColors: {
     blue: mixWithBackground(0.9, saturate(0.5, palette.blue)),
@@ -721,10 +783,12 @@ export default {
     },
   },
   mainToolbar: {
+    backgroundColor: topBarBackgroundColor,
+    separatorColor: guidelinesColor,
     tab: {
       inactive: {
         backgroundColor: topBarBackgroundColor,
-        textColor: mixWithTopBarBackground(0.5, textColor),
+        textColor: mixWithTopBarBackground(0.75, textColor),
       },
       selected: {
         backgroundColor,
@@ -739,6 +803,8 @@ export default {
   menu: {
     backgroundColor: overlayBackgroundColor,
     textColor,
+    separatorColor: guidelinesColor,
+    borderColor: guidelinesColor,
   },
   menuItem: {
     backgroundColor: overlayBackgroundColor,
@@ -749,6 +815,7 @@ export default {
       textColor: mixWithBackground(0.5, textColor),
     },
   },
+  newUIOnboardingDialog: { backgroundColor },
   notification: {
     backgroundColor: overlayBackgroundColor,
     borderColor: guidelinesColor,
@@ -792,7 +859,7 @@ export default {
     list: {
       backgroundColor,
       hover: {
-        backgroundColor: lighten(0.05, backgroundColor),
+        backgroundColor: mixWithBackground(0.75, selectionColor),
       },
       disabled: {
         textColor: mixWithBackground(0.5, textColor),
@@ -871,13 +938,24 @@ export default {
     backgroundColor: overlayBackgroundColor,
     textColor,
   },
+  problemsView: {
+    projectAnalysisButton: {
+      backgroundColor: mixWithBackground(0.5, palette.white),
+    },
+  },
   progressBar: {
     backgroundColor: overlayBackgroundColor,
-    foregroundColor: mixWithEditorBackground(0.5, lighten(0.15, palette.pink)),
-    progressColor: mixWithEditorBackground(0.5, lighten(0.15, palette.pink)),
+    foregroundColor: mixWithEditorBackground(
+      0.5,
+      lighten(0.15, palette.pinkSaturated250),
+    ),
+    progressColor: mixWithEditorBackground(
+      0.5,
+      lighten(0.15, palette.pinkSaturated250),
+    ),
     indeterminate: {
-      startColor: palette.pink,
-      endColor: lighten(0.15, palette.pink),
+      startColor: palette.pinkSaturated250,
+      endColor: lighten(0.15, palette.pinkSaturated250),
     },
     failedColor: errorColor,
     failedEndColor: lighten(0.1, errorColor),
@@ -905,6 +983,13 @@ export default {
       thumbBorderColor: mixWithBackground(0.25, palette.pinkSaturated250),
     },
   },
+  searchField: {
+    errorBackgroundColor: mix(0.5, fieldBackgroundColor, palette.red),
+    errorTextColor: palette.red,
+  },
+  searchMatch: {
+    backgroundColor: palette.blue,
+  },
   segmentedButton: {
     focused: {
       selected: {
@@ -928,26 +1013,129 @@ export default {
     },
     textColor: palette.white,
   },
+  separatorColor: guidelinesColor,
+  settings: {
+    spotlight: {
+      borderColor: palette.pinkSaturated250,
+    },
+  },
+  speedSearch: {
+    backgroundColor: overlayBackgroundColor,
+    textColor,
+    borderColor: guidelinesColor,
+    errorTextColor: palette.red,
+  },
+  spinner: {
+    backgroundColor,
+  },
   tab: {
     active: {
       backgroundColor: null,
-      textColor: palette.pink,
+      textColor,
       focused: {
-        underlineColor: palette.pink,
+        underlineColor: tabs.underlineColor,
       },
       unfocused: {
-        underlineColor: palette.pink,
+        underlineColor: tabs.underlineColor,
       },
     },
     hover: {
-      backgroundColor: rgbaToHex(transparentize(0.9, palette.pink)),
+      backgroundColor: tabs.hoverColor,
     },
     inactive: {
-      backgroundColor: backgroundColor,
+      backgroundColor,
     },
   },
   tabbedPane: {
-    underlineColor: palette.pink,
+    backgroundColor,
+    textColor,
+    contentAreaColor: guidelinesColor,
+    hoverColor: tabs.hoverColor,
+    underlineColor: tabs.underlineColor,
+  },
+  table: {
+    backgroundColor: editorBackgroundColor,
+    alternateRowBackgroundColor: palette.red,
+    textColor,
+    gridColor: editorGuidelinesColor,
+    sortIconColor: textColor,
+    stripeColor: "#ff00ff",
+    dropLine: {
+      normal: {
+        color: "#ff0000",
+      },
+      short: {
+        color: "#ffff00",
+      },
+    },
+    cell: {
+      focus: {
+        backgroundColor: "#00ffff",
+        textColor: "#00ff00",
+      },
+    },
+    hover: {
+      active: {
+        backgroundColor: mixWithEditorBackground(
+          0.9,
+          palette.pinkSaturated250,
+        ),
+      },
+      inactive: {
+        backgroundColor: mixWithEditorBackground(
+          0.9,
+          palette.pinkSaturated250,
+        ),
+      },
+    },
+    selection: {
+      active: {
+        backgroundColor: mixWithEditorBackground(
+          0.5,
+          palette.pinkSaturated250,
+        ),
+        textColor,
+      },
+      inactive: {
+        backgroundColor: mixWithEditorBackground(
+          0.5,
+          palette.pinkSaturated250,
+        ),
+        textColor,
+      },
+    },
+    lightSelection: {
+      active: {
+        backgroundColor: mixWithEditorBackground(
+          0.5,
+          palette.pinkSaturated250,
+        ),
+        textColor,
+      },
+      inactive: {
+        backgroundColor: mixWithEditorBackground(
+          0.5,
+          palette.pinkSaturated250,
+        ),
+        textColor,
+      },
+    },
+    header: {
+      backgroundColor: editorBackgroundColor,
+      textColor,
+      separatorColor: editorBackgroundColor,
+      bottomSeparatorColor: editorGuidelinesColor,
+      cell: {
+        borderColor: editorBackgroundColor,
+        focus: {
+          backgroundColor,
+        },
+      },
+    },
+  },
+  textArea: {
+    textColor,
+    caretColor,
   },
   textField: {
     backgroundColor: fieldBackgroundColor,
@@ -957,6 +1145,35 @@ export default {
     highlightColor: "#ff0000",
     inactive: {
       textColor: mixWithBackground(0.5, fieldTextColor),
+    },
+  },
+  toggleButton: {
+    backgroundColor,
+    textColor: "#00ffff",
+    borderColor: mix(0.25, palette.white, guidelinesColor),
+    buttonColor: palette.green,
+    disabledTextColor: "#0000ff",
+    off: {
+      backgroundColor,
+      textColor,
+    },
+    on: {
+      backgroundColor: mixWithBackground(0.5, palette.green),
+      textColor,
+    },
+  },
+  tooltip: {
+    backgroundColor: overlayBackgroundColor,
+    textColor,
+    borderColor: guidelinesColor,
+    info: { textColor: "#ff0000" },
+    shortcut: { textColor: palette.pinkSaturated250 },
+    link: { textColor: "#ffff00" },
+    actions: {
+      info: {
+        textColor: palette.pinkSaturated250,
+      },
+      backgroundColor: overlayBackgroundColor,
     },
   },
   toolWindow: {

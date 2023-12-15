@@ -5,7 +5,8 @@
   "dark": null,
   "ui": {
     "*": {
-      "background": "{{backgroundColor}}"
+      "background": "{{backgroundColor}}",
+      "foreground": "{{textColor}}"
     },
     "ActionButton": {
       "hoverBackground": "{{actionButtons.hover.backgroundColor}}",
@@ -25,9 +26,11 @@
       "warningBorderColor": "{{banner.warning.borderColor}}"
     },
     "BigSpinner": {
-      "background": "#00ff00"
+      "background": "{{bigSpinner.backgroundColor}}"
     },
-    "Bookmark": {},
+    "Bookmark": {
+      "iconBackground": "#00ff00"
+    },
     "Borders": {
       "color": "{{bordersColor}}",
       "ContrastBorderColor": "{{bordersColor}}"
@@ -106,7 +109,8 @@
       "errorFocusColor": "{{field.error.focusColor}}",
       "inactiveErrorFocusColor": "{{field.error.inactive.focusColor}}",
       "warningFocusColor": "{{field.warning.focusColor}}",
-      "inactiveWarningFocusColor": "{{field.warning.inactive.focusColor}}"
+      "inactiveWarningFocusColor": "{{field.warning.inactive.focusColor}}",
+      "infoForeground": "{{field.infoTextColor}}"
     },
     "CompletionPopup": {
       "foreground": "{{completionPopup.textColor}}",
@@ -123,7 +127,21 @@
       "background": "{{counter.backgroundColor}}",
       "foreground": "{{counter.textColor}}"
     },
-    "Debugger": {},
+    "Debugger": {
+      "EvaluateExpression": {
+        "background": "{{debugger.evaluateExpression.backgroundColor}}"
+      },
+      "Variables": {
+        "changedValueForeground": "{{debugger.variables.changedValue.textColor}}",
+        "collectingDataForeground": "{{debugger.variables.collectingData.textColor}}",
+        "errorMessageForeground": "{{debugger.variables.errorMessage.textColor}}",
+        "evaluatingExpressionForeground": "{{debugger.variables.evaluatingExpression.textColor}}",
+        "exceptionForeground": "{{debugger.variables.exception.textColor}}",
+        "modifyingValueForeground": "{{debugger.variables.modifyingValue.textColor}}",
+        "typeForeground": "{{debugger.variables.type.textColor}}",
+        "valueForeground": "{{debugger.variables.value.textColor}}"
+      }
+    },
     "DebuggerPopup": {},
     "DebuggerTabs": {},
     "DefaultTabs": {
@@ -151,7 +169,13 @@
         "borderColor": "{{editor.toolbar.borderColor}}"
       }
     },
-    "EditorPane": {},
+    "EditorPane": {
+      "background": "#ff0000",
+      "foreground": "{{editor.pane.textColor}}",
+      "caretForeground": "#ffff00",
+      "selectionBackground": "{{editor.pane.selection.backgroundColor}}",
+      "selectionForeground": "{{editor.pane.selection.textColor}}"
+    },
     "EditorTabs": {
       "background": "{{editor.tabs.tab.inactive.backgroundColor}}",
       "underlinedTabBackground": "{{editor.tabs.tab.active.backgroundColor}}"
@@ -166,7 +190,9 @@
       "Yellow": "{{fileColors.yellow}}"
     },
     "FormattedTextField": {},
-    "GotItTooltip": {},
+    "GotItTooltip": {
+      "background": "#00ff00"
+    },
     "Group": {
       "separatorColor": "{{group.separatorColor}}",
       "disabledSeparatorColor": "{{group.disabled.separatorColor}}"
@@ -208,7 +234,7 @@
     "MainMenu": {},
     "MainToolbar": {
       "background": "{{mainToolbar.backgroundColor}}",
-      "separatorColor": "{{bordersColor}}"
+      "separatorColor": "{{mainToolbar.separatorColor}}"
     },
     "MainWindow": {
       "Tab": {
@@ -227,7 +253,11 @@
       "disabledForeground": "#00ffff",
       "disabledBackground": "#0000ff",
       "selectionForeground": "{{selection.textColor}}",
-      "selectionBackground": "{{selection.active.backgroundColor}}"
+      "selectionBackground": "{{selection.active.backgroundColor}}",
+      "separatorColor": "{{menu.separatorColor}}",
+      "borderColor": "{{menu.borderColor}}",
+      "acceleratorForeground": "#ff0000",
+      "acceleratorSelectionForeground": "#ffff00"
     },
     "MenuItem": {
       "background": "{{menuItem.backgroundColor}}",
@@ -238,8 +268,14 @@
       "selectionForeground": "{{selection.textColor}}",
       "selectionBackground": "{{selection.active.backgroundColor}}"
     },
-    "NavBar": {},
-    "NewUiOnboarding": {},
+    "NavBar": {
+      "borderColor": "#00ff00"
+    },
+    "NewUiOnboarding": {
+      "Dialog": {
+        "background": "{{newUIOnboardingDialog.backgroundColor}}"
+      }
+    },
     "Notification": {
       "background": "{{notification.backgroundColor}}",
       "borderColor": "{{notification.borderColor}}",
@@ -268,7 +304,9 @@
         "hoverBackground": "{{notification.hover.backgroundColor}}"
       }
     },
-    "OnePixelDivider": {},
+    "OnePixelDivider": {
+      "background": "#ff00ff"
+    },
     "OptionButton": {},
     "OptionPane": {},
     "Panel": {
@@ -341,7 +379,9 @@
     },
     "PopupMenuSeparator": {},
     "PresentationAssistant": {},
-    "ProblemsView": {},
+    "ProblemsView": {
+      "projectAnalysisButtonBackground": "{{problemsView.projectAnalysisButton.backgroundColor}}"
+    },
     "ProgressBar": {
       "background": "{{progressBar.backgroundColor}}",
       "foreground": "{{progressBar.foregroundColor}}",
@@ -360,7 +400,17 @@
     "RadioButton": {},
     "RadioButtonMenuItem": {},
     "Review": {},
-    "RunToolbar": {},
+    "RunToolbar": {
+      "Debug": {
+        "activeBackground": "#00ff00"
+      },
+      "Profile": {
+        "activeBackground": "#ff00ff"
+      },
+      "Run": {
+        "activeBackground": "#00ffff"
+      }
+    },
     "RunWidget": {
       "iconColor": "{{runWidget.iconColor}}",
       "foreground": "{{runWidget.textColor}}",
@@ -393,18 +443,55 @@
       "background": "#ff0000",
       "foreground": "#00ffff"
     },
-    "SearchEverywhere": {},
-    "SearchField": {},
-    "SearchMatch": {},
-    "SearchOption": {},
+    "SearchEverywhere": {
+      "Advertiser": {
+        "background": "#ffff00",
+        "foreground": "#00ffff"
+      },
+      "Header": {
+        "background": "#00ff00"
+      },
+      "List": {
+        "separatorColor": "#00ffff",
+        "separatorForeground": "#ffff00",
+        "settingsBackground": "#ff0000"
+      },
+      "SearchField": {
+        "background": "#00ffff",
+        "borderColor": "#ffff00"
+      },
+      "Tab": {
+        "selectedBackground": "#ff00ff",
+        "selectedForeground": "#00ff00"
+      }
+    },
+    "SearchField": {
+      "errorBackground": "{{searchField.errorBackgroundColor}}",
+      "errorForeground": "{{searchField.errorTextColor}}"
+    },
+    "SearchMatch": {
+      "endBackground": "{{searchMatch.backgroundColor}}",
+      "startBackground": "{{searchMatch.backgroundColor}}"
+    },
+    "SearchOption": {
+      "selectedBackground": "{{actionButtons.hover.backgroundColor}}",
+      "selectedHoveredBackground": "{{actionButtons.pressed.backgroundColor}}",
+      "selectedPressedBackground": "{{actionButtons.pressed.backgroundColor}}"
+    },
     "SegmentedButton": {
       "focusedSelectedButtonColor": "{{segmentedButton.focused.selected.backgroundColor}}",
       "selectedButtonColor": "{{segmentedButton.selected.backgroundColor}}",
-      "selectedStartBorderColor": "{{segmentedButton.selected.borderColor.start}}",
-      "selectedEndBorderColor": "{{segmentedButton.selected.borderColor.end}}"
+      "selectedEndBorderColor": "{{segmentedButton.selected.borderColor.end}}",
+      "selectedStartBorderColor": "{{segmentedButton.selected.borderColor.start}}"
     },
-    "Separator": {},
-    "Settings": {},
+    "Separator": {
+      "separatorColor": "{{separatorColor}}"
+    },
+    "Settings": {
+      "Spotlight": {
+        "borderColor": "{{settings.spotlight.borderColor}}"
+      }
+    },
     "SettingsTree": {
       "rowHeight": "{{tree.rowHeight}}"
     },
@@ -412,19 +499,81 @@
       "background": "{{backgroundColor}}"
     },
     "Slider": {},
-    "SpeedSearch": {},
-    "Spinner": {},
-    "SplitPane": {},
-    "SplitPaneDivider": {},
-    "StatusBar": {},
+    "SpeedSearch": {
+      "background": "{{speedSearch.backgroundColor}}",
+      "foreground": "{{speedSearch.textColor}}",
+      "borderColor": "{{speedSearch.borderColor}}",
+      "errorForeground": "{{speedSearch.errorTextColor}}"
+    },
+    "Spinner": {
+      "background": "{{spinner.backgroundColor}}"
+    },
+    "SplitPane": {
+      "background": "#00ffff",
+      "darkShadow": "#ff00ff",
+      "highlight": "#ffff00",
+      "shadow": "#0000ff"
+    },
+    "SplitPaneDivider": {
+      "draggingColor": "#00ff00"
+    },
+    "StatusBar": {
+      "borderColor": "{{bordersColor}}"
+    },
     "TabbedPane": {
+      "background": "{{tabbedPane.backgroundColor}}",
+      "foreground": "{{tabbedPane.textColor}}",
+      "focus": "#00ff00",
+      "focusColor": "#ff00ff",
+      "contentAreaColor": "{{tabbedPane.contentAreaColor}}",
+      "hoverColor": "{{tabbedPane.hoverColor}}",
       "underlineColor": "{{tabbedPane.underlineColor}}"
     },
-    "Table": {},
-    "TableHeader": {},
-    "Tag": {},
-    "TextArea": {},
-    "TextComponent": {},
+    "Table": {
+      "background": "{{table.backgroundColor}}",
+      "alternativeRowBackground": "{{table.alternateRowBackgroundColor}}",
+      "foreground": "{{table.textColor}}",
+      "gridColor": "{{table.gridColor}}",
+      "sortIconColor": "{{table.sortIconColor}}",
+      "stripeColor": "{{table.stripeColor}}",
+      "dropLineColor": "{{table.dropLine.normal.color}}",
+      "dropLineShortColor": "{{table.dropLine.short.color}}",
+      "focusCellBackground": "{{table.cell.focus.backgroundColor}}",
+      "focusCellForeground": "{{table.cell.focus.textColor}}",
+      "hoverBackground": "{{table.hover.active.backgroundColor}}",
+      "hoverInactiveBackground": "{{table.hover.inactive.backgroundColor}}",
+      "selectionBackground": "{{table.selection.active.backgroundColor}}",
+      "selectionForeground": "{{table.selection.active.textColor}}",
+      "selectionInactiveBackground": "{{table.selection.inactive.backgroundColor}}",
+      "selectionInactiveForeground": "{{table.selection.inactive.textColor}}",
+      "lightSelectionBackground": "{{table.lightSelection.active.backgroundColor}}",
+      "lightSelectionForeground": "{{table.lightSelection.active.textColor}}",
+      "lightSelectionInactiveBackground": "{{table.lightSelection.inactive.backgroundColor}}",
+      "lightSelectionInactiveForeground": "{{table.lightSelection.inactive.textColor}}"
+    },
+    "TableHeader": {
+      "background": "{{table.header.backgroundColor}}",
+      "foreground": "{{table.header.textColor}}",
+      "separatorColor": "{{table.header.separatorColor}}",
+      "bottomSeparatorColor": "{{table.header.bottomSeparatorColor}}",
+      "cellBorder": "{{table.header.cell.borderColor}}",
+      "focusCellBackground": "{{table.header.cell.focus.backgroundColor}}"
+    },
+    "Tag": {
+      "background": "#ff80ff"
+    },
+    "TextArea": {
+      "background": "#ffff00",
+      "foreground": "{{textArea.textColor}}",
+      "selectionBackground": "{{selection.active.backgroundColor}}",
+      "selectionForeground": "{{selection.textColor}}",
+      "inactiveBackground": "#00ff00",
+      "inactiveForeground": "#ff00ff",
+      "caretForeground": "{{textArea.caretColor}}"
+    },
+    "TextComponent": {
+      "selectionBackgroundInactive": "#00ff00"
+    },
     "TextField": {
       "background": "{{textField.backgroundColor}}",
       "foreground": "{{textField.textColor}}",
@@ -435,8 +584,20 @@
       "highlight": "{{textField.highlightColor}}",
       "inactiveForeground": "{{textField.inactive.textColor}}"
     },
-    "TextPane": {},
-    "TipOfTheDay": {},
+    "TextPane": {
+      "background": "#00ffff",
+      "foreground": "#ff0000",
+      "caretForeground": "#ff00ff",
+      "inactiveBackground": "#ffff00",
+      "inactiveForeground": "#0000ff",
+      "selectionBackground": "#00ff00",
+      "selectionForeground": "#ff00ff"
+    },
+    "TipOfTheDay": {
+      "Image": {
+        "borderColor": "#ffff00"
+      }
+    },
     "TitledBorder": {
       "titleColor": "#ff00ff"
     },
@@ -446,12 +607,34 @@
         "hoverBackground": "#ffff00"
       }
     },
-    "ToggleButton": {},
+    "ToggleButton": {
+      "background": "{{toggleButton.backgroundColor}}",
+      "foreground": "{{toggleButton.textColor}}",
+      "borderColor": "{{toggleButton.borderColor}}",
+      "buttonColor": "{{toggleButton.buttonColor}}",
+      "disabledText": "{{toggleButton.disabledTextColor}}",
+      "offBackground": "{{toggleButton.off.backgroundColor}}",
+      "offForeground": "{{toggleButton.off.textColor}}",
+      "onBackground": "{{toggleButton.on.backgroundColor}}",
+      "onForeground": "{{toggleButton.on.textColor}}"
+    },
     "ToolBar": {
       "background": "#ff0000",
       "foreground": "#00ff00"
     },
-    "ToolTip": {},
+    "ToolTip": {
+      "background": "{{tooltip.backgroundColor}}",
+      "foreground": "{{tooltip.textColor}}",
+      "borderColor": "{{tooltip.borderColor}}",
+      "paintBorder": true,
+      "infoForeground": "{{tooltip.info.textColor}}",
+      "shortcutForeground": "{{tooltip.shortcut.textColor}}",
+      "linkForeground": "{{tooltip.link.textColor}}",
+      "Actions": {
+        "infoForeground": "{{tooltip.actions.info.textColor}}",
+        "background": "{{tooltip.actions.backgroundColor}}"
+      }
+    },
     "ToolWindow": {
       "background": "{{toolWindow.backgroundColor}}",
       "Header": {
@@ -478,7 +661,12 @@
       "paintLines": true
     },
     "UiDesigner": {},
-    "ValidationTooltip": {},
+    "ValidationTooltip": {
+      "errorBackground": "#ff0000",
+      "errorBorderColor": "#aa0000",
+      "warningBackground": "#ffff00",
+      "warningBorderColor": "#aaaa00"
+    },
     "VersionControl": {
       "GitLog": {
         "headIconColor": "{{vcs.log.icon.head}}",
@@ -519,7 +707,10 @@
         }
       }
     },
-    "Viewport": {},
+    "Viewport": {
+      "background": "#bada55",
+      "foreground": "#302099"
+    },
     "WelcomeScreen": {
       "background": "{{welcomeScreen.backgroundColor}}",
       "borderColor": "{{welcomeScreen.borderColor}}",
@@ -550,7 +741,12 @@
       },
       "separatorColor": "{{welcomeScreen.separatorColor}}"
     },
-    "Window": {}
+    "Window": {
+      "border": "1,1,1,1,#ff0000",
+      "undecorated": {
+        "border": "1,1,1,1,#ffff00"
+      }
+    }
   },
   "icons": {
     "ColorPalette": {
