@@ -6,6 +6,8 @@
 
 
 <!-- Plugin description -->
+NOTE: This plugin is pre-release, there may be some parts of the UI which are not yet themed.
+
 This plugin is a theme for IntelliJ based IDEs. It is inspired by sakura trees.
 <!-- Plugin description end -->
 

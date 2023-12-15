@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added pre-release warning to plugin description.
 
 ## [0.4.0] - 2023-12-15
 ### Added
