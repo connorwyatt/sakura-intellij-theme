@@ -6,10 +6,10 @@ const { darken, desaturate, lighten, mix, saturate, transparentize } = Polished;
 
 const themeName = "Sakura Night";
 
-const backgroundColor = palette.charcoalDarken075;
-const overlayBackgroundColor = palette.charcoalDarken050;
-const topBarBackgroundColor = palette.charcoalDarken100;
-const editorBackgroundColor = palette.charcoalDarken100;
+const backgroundColor = palette.washedBlack;
+const overlayBackgroundColor = palette.infinity;
+const topBarBackgroundColor = palette.riverStyx;
+const editorBackgroundColor = palette.riverStyx;
 
 const mixWithBackground = (percentage: number, color: string): string =>
   mix(percentage, backgroundColor, color);
@@ -20,31 +20,31 @@ const mixWithTopBarBackground = (percentage: number, color: string): string =>
 const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
-const textColor = palette.white;
-const editorTextColor = palette.white;
+const textColor = palette.chefsHat;
+const editorTextColor = palette.chefsHat;
 
 const fieldBackgroundColor = mixWithBackground(
   0.925,
-  lighten(0.15, palette.pink),
+  lighten(0.15, palette.pepto),
 );
-const fieldBorderColor = mixWithBackground(0.5, palette.pinkSaturated250);
+const fieldBorderColor = mixWithBackground(0.5, palette.sairaRed);
 const fieldTextColor = textColor;
 
 const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
 const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
 
-const checkboxBackgroundColor = palette.pinkSaturated250;
-const checkboxTickColor = palette.white;
+const checkboxBackgroundColor = palette.sairaRed;
+const checkboxTickColor = palette.chefsHat;
 
-const buttonPrimaryBackgroundColor = palette.pinkSaturated250;
+const buttonPrimaryBackgroundColor = palette.sairaRed;
 const buttonPrimaryBorderColor = buttonPrimaryBackgroundColor;
-const buttonPrimaryTextColor = palette.white;
+const buttonPrimaryTextColor = palette.chefsHat;
 
 const buttonSecondaryBackgroundColor = fieldBackgroundColor;
 const buttonSecondaryBorderColor = fieldBorderColor;
 const buttonSecondaryTextColor = fieldTextColor;
 
-const linkColor = palette.blue;
+const linkColor = palette.pacificHarbour;
 
 const fieldFocusColor = mix(
   0.5,
@@ -52,49 +52,49 @@ const fieldFocusColor = mix(
   buttonPrimaryBackgroundColor,
 );
 
-const caretColor = palette.pinkSaturated250;
+const caretColor = palette.sairaRed;
 
-const errorColor = palette.red;
-const infoColor = palette.blue;
-const successColor = palette.green;
-const warningColor = palette.yellow;
+const errorColor = palette.briquette;
+const infoColor = palette.pacificHarbour;
+const successColor = palette.liveryGreen;
+const warningColor = palette.overjoy;
 
-const guidelinesColor = mixWithBackground(0.95, palette.white);
-const treeLinesColor = mixWithBackground(0.8, palette.white);
-const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.white);
+const guidelinesColor = mixWithBackground(0.95, palette.chefsHat);
+const treeLinesColor = mixWithBackground(0.8, palette.chefsHat);
+const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.chefsHat);
 
-const selectionColor = mixWithBackground(0.25, palette.pinkSaturated250);
+const selectionColor = mixWithBackground(0.25, palette.sairaRed);
 const editorSelectionColor = mixWithEditorBackground(
   0.75,
-  palette.pinkSaturated250,
+  palette.sairaRed,
 );
 
-const badgeBackgroundColor = palette.pinkSaturated250;
-const badgeTextColor = palette.white;
+const badgeBackgroundColor = palette.sairaRed;
+const badgeTextColor = palette.chefsHat;
 
 const tabs = {
-  hoverColor: rgbaToHex(transparentize(0.9, palette.pinkSaturated250)),
-  underlineColor: palette.pinkSaturated250,
+  hoverColor: rgbaToHex(transparentize(0.9, palette.sairaRed)),
+  underlineColor: palette.sairaRed,
 };
 
-const commentColor = mixWithEditorBackground(0.25, palette.white);
-const constantColor = palette.purple;
-const enumCaseColor = palette.purple;
-const functionColor = palette.blue;
-const globalVariableColor = palette.yellow;
-const keywordColor = palette.pink;
+const commentColor = mixWithEditorBackground(0.25, palette.chefsHat);
+const constantColor = palette.brightLavender;
+const enumCaseColor = palette.brightLavender;
+const functionColor = palette.pacificHarbour;
+const globalVariableColor = palette.overjoy;
+const keywordColor = palette.pepto;
 const localVariableColor = editorTextColor;
-const metadataColor = palette.purple;
-const numberColor = palette.blue;
-const punctuationColor = mix(0.5, editorTextColor, palette.pink);
-const stringColor = palette.green;
-const stringEscapeColor = palette.orange;
+const metadataColor = palette.brightLavender;
+const numberColor = palette.pacificHarbour;
+const punctuationColor = mix(0.5, editorTextColor, palette.pepto);
+const stringColor = palette.liveryGreen;
+const stringEscapeColor = palette.pumpkinPie;
 const templateLanguageBackgroundColor = mixWithEditorBackground(
   0.75,
-  palette.blue,
+  palette.pacificHarbour,
 );
-const todoColor = palette.orange;
-const typeNameColor = palette.yellow;
+const todoColor = palette.pumpkinPie;
+const typeNameColor = palette.overjoy;
 
 const syntax = {
   attribute: metadataColor,
@@ -127,14 +127,14 @@ const syntax = {
     comment: {
       textColor: mixWithEditorBackground(0.25, stringColor),
       tag: {
-        textColor: palette.pink,
+        textColor: palette.pepto,
         value: {
-          textColor: palette.yellow,
+          textColor: palette.overjoy,
         },
       },
     },
     markup: {
-      textColor: palette.blue,
+      textColor: palette.pacificHarbour,
     },
   },
   dot: punctuationColor,
@@ -224,10 +224,10 @@ const syntax = {
   },
   whitespace: editorGuidelinesColor,
   xml: {
-    nsPrefix: { textColor: palette.yellow },
-    attributeName: palette.yellow,
-    attributeValue: palette.blue,
-    tagName: palette.pink,
+    nsPrefix: { textColor: palette.overjoy },
+    attributeName: palette.overjoy,
+    attributeValue: palette.pacificHarbour,
+    tagName: palette.pepto,
   },
 };
 
@@ -240,40 +240,40 @@ export default {
   textColor,
   actionButtons: {
     hover: {
-      backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
-      borderColor: mixWithBackground(0.25, palette.pinkSaturated250),
+      backgroundColor: mixWithBackground(0.5, palette.sairaRed),
+      borderColor: mixWithBackground(0.25, palette.sairaRed),
     },
     pressed: {
-      backgroundColor: mixWithBackground(0.4, palette.pinkSaturated250),
-      borderColor: mixWithBackground(0.25, palette.pinkSaturated250),
+      backgroundColor: mixWithBackground(0.4, palette.sairaRed),
+      borderColor: mixWithBackground(0.25, palette.sairaRed),
     },
     separatorColor: guidelinesColor,
   },
   actions: {
-    blue: palette.blue,
-    green: palette.green,
+    blue: palette.pacificHarbour,
+    green: palette.liveryGreen,
     grey: textColor,
     greyInline: textColor,
     greyInlineDark: textColor,
-    red: palette.red,
-    yellow: palette.yellow,
+    red: palette.briquette,
+    yellow: palette.overjoy,
   },
   banner: {
     error: {
-      backgroundColor: mixWithBackground(0.75, palette.red),
-      borderColor: mixWithBackground(0.5, palette.red),
+      backgroundColor: mixWithBackground(0.75, palette.briquette),
+      borderColor: mixWithBackground(0.5, palette.briquette),
     },
     info: {
-      backgroundColor: mixWithBackground(0.75, palette.blue),
-      borderColor: mixWithBackground(0.5, palette.blue),
+      backgroundColor: mixWithBackground(0.75, palette.pacificHarbour),
+      borderColor: mixWithBackground(0.5, palette.pacificHarbour),
     },
     success: {
-      backgroundColor: mixWithBackground(0.75, palette.green),
-      borderColor: mixWithBackground(0.5, palette.green),
+      backgroundColor: mixWithBackground(0.75, palette.liveryGreen),
+      borderColor: mixWithBackground(0.5, palette.liveryGreen),
     },
     warning: {
-      backgroundColor: mixWithBackground(0.75, palette.yellow),
-      borderColor: mixWithBackground(0.5, palette.yellow),
+      backgroundColor: mixWithBackground(0.75, palette.overjoy),
+      borderColor: mixWithBackground(0.5, palette.overjoy),
     },
   },
   bigSpinner: {
@@ -337,7 +337,7 @@ export default {
       textColor: mixWithBackground(0.5, fieldTextColor),
     },
     modified: {
-      textColor: mix(0.5, palette.pink, fieldTextColor),
+      textColor: mix(0.5, palette.pepto, fieldTextColor),
     },
     selected: {
       backgroundColor: selectionColor,
@@ -359,7 +359,7 @@ export default {
   },
   completionPopup: {
     match: {
-      textColor: palette.pinkSaturated250,
+      textColor: palette.sairaRed,
     },
     textColor,
   },
@@ -384,20 +384,20 @@ export default {
     },
   },
   dragAndDrop: {
-    borderColor: mixWithBackground(0.5, palette.pinkSaturated250),
+    borderColor: mixWithBackground(0.5, palette.sairaRed),
     area: {
       backgroundColor,
       foregroundColor: textColor,
     },
     row: {
-      backgroundColor: rgbaToHex(transparentize(0.9, palette.pinkSaturated250)),
+      backgroundColor: rgbaToHex(transparentize(0.9, palette.sairaRed)),
     },
   },
   editor: {
     backgroundColor: editorBackgroundColor,
     borderColor: editorGuidelinesColor,
     textColor,
-    shortcutForeground: palette.pinkSaturated250,
+    shortcutForeground: palette.sairaRed,
     searchField: {
       backgroundColor: editorBackgroundColor,
     },
@@ -407,9 +407,9 @@ export default {
     bookmark: {
       lineBackgroundColor: mixWithEditorBackground(
         0.75,
-        palette.pinkSaturated250,
+        palette.sairaRed,
       ),
-      errorStripeColor: mixWithEditorBackground(0.75, palette.pinkSaturated250),
+      errorStripeColor: mixWithEditorBackground(0.75, palette.sairaRed),
     },
     breadcrumbs: {
       current: {
@@ -439,15 +439,15 @@ export default {
       },
     },
     breakpoint: {
-      lineBackgroundColor: mixWithEditorBackground(0.75, palette.red),
-      errorStripeColor: mixWithEditorBackground(0.75, palette.red),
+      lineBackgroundColor: mixWithEditorBackground(0.75, palette.briquette),
+      errorStripeColor: mixWithEditorBackground(0.75, palette.briquette),
     },
     caret: {
       color: caretColor,
       rowBackgroundColor: lighten(0.05, editorBackgroundColor),
     },
     codeLens: {
-      borderColor: palette.pink,
+      borderColor: palette.pepto,
     },
     console: {
       output: {
@@ -455,20 +455,20 @@ export default {
           backgroundColor: textColor,
           textColor: editorBackgroundColor,
         },
-        red: palette.red,
-        green: palette.green,
-        yellow: palette.yellow,
-        blue: palette.blue,
-        pink: palette.pink,
-        cyan: palette.turquoise,
+        red: palette.briquette,
+        green: palette.liveryGreen,
+        yellow: palette.overjoy,
+        blue: palette.pacificHarbour,
+        pink: palette.pepto,
+        cyan: palette.hiddenSeaGlass,
         gray: mixWithEditorBackground(0.25, textColor),
         darkGray: mixWithEditorBackground(0.5, textColor),
-        redBright: lighten(0.05, saturate(0.2, palette.red)),
-        greenBright: lighten(0.05, saturate(0.2, palette.green)),
-        yellowBright: lighten(0.05, saturate(0.2, palette.yellow)),
-        blueBright: lighten(0.05, saturate(0.2, palette.blue)),
-        pinkBright: lighten(0.05, saturate(0.2, palette.pink)),
-        cyanBright: lighten(0.05, saturate(0.2, palette.turquoise)),
+        redBright: lighten(0.05, saturate(0.2, palette.briquette)),
+        greenBright: lighten(0.05, saturate(0.2, palette.liveryGreen)),
+        yellowBright: lighten(0.05, saturate(0.2, palette.overjoy)),
+        blueBright: lighten(0.05, saturate(0.2, palette.pacificHarbour)),
+        pinkBright: lighten(0.05, saturate(0.2, palette.pepto)),
+        cyanBright: lighten(0.05, saturate(0.2, palette.hiddenSeaGlass)),
         normal: textColor,
         error: errorColor,
         system: textColor,
@@ -480,7 +480,7 @@ export default {
         user: textColor,
       },
       rangeToExecute: {
-        effectColor: palette.pinkSaturated250,
+        effectColor: palette.sairaRed,
       },
     },
     ctrlClickable: {
@@ -490,10 +490,10 @@ export default {
     debugger: {
       inlineValue: {
         executionLine: {
-          textColor: mix(0.5, palette.blue, commentColor),
+          textColor: mix(0.5, palette.pacificHarbour, commentColor),
         },
         modified: {
-          textColor: mix(0.5, palette.yellow, commentColor),
+          textColor: mix(0.5, palette.overjoy, commentColor),
         },
         other: {
           textColor: commentColor,
@@ -502,37 +502,37 @@ export default {
     },
     diff: {
       conflict: {
-        importantColor: mixWithEditorBackground(0.75, palette.yellow),
-        ignoredColor: mixWithEditorBackground(0.875, palette.yellow),
-        errorStripeColor: mixWithEditorBackground(0.5, palette.yellow),
+        importantColor: mixWithEditorBackground(0.75, palette.overjoy),
+        ignoredColor: mixWithEditorBackground(0.875, palette.overjoy),
+        errorStripeColor: mixWithEditorBackground(0.5, palette.overjoy),
       },
       deleted: {
-        importantColor: mixWithEditorBackground(0.75, palette.red),
-        ignoredColor: mixWithEditorBackground(0.875, palette.red),
-        errorStripeColor: mixWithEditorBackground(0.5, palette.red),
+        importantColor: mixWithEditorBackground(0.75, palette.briquette),
+        ignoredColor: mixWithEditorBackground(0.875, palette.briquette),
+        errorStripeColor: mixWithEditorBackground(0.5, palette.briquette),
       },
       inserted: {
-        importantColor: mixWithEditorBackground(0.75, palette.green),
-        ignoredColor: mixWithEditorBackground(0.875, palette.green),
-        errorStripeColor: mixWithEditorBackground(0.5, palette.green),
+        importantColor: mixWithEditorBackground(0.75, palette.liveryGreen),
+        ignoredColor: mixWithEditorBackground(0.875, palette.liveryGreen),
+        errorStripeColor: mixWithEditorBackground(0.5, palette.liveryGreen),
       },
       modified: {
-        importantColor: mixWithEditorBackground(0.75, palette.blue),
-        ignoredColor: mixWithEditorBackground(0.875, palette.blue),
-        errorStripeColor: mixWithEditorBackground(0.5, palette.blue),
+        importantColor: mixWithEditorBackground(0.75, palette.pacificHarbour),
+        ignoredColor: mixWithEditorBackground(0.875, palette.pacificHarbour),
+        errorStripeColor: mixWithEditorBackground(0.5, palette.pacificHarbour),
       },
-      separatorWave: mixWithEditorBackground(0.5, palette.pinkSaturated250),
+      separatorWave: mixWithEditorBackground(0.5, palette.sairaRed),
     },
     fileStatus: {
-      added: palette.green,
-      conflicts: palette.orange,
-      copied: palette.green,
-      deleted: palette.red,
-      merged: palette.purple,
-      modified: palette.blue,
-      switched: palette.purple,
-      unknown: palette.orange,
-      warning: palette.yellow,
+      added: palette.liveryGreen,
+      conflicts: palette.pumpkinPie,
+      copied: palette.liveryGreen,
+      deleted: palette.briquette,
+      merged: palette.brightLavender,
+      modified: palette.pacificHarbour,
+      switched: palette.brightLavender,
+      unknown: palette.pumpkinPie,
+      warning: palette.overjoy,
     },
     foldedText: {
       textColor: mixWithEditorBackground(0.5, textColor),
@@ -543,40 +543,40 @@ export default {
     },
     hint: {
       borderColor: editorGuidelinesColor,
-      error: mixWithBackground(0.5, palette.red),
+      error: mixWithBackground(0.5, palette.briquette),
       info: backgroundColor,
-      question: mixWithBackground(0.5, palette.purple),
-      warning: mixWithBackground(0.5, palette.yellow),
+      question: mixWithBackground(0.5, palette.brightLavender),
+      warning: mixWithBackground(0.5, palette.overjoy),
     },
     htmlTagTreeLevels: {
-      level0: palette.pink,
-      level1: palette.purple,
-      level2: palette.blue,
-      level3: palette.green,
-      level4: palette.yellow,
-      level5: palette.orange,
+      level0: palette.pepto,
+      level1: palette.brightLavender,
+      level2: palette.pacificHarbour,
+      level3: palette.liveryGreen,
+      level4: palette.overjoy,
+      level5: palette.pumpkinPie,
     },
     identifierUnderCaret: {
       standard: {
         backgroundColor: mixWithEditorBackground(
           0.9,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
-        effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
+        effectColor: mixWithEditorBackground(0.5, palette.sairaRed),
         errorStripeColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
       },
       write: {
         backgroundColor: mixWithEditorBackground(
           0.9,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
-        effectColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
+        effectColor: mixWithEditorBackground(0.5, palette.sairaRed),
         errorStripeColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
       },
     },
@@ -594,7 +594,7 @@ export default {
       selected: { color: editorSelectionColor },
     },
     injectedLanguageFragment: {
-      backgroundColor: mixWithEditorBackground(0.8, palette.orange),
+      backgroundColor: mixWithEditorBackground(0.8, palette.pumpkinPie),
     },
     inlay: {
       default: {
@@ -624,15 +624,15 @@ export default {
     },
     lineNumbers: {
       normal: { textColor },
-      caretRow: { textColor: palette.pinkSaturated250 },
+      caretRow: { textColor: palette.sairaRed },
     },
     matchedBracesIndentGuideColor: editorSelectionColor,
     matchingElement: {
-      effectColor: palette.pinkSaturated250,
+      effectColor: palette.sairaRed,
     },
     methodSeparators: editorGuidelinesColor,
     notification: {
-      backgroundColor: mixWithEditorBackground(0.5, palette.pinkSaturated250),
+      backgroundColor: mixWithEditorBackground(0.5, palette.sairaRed),
     },
     pane: {
       textColor,
@@ -646,10 +646,10 @@ export default {
       borderColor: editorGuidelinesColor,
     },
     readonly: {
-      background: mixWithEditorBackground(0.95, palette.pinkSaturated250),
+      background: mixWithEditorBackground(0.95, palette.sairaRed),
       fragmentBackground: mixWithEditorBackground(
         0.95,
-        palette.pinkSaturated250,
+        palette.sairaRed,
       ),
     },
     recentLocations: {
@@ -660,16 +660,16 @@ export default {
     rightMarginColor: editorGuidelinesColor,
     search: {
       searchResult: {
-        backgroundColor: mixWithEditorBackground(0.5, palette.blue),
-        effectColor: mixWithEditorBackground(0.25, palette.blue),
+        backgroundColor: mixWithEditorBackground(0.5, palette.pacificHarbour),
+        effectColor: mixWithEditorBackground(0.25, palette.pacificHarbour),
       },
       textSearchResult: {
-        backgroundColor: mixWithEditorBackground(0.5, palette.blue),
-        effectColor: mixWithEditorBackground(0.25, palette.blue),
+        backgroundColor: mixWithEditorBackground(0.5, palette.pacificHarbour),
+        effectColor: mixWithEditorBackground(0.25, palette.pacificHarbour),
       },
       writeSearchResult: {
-        backgroundColor: mixWithEditorBackground(0.5, palette.blue),
-        effectColor: mixWithEditorBackground(0.25, palette.blue),
+        backgroundColor: mixWithEditorBackground(0.5, palette.pacificHarbour),
+        effectColor: mixWithEditorBackground(0.25, palette.pacificHarbour),
       },
     },
     selection: {
@@ -684,7 +684,7 @@ export default {
         active: {
           backgroundColor: null,
         },
-        modifiedIconColor: palette.pinkSaturated250,
+        modifiedIconColor: palette.sairaRed,
       },
     },
     vcs: {
@@ -693,20 +693,20 @@ export default {
         lastCommit: {
           textColor,
         },
-        color1: mixWithEditorBackground(0.3, palette.pinkSaturated250),
-        color2: mixWithEditorBackground(0.45, palette.pinkSaturated250),
-        color3: mixWithEditorBackground(0.6, palette.pinkSaturated250),
-        color4: mixWithEditorBackground(0.75, palette.pinkSaturated250),
-        color5: mixWithEditorBackground(0.9, palette.pinkSaturated250),
+        color1: mixWithEditorBackground(0.3, palette.sairaRed),
+        color2: mixWithEditorBackground(0.45, palette.sairaRed),
+        color3: mixWithEditorBackground(0.6, palette.sairaRed),
+        color4: mixWithEditorBackground(0.75, palette.sairaRed),
+        color5: mixWithEditorBackground(0.9, palette.sairaRed),
       },
       changedLinesPopup: {
         backgroundColor,
       },
       gutter: {
-        addedLines: palette.green,
-        deletedLines: palette.red,
-        modifiedLines: palette.blue,
-        removedLines: palette.red,
+        addedLines: palette.liveryGreen,
+        deletedLines: palette.briquette,
+        modifiedLines: palette.pacificHarbour,
+        removedLines: palette.briquette,
       },
     },
     visualIndentGuideColor: editorGuidelinesColor,
@@ -738,13 +738,13 @@ export default {
     infoTextColor: mixWithBackground(0.5, textColor),
   },
   fileColors: {
-    blue: mixWithBackground(0.9, saturate(0.5, palette.blue)),
+    blue: mixWithBackground(0.9, saturate(0.5, palette.pacificHarbour)),
     gray: mixWithBackground(0.9, saturate(0.5, textColor)),
-    green: mixWithBackground(0.9, saturate(0.5, palette.green)),
-    orange: mixWithBackground(0.9, saturate(0.5, palette.orange)),
-    rose: mixWithBackground(0.9, saturate(0.5, palette.red)),
-    violet: mixWithBackground(0.9, saturate(0.5, palette.purple)),
-    yellow: mixWithBackground(0.9, saturate(0.5, palette.yellow)),
+    green: mixWithBackground(0.9, saturate(0.5, palette.liveryGreen)),
+    orange: mixWithBackground(0.9, saturate(0.5, palette.pumpkinPie)),
+    rose: mixWithBackground(0.9, saturate(0.5, palette.briquette)),
+    violet: mixWithBackground(0.9, saturate(0.5, palette.brightLavender)),
+    yellow: mixWithBackground(0.9, saturate(0.5, palette.overjoy)),
   },
   group: {
     separatorColor: guidelinesColor,
@@ -840,16 +840,16 @@ export default {
     },
   },
   objects: {
-    blue: palette.blue,
-    blackText: palette.white,
-    green: palette.green,
+    blue: palette.pacificHarbour,
+    blackText: palette.chefsHat,
+    green: palette.liveryGreen,
     grey: mixWithBackground(0.5, textColor),
-    pink: palette.pink,
-    purple: palette.purple,
-    red: palette.red,
-    redStatus: palette.red,
-    yellow: palette.yellow,
-    yellowDark: darken(0.2, palette.yellow),
+    pink: palette.pepto,
+    purple: palette.brightLavender,
+    red: palette.briquette,
+    redStatus: palette.briquette,
+    yellow: palette.overjoy,
+    yellowDark: darken(0.2, palette.overjoy),
   },
   panel: {
     backgroundColor,
@@ -870,11 +870,11 @@ export default {
     },
     description: {
       tag: {
-        backgroundColor: mixWithBackground(0.25, palette.blue),
-        textColor: palette.white,
+        backgroundColor: mixWithBackground(0.25, palette.pacificHarbour),
+        textColor: palette.chefsHat,
       },
       pagination: {
-        current: palette.pink,
+        current: palette.pepto,
       },
       suggestedLabel: {
         backgroundColor: overlayBackgroundColor,
@@ -940,22 +940,22 @@ export default {
   },
   problemsView: {
     projectAnalysisButton: {
-      backgroundColor: mixWithBackground(0.5, palette.white),
+      backgroundColor: mixWithBackground(0.5, palette.chefsHat),
     },
   },
   progressBar: {
     backgroundColor: overlayBackgroundColor,
     foregroundColor: mixWithEditorBackground(
       0.5,
-      lighten(0.15, palette.pinkSaturated250),
+      lighten(0.15, palette.sairaRed),
     ),
     progressColor: mixWithEditorBackground(
       0.5,
-      lighten(0.15, palette.pinkSaturated250),
+      lighten(0.15, palette.sairaRed),
     ),
     indeterminate: {
-      startColor: palette.pinkSaturated250,
-      endColor: lighten(0.15, palette.pinkSaturated250),
+      startColor: palette.sairaRed,
+      endColor: lighten(0.15, palette.sairaRed),
     },
     failedColor: errorColor,
     failedEndColor: lighten(0.1, errorColor),
@@ -967,28 +967,28 @@ export default {
   runWidget: {
     iconColor: textColor,
     textColor,
-    runningIconColor: palette.white,
+    runningIconColor: palette.chefsHat,
     running: {
-      backgroundColor: desaturate(0.3, darken(0.2, palette.green)),
+      backgroundColor: desaturate(0.3, darken(0.2, palette.liveryGreen)),
     },
-    stop: { backgroundColor: desaturate(0.3, darken(0.2, palette.red)) },
+    stop: { backgroundColor: desaturate(0.3, darken(0.2, palette.briquette)) },
     hover: { overlayColor: rgbaToHex(transparentize(0.9, backgroundColor)) },
     pressed: { overlayColor: rgbaToHex(transparentize(0.8, backgroundColor)) },
   },
   scrollBar: {
-    thumbColor: mixWithBackground(0.75, palette.pinkSaturated250),
-    thumbBorderColor: mixWithBackground(0.5, palette.pinkSaturated250),
+    thumbColor: mixWithBackground(0.75, palette.sairaRed),
+    thumbBorderColor: mixWithBackground(0.5, palette.sairaRed),
     hover: {
-      thumbColor: mixWithBackground(0.5, palette.pinkSaturated250),
-      thumbBorderColor: mixWithBackground(0.25, palette.pinkSaturated250),
+      thumbColor: mixWithBackground(0.5, palette.sairaRed),
+      thumbBorderColor: mixWithBackground(0.25, palette.sairaRed),
     },
   },
   searchField: {
-    errorBackgroundColor: mix(0.5, fieldBackgroundColor, palette.red),
-    errorTextColor: palette.red,
+    errorBackgroundColor: mix(0.5, fieldBackgroundColor, palette.briquette),
+    errorTextColor: palette.briquette,
   },
   searchMatch: {
-    backgroundColor: palette.blue,
+    backgroundColor: palette.pacificHarbour,
   },
   segmentedButton: {
     focused: {
@@ -1011,19 +1011,19 @@ export default {
     inactive: {
       backgroundColor: mixWithBackground(0.5, selectionColor),
     },
-    textColor: palette.white,
+    textColor: palette.chefsHat,
   },
   separatorColor: guidelinesColor,
   settings: {
     spotlight: {
-      borderColor: palette.pinkSaturated250,
+      borderColor: palette.sairaRed,
     },
   },
   speedSearch: {
     backgroundColor: overlayBackgroundColor,
     textColor,
     borderColor: guidelinesColor,
-    errorTextColor: palette.red,
+    errorTextColor: palette.briquette,
   },
   spinner: {
     backgroundColor,
@@ -1055,7 +1055,7 @@ export default {
   },
   table: {
     backgroundColor: editorBackgroundColor,
-    alternateRowBackgroundColor: palette.red,
+    alternateRowBackgroundColor: palette.briquette,
     textColor,
     gridColor: editorGuidelinesColor,
     sortIconColor: textColor,
@@ -1078,13 +1078,13 @@ export default {
       active: {
         backgroundColor: mixWithEditorBackground(
           0.9,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
       },
       inactive: {
         backgroundColor: mixWithEditorBackground(
           0.9,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
       },
     },
@@ -1092,14 +1092,14 @@ export default {
       active: {
         backgroundColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
         textColor,
       },
       inactive: {
         backgroundColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
         textColor,
       },
@@ -1108,14 +1108,14 @@ export default {
       active: {
         backgroundColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
         textColor,
       },
       inactive: {
         backgroundColor: mixWithEditorBackground(
           0.5,
-          palette.pinkSaturated250,
+          palette.sairaRed,
         ),
         textColor,
       },
@@ -1150,15 +1150,15 @@ export default {
   toggleButton: {
     backgroundColor,
     textColor: "#00ffff",
-    borderColor: mix(0.25, palette.white, guidelinesColor),
-    buttonColor: palette.green,
+    borderColor: mix(0.25, palette.chefsHat, guidelinesColor),
+    buttonColor: palette.liveryGreen,
     disabledTextColor: "#0000ff",
     off: {
       backgroundColor,
       textColor,
     },
     on: {
-      backgroundColor: mixWithBackground(0.5, palette.green),
+      backgroundColor: mixWithBackground(0.5, palette.liveryGreen),
       textColor,
     },
   },
@@ -1167,11 +1167,11 @@ export default {
     textColor,
     borderColor: guidelinesColor,
     info: { textColor: "#ff0000" },
-    shortcut: { textColor: palette.pinkSaturated250 },
+    shortcut: { textColor: palette.sairaRed },
     link: { textColor: "#ffff00" },
     actions: {
       info: {
-        textColor: palette.pinkSaturated250,
+        textColor: palette.sairaRed,
       },
       backgroundColor: overlayBackgroundColor,
     },
@@ -1180,11 +1180,11 @@ export default {
     backgroundColor,
     button: {
       selected: {
-        backgroundColor: mixWithBackground(0.25, palette.pinkSaturated250),
+        backgroundColor: mixWithBackground(0.25, palette.sairaRed),
         iconColor: textColor,
       },
       hover: {
-        backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
+        backgroundColor: mixWithBackground(0.5, palette.sairaRed),
       },
     },
     header: {
@@ -1198,29 +1198,29 @@ export default {
     hash: treeLinesColor,
     iconColor: textColor,
     hover: {
-      backgroundColor: mixWithBackground(0.9, palette.pink),
+      backgroundColor: mixWithBackground(0.9, palette.pepto),
       inactive: {
-        backgroundColor: mixWithBackground(0.9, palette.pink),
+        backgroundColor: mixWithBackground(0.9, palette.pepto),
       },
     },
     error: { textColor: errorColor },
-    modified: { textColor: palette.blue },
+    modified: { textColor: palette.pacificHarbour },
   },
   vcs: {
     log: {
       commit: {
         rowHeight: 28,
         currentBranch: {
-          backgroundColor: mixWithBackground(0.9, palette.pinkSaturated250),
+          backgroundColor: mixWithBackground(0.9, palette.sairaRed),
         },
         hover: {
-          backgroundColor: mixWithBackground(0.8, palette.pinkSaturated250),
+          backgroundColor: mixWithBackground(0.8, palette.sairaRed),
         },
         selected: {
-          backgroundColor: mixWithBackground(0.5, palette.pinkSaturated250),
-          textColor: palette.white,
+          backgroundColor: mixWithBackground(0.5, palette.sairaRed),
+          textColor: palette.chefsHat,
           inactive: {
-            backgroundColor: mixWithBackground(0.75, palette.pinkSaturated250),
+            backgroundColor: mixWithBackground(0.75, palette.sairaRed),
             textColor,
           },
         },
@@ -1232,11 +1232,11 @@ export default {
         },
       },
       icon: {
-        head: palette.pink,
-        localBranch: palette.blue,
-        remoteBranch: palette.green,
-        tag: palette.yellow,
-        other: palette.purple,
+        head: palette.pepto,
+        localBranch: palette.pacificHarbour,
+        remoteBranch: palette.liveryGreen,
+        tag: palette.overjoy,
+        other: palette.brightLavender,
       },
     },
     markerPopup: {
