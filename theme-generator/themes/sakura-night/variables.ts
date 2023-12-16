@@ -635,6 +635,7 @@ export default {
       backgroundColor: mixWithEditorBackground(0.5, palette.sairaRed),
     },
     pane: {
+      backgroundColor: overlayBackgroundColor,
       textColor,
       selection: {
         backgroundColor: selectionColor,
@@ -981,6 +982,12 @@ export default {
     hover: {
       thumbColor: mixWithBackground(0.5, palette.sairaRed),
       thumbBorderColor: mixWithBackground(0.25, palette.sairaRed),
+    },
+  },
+  searchEverywhere: {
+    advertiser: {
+      backgroundColor: overlayBackgroundColor,
+      textColor,
     },
   },
   searchField: {
