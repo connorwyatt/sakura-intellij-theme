@@ -21,7 +21,6 @@ const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
 const textColor = palette.whiteDarken1;
-const editorTextColor = palette.whiteDarken1;
 
 const fieldBackgroundColor = mixWithBackground(
   0.925,
@@ -34,11 +33,11 @@ const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
 const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
 
 const checkboxBackgroundColor = palette.pinkDarken1;
-const checkboxTickColor = palette.white;
+const checkboxTickColor = palette.whiteDarken1;
 
 const buttonPrimaryBackgroundColor = palette.pinkDarken1;
 const buttonPrimaryBorderColor = buttonPrimaryBackgroundColor;
-const buttonPrimaryTextColor = palette.white;
+const buttonPrimaryTextColor = palette.whiteDarken1;
 
 const buttonSecondaryBackgroundColor = fieldBackgroundColor;
 const buttonSecondaryBorderColor = fieldBorderColor;
@@ -59,9 +58,12 @@ const infoColor = palette.blue;
 const successColor = palette.green;
 const warningColor = palette.yellow;
 
-const guidelinesColor = mixWithBackground(0.95, palette.white);
-const treeLinesColor = mixWithBackground(0.8, palette.white);
-const editorGuidelinesColor = mixWithEditorBackground(0.9, palette.white);
+const guidelinesColor = mixWithBackground(0.95, palette.whiteDarken1);
+const treeLinesColor = mixWithBackground(0.8, palette.whiteDarken1);
+const editorGuidelinesColor = mixWithEditorBackground(
+  0.9,
+  palette.whiteDarken1,
+);
 
 const selectionColor = mixWithBackground(0.25, palette.pinkDarken1);
 const editorSelectionColor = mixWithEditorBackground(
@@ -70,31 +72,42 @@ const editorSelectionColor = mixWithEditorBackground(
 );
 
 const badgeBackgroundColor = palette.pinkDarken1;
-const badgeTextColor = palette.white;
+const badgeTextColor = palette.whiteDarken1;
 
 const tabs = {
-  hoverColor: rgbaToHex(transparentize(0.9, palette.pinkDarken1)),
-  underlineColor: palette.pinkDarken1,
+  hoverColor: rgbaToHex(transparentize(0.9, palette.pink)),
+  underlineColor: palette.pink,
 };
 
+const editorTextColor = palette.whiteDarken1;
+
 const commentColor = mixWithEditorBackground(0.25, editorTextColor);
-const constantColor = palette.purple;
-const enumCaseColor = palette.purple;
-const functionColor = palette.blue;
-const globalVariableColor = palette.yellow;
+const constantColor = palette.turquoise;
+const enumCaseColor = palette.green;
+const globalVariableColor = palette.blue;
+const identifierColor = editorTextColor;
+const instanceMethodColor = palette.blue;
+const instanceFieldColor = palette.purple;
 const keywordColor = palette.pink;
 const localVariableColor = editorTextColor;
 const metadataColor = palette.purple;
-const numberColor = palette.blue;
+const numberColor = palette.purple;
+const parameterColor = editorTextColor;
 const punctuationColor = mixWithEditorBackground(0.25, editorTextColor);
+const staticFieldColor = instanceFieldColor;
+const staticMethodColor = instanceMethodColor;
 const stringColor = palette.green;
 const stringEscapeColor = palette.orange;
+const tagAttributeNameColor = palette.yellow;
+const tagAttributeValueColor = palette.blue;
+const tagName = palette.pink;
 const templateLanguageBackgroundColor = mixWithEditorBackground(
   0.75,
-  palette.blue,
+  palette.orange,
 );
 const todoColor = palette.orange;
 const typeNameColor = palette.yellow;
+const whitespaceColor = mix(0.5, editorGuidelinesColor, punctuationColor);
 
 const syntax = {
   attribute: metadataColor,
@@ -120,21 +133,21 @@ const syntax = {
     keyword4: keywordColor,
   },
   deprecation: {
-    effectColor: mixWithEditorBackground(0.5, editorTextColor),
-    textColor: mixWithEditorBackground(0.5, editorTextColor),
+    effectColor: commentColor,
+    textColor: commentColor,
   },
   docs: {
     comment: {
       textColor: mixWithEditorBackground(0.25, stringColor),
       tag: {
-        textColor: palette.pink,
+        textColor: mixWithEditorBackground(0.25, tagAttributeNameColor),
         value: {
-          textColor: palette.yellow,
+          textColor: mixWithEditorBackground(0.25, tagAttributeValueColor),
         },
       },
     },
     markup: {
-      textColor: palette.blue,
+      textColor: mixWithEditorBackground(0.25, tagName),
     },
   },
   dot: punctuationColor,
@@ -149,8 +162,8 @@ const syntax = {
     effectColor: errorColor,
     errorStripeColor: errorColor,
   },
-  functionCall: functionColor,
-  functionDeclaration: functionColor,
+  functionCall: instanceMethodColor,
+  functionDeclaration: instanceMethodColor,
   globalVariable: globalVariableColor,
   grammarError: {
     effectColor: warningColor,
@@ -168,9 +181,9 @@ const syntax = {
     textColor: linkColor,
     effectColor: linkColor,
   },
-  identifier: editorTextColor,
-  instanceField: editorTextColor,
-  instanceMethod: functionColor,
+  identifier: identifierColor,
+  instanceField: instanceFieldColor,
+  instanceMethod: instanceMethodColor,
   interfaceName: typeNameColor,
   json: {
     propertyKey: keywordColor,
@@ -189,11 +202,11 @@ const syntax = {
   namedParameter: metadataColor,
   number: numberColor,
   operator: punctuationColor,
-  parameter: editorTextColor,
+  parameter: parameterColor,
   primitiveTypes: typeNameColor,
   semicolon: punctuationColor,
-  staticField: editorTextColor,
-  staticMethod: functionColor,
+  staticField: staticFieldColor,
+  staticMethod: staticMethodColor,
   string: stringColor,
   stringEscape: {
     invalid: { textColor: stringEscapeColor, effectColor: errorColor },
@@ -222,12 +235,12 @@ const syntax = {
     effectColor: warningColor,
     errorStripeColor: warningColor,
   },
-  whitespace: editorGuidelinesColor,
+  whitespace: whitespaceColor,
   xml: {
-    nsPrefix: { textColor: palette.yellow },
-    attributeName: palette.yellow,
-    attributeValue: palette.blue,
-    tagName: palette.pink,
+    nsPrefix: { textColor: tagAttributeNameColor },
+    attributeName: tagAttributeNameColor,
+    attributeValue: tagAttributeValueColor,
+    tagName: tagName,
   },
 };
 
