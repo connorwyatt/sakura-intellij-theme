@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Style miscellaneous errors & warnings (e.g. runtime errors, and text style errors, warnings and suggestions).
 
 ## [0.5.0] - 2023-12-17
 ### Added

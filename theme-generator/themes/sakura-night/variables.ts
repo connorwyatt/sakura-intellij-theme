@@ -196,7 +196,7 @@ const syntax = {
   },
   markedForRemoval: {
     effectColor: errorColor,
-    textColor: mixWithEditorBackground(0.5, errorColor),
+    textColor: commentColor,
   },
   metadata: metadataColor,
   namedParameter: metadataColor,
@@ -204,6 +204,10 @@ const syntax = {
   operator: punctuationColor,
   parameter: parameterColor,
   primitiveTypes: typeNameColor,
+  runtimeError: {
+    effectColor: errorColor,
+    errorStripeColor: errorColor,
+  },
   semicolon: punctuationColor,
   staticField: staticFieldColor,
   staticMethod: staticMethodColor,
@@ -216,6 +220,15 @@ const syntax = {
   tag: punctuationColor,
   templateLanguage: {
     backgroundColor: templateLanguageBackgroundColor,
+  },
+  textStyleError: {
+    effectColor: errorColor,
+  },
+  textStyleSuggestion: {
+    effectColor: infoColor,
+  },
+  textStyleWarning: {
+    effectColor: warningColor,
   },
   todo: {
     textColor: todoColor,
