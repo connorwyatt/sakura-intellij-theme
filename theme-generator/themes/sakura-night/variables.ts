@@ -992,11 +992,11 @@ export default {
     pressed: { overlayColor: rgbaToHex(transparentize(0.8, backgroundColor)) },
   },
   scrollBar: {
-    thumbColor: mixWithBackground(0.75, palette.pinkDarken1),
-    thumbBorderColor: mixWithBackground(0.5, palette.pinkDarken1),
+    thumbColor: mixWithBackground(0.75, palette.pink),
+    thumbBorderColor: mixWithBackground(0.5, palette.pink),
     hover: {
-      thumbColor: mixWithBackground(0.5, palette.pinkDarken1),
-      thumbBorderColor: mixWithBackground(0.25, palette.pinkDarken1),
+      thumbColor: mixWithBackground(0.5, palette.pink),
+      thumbBorderColor: mixWithBackground(0.25, palette.pink),
     },
   },
   searchEverywhere: {
