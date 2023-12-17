@@ -6,6 +6,9 @@
 ### Added
 - Style miscellaneous errors & warnings (e.g. runtime errors, and text style errors, warnings and suggestions).
 
+### Changed
+- Update Kotlin, CSS and Regexp editor scheme theming.
+
 ## [0.5.0] - 2023-12-17
 ### Added
 - Added pre-release warning to plugin description.

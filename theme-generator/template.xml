@@ -314,21 +314,19 @@
 				<option name="FOREGROUND" value="{{editor.syntax.color}}"/>
 			</value>
 		</option>
+		<option name="CSS.IMPORTANT" baseAttributes="DEFAULT_KEYWORD" />
+		<option name="CSS.UNIT">
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.css.unit}}" />
+			</value>
+		</option>
+		<option name="CSS.URL" baseAttributes="HTML_ATTRIBUTE_VALUE" />
 		<option name="CTRL_CLICKABLE">
 			<value>
 				<option name="FOREGROUND" value="{{editor.ctrlClickable.textColor}}"/>
 				<option name="EFFECT_COLOR" value="{{editor.ctrlClickable.effectColor}}"/>
 				<option name="EFFECT_TYPE" value="1"/>
 			</value>
-		</option>
-		<option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
 		</option>
 		<option name="CUSTOM_KEYWORD1_ATTRIBUTES">
 			<value>
@@ -350,51 +348,7 @@
 				<option name="FOREGROUND" value="{{editor.syntax.custom.keyword4}}"/>
 			</value>
 		</option>
-		<option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="CUSTOM_NUMBER_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="CUSTOM_STRING_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
+		<option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
 		<option name="DEBUGGER_INLINED_VALUES">
 			<value>
 				<option name="FOREGROUND" value="{{editor.debugger.inlineValue.other.textColor}}"/>
@@ -407,26 +361,8 @@
 		</option>
 		<option name="DEBUGGER_INLINED_VALUES_MODIFIED">
 			<value>
-				<option name="FOREGROUND" value="{{editor.debugger.inlineValue.modified.textColor}}" />
+				<option name="FOREGROUND" value="{{editor.debugger.inlineValue.modified.textColor}}"/>
 			</value>
-		</option>
-		<option name="DEBUGGER_SMART_STEP_INTO_SELECTION">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="DEBUGGER_SMART_STEP_INTO_TARGET">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
 		</option>
 		<option name="DEFAULT_ATTRIBUTE">
 			<value>
@@ -692,33 +628,6 @@
 				<option name="EFFECT_TYPE" value="2"/>
 			</value>
 		</option>
-		<option name="EVALUATED_EXPRESSION_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="EVALUATED_EXPRESSION_EXECUTION_LINE_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="EXECUTIONPOINT_ATTRIBUTES">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
 		<option name="FOLDED_TEXT_ATTRIBUTES">
 			<value>
 				<option name="FOREGROUND" value="{{editor.foldedText.textColor}}"/>
@@ -766,43 +675,6 @@
 				<option name="FOREGROUND" value="{{editor.syntax.xml.tagName}}"/>
 			</value>
 		</option>
-		<option name="HTTP_REQUEST_INPUT_FILE">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="HTTP_REQUEST_MULTIPART_BOUNDARY" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE"/>
-		<option name="HTTP_REQUEST_PARAMETER_NAME">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="HTTP_REQUEST_PARAMETER_VALUE">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="HTTP_REQUEST_PORT">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
 		<option name="HYPERLINK_ATTRIBUTES">
 			<value>
 				<option name="FOREGROUND" value="{{editor.syntax.hyperlinks.textColor}}"/>
@@ -817,87 +689,6 @@
 				<option name="EFFECT_TYPE" value="0"/>
 				<option name="ERROR_STRIPE_COLOR" value="{{editor.identifierUnderCaret.standard.errorStripeColor}}"/>
 			</value>
-		</option>
-		<option name="IGNORE.BRACKET">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.COMMENT">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.HEADER">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.NEGATION">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.SECTION">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.SLASH">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.SYNTAX">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.UNUSED_ENTRY">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
-		</option>
-		<option name="IGNORE.VALUE">
-			<!--<value>-->
-			<!--<option name="FOREGROUND" value="ffffff" />-->
-			<!--<option name="BACKGROUND" value="ffffff" />-->
-			<!--<option name="FONT_TYPE" value="3" />-->
-			<!--<option name="EFFECT_COLOR" value="ffffff" />-->
-			<!--<option name="ERROR_STRIPE_COLOR" value="ffffff" />-->
-			<!--</value>-->
 		</option>
 		<option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
 		<option name="INACTIVE_HYPERLINK_ATTRIBUTES">
@@ -970,13 +761,34 @@
 		<option name="KOTLIN_BACKING_FIELD_VARIABLE">
 			<value/>
 		</option>
+		<option name="KOTLIN_BUILTIN_ANNOTATION">
+			<value>
+				<option name="FOREGROUND" value="ff00"/>
+			</value>
+		</option>
 		<option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
 			<value/>
 		</option>
+		<option name="KOTLIN_COLON">
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.kotlin.colon}}"/>
+			</value>
+		</option>
 		<option name="KOTLIN_CONSTRUCTOR" baseAttributes="DEFAULT_FUNCTION_CALL"/>
-		<option name="KOTLIN_DYNAMIC_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
+		<option name="KOTLIN_DOUBLE_COLON">
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.kotlin.doubleColon}}"/>
+			</value>
+		</option>
+		<option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.functionCal}}"/>
+			</value>
+		</option>
 		<option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
-			<value/>
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.instanceField}}"/>
+			</value>
 		</option>
 		<option name="KOTLIN_ENUM_ENTRY">
 			<value>
@@ -984,7 +796,9 @@
 			</value>
 		</option>
 		<option name="KOTLIN_EXCLEXCL">
-			<value/>
+			<value>
+				<option name="FOREGROUND" value="ffff00"/>
+			</value>
 		</option>
 		<option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
 			<value>
@@ -1005,14 +819,20 @@
 			</value>
 		</option>
 		<option name="KOTLIN_PACKAGE_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD"/>
-		<option name="KOTLIN_QUEST" baseAttributes="DEFAULT_DOT"/>
+		<option name="KOTLIN_QUEST">
+			<value>
+				<option name="FOREGROUND" value="{{editor.syntax.punctuation}}"/>
+			</value>
+		</option>
 		<option name="KOTLIN_SMART_CAST_RECEIVER">
 			<value/>
 		</option>
 		<option name="KOTLIN_SMART_CAST_VALUE">
 			<value/>
 		</option>
-		<option name="KOTLIN_SMART_CONSTANT" baseAttributes="DEFAULT_CONSTANT"/>
+		<option name="KOTLIN_SMART_CONSTANT">
+			<value/>
+		</option>
 		<option name="KOTLIN_TYPE_PARAMETER" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES"/>
 		<option name="KOTLIN_VARIABLE_AS_FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL"/>
 		<option name="KOTLIN_VARIABLE_AS_FUNCTION_LIKE" baseAttributes="DEFAULT_FUNCTION_CALL"/>
@@ -1053,11 +873,23 @@
 		<option name="PROPERTIES.KEY" baseAttributes="DEFAULT_KEYWORD"/>
 		<option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN"/>
 		<option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+		<option name="REGEXP.BRACES" baseAttributes="DEFAULT_BRACES"/>
+		<option name="REGEXP.BRACKETS" baseAttributes="DEFAULT_BRACKETS"/>
+		<option name="REGEXP.CHAR_CLASS" baseAttributes="DEFAULT_ENTITY"/>
+		<option name="REGEXP.ESC_CHARACTER" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+		<option name="REGEXP.META" baseAttributes="DEFAULT_KEYWORD"/>
+		<option name="REGEXP.PARENTHS" baseAttributes="DEFAULT_PARENTHS"/>
+		<option name="REGEXP.QUOTE_CHARACTER" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
+		<option name="REGEXP_MATCHED_GROUPS">
+			<value>
+				<option name="BACKGROUND" value="{{editor.syntax.regexp.matchedGroups.backgroundColor}}"/>
+			</value>
+		</option>
 		<option name="RUNTIME_ERROR">
 			<value>
-				<option name="EFFECT_COLOR" value="{{editor.syntax.runtimeError.effectColor}}" />
-				<option name="ERROR_STRIPE_COLOR" value="{{editor.syntax.runtimeError.errorStripeColor}}" />
-				<option name="EFFECT_TYPE" value="5" />
+				<option name="EFFECT_COLOR" value="{{editor.syntax.runtimeError.effectColor}}"/>
+				<option name="ERROR_STRIPE_COLOR" value="{{editor.syntax.runtimeError.errorStripeColor}}"/>
+				<option name="EFFECT_TYPE" value="5"/>
 			</value>
 		</option>
 		<option name="SEARCH_RESULT_ATTRIBUTES">
@@ -1102,20 +934,20 @@
 		</option>
 		<option name="TEXT_STYLE_ERROR">
 			<value>
-				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleError.effectColor}}" />
-				<option name="EFFECT_TYPE" value="5" />
+				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleError.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="5"/>
 			</value>
 		</option>
 		<option name="TEXT_STYLE_SUGGESTION">
 			<value>
-				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleSuggestion.effectColor}}" />
-				<option name="EFFECT_TYPE" value="5" />
+				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleSuggestion.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="5"/>
 			</value>
 		</option>
 		<option name="TEXT_STYLE_WARNING">
 			<value>
-				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleWarning.effectColor}}" />
-				<option name="EFFECT_TYPE" value="5" />
+				<option name="EFFECT_COLOR" value="{{editor.syntax.textStyleWarning.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="5"/>
 			</value>
 		</option>
 		<option name="TODO_DEFAULT_ATTRIBUTES">

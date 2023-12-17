@@ -126,6 +126,9 @@ const syntax = {
     textColor: commentColor,
   },
   constant: constantColor,
+  css: {
+    unit: punctuationColor,
+  },
   custom: {
     keyword1: keywordColor,
     keyword2: keywordColor,
@@ -193,13 +196,14 @@ const syntax = {
   keyword: keywordColor,
   kotlin: {
     colon: punctuationColor,
+    doubleColon: punctuationColor,
   },
   markedForRemoval: {
     effectColor: errorColor,
     textColor: commentColor,
   },
   metadata: metadataColor,
-  namedParameter: metadataColor,
+  namedArgument: metadataColor,
   number: numberColor,
   operator: punctuationColor,
   parameter: parameterColor,
