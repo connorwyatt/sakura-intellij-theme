@@ -170,7 +170,7 @@
       }
     },
     "EditorPane": {
-      "background": "#ff0000",
+      "background": "{{editor.pane.backgroundColor}}",
       "foreground": "{{editor.pane.textColor}}",
       "caretForeground": "#ffff00",
       "selectionBackground": "{{editor.pane.selection.backgroundColor}}",
@@ -445,8 +445,8 @@
     },
     "SearchEverywhere": {
       "Advertiser": {
-        "background": "#ffff00",
-        "foreground": "#00ffff"
+        "background": "{{searchEverywhere.advertiser.backgroundColor}}",
+        "foreground": "{{searchEverywhere.advertiser.textColor}}"
       },
       "Header": {
         "background": "#00ff00"

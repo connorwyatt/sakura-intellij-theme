@@ -1161,7 +1161,7 @@
 			<value>
 				<option name="BACKGROUND" value="{{editor.identifierUnderCaret.write.backgroundColor}}"/>
 				<option name="EFFECT_COLOR" value="{{editor.identifierUnderCaret.write.effectColor}}"/>
-				<option name="EFFECT_TYPE" value="1"/>
+				<option name="EFFECT_TYPE" value="0"/>
 				<option name="ERROR_STRIPE_COLOR" value="{{editor.identifierUnderCaret.write.errorStripeColor}}"/>
 			</value>
 		</option>
