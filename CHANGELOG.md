@@ -3,8 +3,14 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.5.0] - 2023-12-17
 ### Added
 - Added pre-release warning to plugin description.
+
+### Changed
+- Dimmed theme a little bit.
+- Reworked editor syntax colors.
 
 ## [0.4.0] - 2023-12-15
 ### Added
