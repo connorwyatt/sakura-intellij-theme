@@ -763,7 +763,7 @@
 		</option>
 		<option name="KOTLIN_BUILTIN_ANNOTATION">
 			<value>
-				<option name="FOREGROUND" value="ff00"/>
+				<option name="FOREGROUND" value="{{editor.syntax.modifiers}}"/>
 			</value>
 		</option>
 		<option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
@@ -782,7 +782,7 @@
 		</option>
 		<option name="KOTLIN_DYNAMIC_FUNCTION_CALL">
 			<value>
-				<option name="FOREGROUND" value="{{editor.syntax.functionCal}}"/>
+				<option name="FOREGROUND" value="{{editor.syntax.functionCall}}"/>
 			</value>
 		</option>
 		<option name="KOTLIN_DYNAMIC_PROPERTY_CALL">
@@ -797,7 +797,7 @@
 		</option>
 		<option name="KOTLIN_EXCLEXCL">
 			<value>
-				<option name="FOREGROUND" value="ffff00"/>
+				<option name="FOREGROUND" value="ff00ff"/>
 			</value>
 		</option>
 		<option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">
@@ -821,7 +821,7 @@
 		<option name="KOTLIN_PACKAGE_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD"/>
 		<option name="KOTLIN_QUEST">
 			<value>
-				<option name="FOREGROUND" value="{{editor.syntax.punctuation}}"/>
+				<option name="FOREGROUND" value="{{editor.syntax.kotlin.questionMark}}"/>
 			</value>
 		</option>
 		<option name="KOTLIN_SMART_CAST_RECEIVER">

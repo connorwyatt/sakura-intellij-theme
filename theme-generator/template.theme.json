@@ -560,10 +560,10 @@
       "focusCellBackground": "{{table.header.cell.focus.backgroundColor}}"
     },
     "Tag": {
-      "background": "#ff80ff"
+      "background": "#ff00ff"
     },
     "TextArea": {
-      "background": "#ffff00",
+      "background": "{{textArea.backgroundColor}}",
       "foreground": "{{textArea.textColor}}",
       "selectionBackground": "{{selection.active.backgroundColor}}",
       "selectionForeground": "{{selection.textColor}}",
