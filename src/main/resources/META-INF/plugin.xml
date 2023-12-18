@@ -8,6 +8,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuraday" path="/themes/sakura-day.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuraday.colorscheme" path="/themes/sakura-day"/>
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuranight" path="/themes/sakura-night.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuranight.colorscheme" path="/themes/sakura-night"/>
     </extensions>

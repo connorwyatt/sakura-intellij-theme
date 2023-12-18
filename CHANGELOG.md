@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added a beta Sakura Day theme.
 
 ## [0.6.0] - 2023-12-17
 ### Added
