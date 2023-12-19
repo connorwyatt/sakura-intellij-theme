@@ -106,7 +106,7 @@ const tabs = {
   underlineColor: palette.pinkDarken1,
 };
 
-const editorTextColor = palette.blackLighten3;
+const editorTextColor = mixWithEditorBackground(0.25, palette.blackLighten3);
 
 const commentColor = mixWithEditorBackground(0.5, editorTextColor);
 const constantColor = palette.turquoiseDarken1;
@@ -467,7 +467,7 @@ export default {
   editor: {
     backgroundColor: editorBackgroundColor,
     borderColor: editorGuidelinesColor,
-    textColor,
+    textColor: editorTextColor,
     shortcutForeground: palette.pinkDarken1,
     searchField: {
       backgroundColor: editorBackgroundColor,
