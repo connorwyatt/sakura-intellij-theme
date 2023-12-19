@@ -66,7 +66,33 @@ const editorGuidelinesColor = mixWithEditorBackground(
   palette.blackLighten3,
 );
 
-const selectionColor = mixWithBackground(0.25, palette.pinkDarken1);
+const listItem = (() => {
+  const hoverColor = mixWithBackground(0.9, palette.pink);
+  const inactiveSelectionColor = mixWithBackground(0.9, palette.blackLighten3);
+  const selectionColor = mixWithBackground(0.8, palette.pink);
+
+  return {
+    hover: {
+      active: {
+        backgroundColor: hoverColor,
+      },
+      inactive: {
+        backgroundColor: hoverColor,
+      },
+    },
+    selection: {
+      inactive: {
+        backgroundColor: inactiveSelectionColor,
+        textColor,
+      },
+      active: {
+        backgroundColor: selectionColor,
+        textColor,
+      },
+    },
+  };
+})();
+
 const editorSelectionColor = mixWithEditorBackground(
   0.75,
   palette.pinkDarken1,
@@ -363,6 +389,12 @@ export default {
       tickColor: mixWithBackground(0.5, checkboxTickColor),
     },
   },
+  checkboxMenuItem: {
+    selection: {
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
+    },
+  },
   comboBox: {
     backgroundColor,
     textColor: fieldTextColor,
@@ -373,8 +405,8 @@ export default {
       textColor: mix(0.5, palette.pinkDarken1, fieldTextColor),
     },
     selected: {
-      backgroundColor: selectionColor,
-      textColor,
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
     },
     nonEditable: {
       backgroundColor: fieldBackgroundColor,
@@ -395,6 +427,12 @@ export default {
       textColor: palette.pinkDarken1,
     },
     textColor,
+    selection: {
+      active: { backgroundColor: listItem.selection.active.backgroundColor },
+      inactive: {
+        backgroundColor: listItem.selection.inactive.backgroundColor,
+      },
+    },
   },
   complexPopup: { header: { backgroundColor } },
   counter: {
@@ -671,8 +709,8 @@ export default {
       backgroundColor: overlayBackgroundColor,
       textColor,
       selection: {
-        backgroundColor: selectionColor,
-        textColor,
+        backgroundColor: listItem.selection.active.backgroundColor,
+        textColor: listItem.selection.active.textColor,
       },
     },
     preview: {
@@ -799,6 +837,9 @@ export default {
     success: {
       textColor: successColor,
     },
+    selected: {
+      textColor,
+    },
   },
   link: {
     active: { textColor: linkColor },
@@ -808,11 +849,24 @@ export default {
     secondary: { textColor: linkColor },
   },
   list: {
+    backgroundColor,
     textColor,
     hover: {
-      backgroundColor: lighten(0.05, backgroundColor),
+      active: {
+        backgroundColor: listItem.hover.active.backgroundColor,
+      },
       inactive: {
-        backgroundColor: lighten(0.025, backgroundColor),
+        backgroundColor: listItem.hover.inactive.backgroundColor,
+      },
+    },
+    selection: {
+      inactive: {
+        backgroundColor: listItem.selection.inactive.backgroundColor,
+        textColor: listItem.selection.inactive.textColor,
+      },
+      active: {
+        backgroundColor: listItem.selection.active.backgroundColor,
+        textColor: listItem.selection.active.textColor,
       },
     },
   },
@@ -839,6 +893,10 @@ export default {
     textColor,
     separatorColor: guidelinesColor,
     borderColor: guidelinesColor,
+    selection: {
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
+    },
   },
   menuItem: {
     backgroundColor: overlayBackgroundColor,
@@ -847,6 +905,10 @@ export default {
     disabled: {
       backgroundColor,
       textColor: mixWithBackground(0.5, textColor),
+    },
+    selection: {
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
     },
   },
   newUIOnboardingDialog: { backgroundColor },
@@ -890,16 +952,17 @@ export default {
     textColor,
   },
   plugins: {
+    borderColor: guidelinesColor,
     list: {
       backgroundColor,
       hover: {
-        backgroundColor: mixWithBackground(0.75, selectionColor),
+        backgroundColor: listItem.hover.active.backgroundColor,
       },
       disabled: {
         textColor: mixWithBackground(0.5, textColor),
       },
       selected: {
-        backgroundColor: selectionColor,
+        backgroundColor: listItem.selection.active.backgroundColor,
       },
     },
     description: {
@@ -971,6 +1034,10 @@ export default {
   popupMenu: {
     backgroundColor: overlayBackgroundColor,
     textColor,
+    selection: {
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
+    },
   },
   problemsView: {
     projectAnalysisButton: {
@@ -1000,6 +1067,7 @@ export default {
     passedEndColor: lighten(0.1, successColor),
   },
   runWidget: {
+    backgroundColor: mixWithBackground(0.75, palette.pinkDarken1),
     iconColor: textColor,
     textColor,
     runningIconColor: palette.whiteDarken3,
@@ -1046,15 +1114,6 @@ export default {
         end: buttonSecondaryBorderColor,
       },
     },
-  },
-  selection: {
-    active: {
-      backgroundColor: selectionColor,
-    },
-    inactive: {
-      backgroundColor: mixWithBackground(0.5, selectionColor),
-    },
-    textColor: palette.whiteDarken2,
   },
   separatorColor: guidelinesColor,
   settings: {
@@ -1180,6 +1239,10 @@ export default {
     backgroundColor: editorBackgroundColor,
     textColor,
     caretColor,
+    selection: {
+      backgroundColor: editorSelectionColor,
+      textColor,
+    },
   },
   textField: {
     backgroundColor: fieldBackgroundColor,
@@ -1189,6 +1252,10 @@ export default {
     highlightColor: "#ff0000",
     inactive: {
       textColor: mixWithBackground(0.5, fieldTextColor),
+    },
+    selection: {
+      backgroundColor: listItem.selection.active.backgroundColor,
+      textColor: listItem.selection.active.textColor,
     },
   },
   tipOfTheDay: {
@@ -1247,13 +1314,24 @@ export default {
     hash: treeLinesColor,
     iconColor: textColor,
     hover: {
-      backgroundColor: mixWithBackground(0.9, palette.pinkDarken1),
+      active: {
+        backgroundColor: listItem.hover.active.backgroundColor,
+      },
       inactive: {
-        backgroundColor: mixWithBackground(0.9, palette.pinkDarken1),
+        backgroundColor: listItem.hover.inactive.backgroundColor,
       },
     },
     error: { textColor: errorColor },
     modified: { textColor: palette.blueDarken1 },
+    selection: {
+      textColor: listItem.selection.active.textColor,
+      active: {
+        backgroundColor: listItem.selection.active.backgroundColor,
+      },
+      inactive: {
+        backgroundColor: listItem.selection.inactive.backgroundColor,
+      },
+    },
   },
   vcs: {
     log: {

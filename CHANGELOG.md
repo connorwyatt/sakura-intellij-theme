@@ -6,6 +6,9 @@
 ### Added
 - Added a beta Sakura Day theme.
 
+### Changed
+- Update list item colors.
+
 ## [0.6.0] - 2023-12-17
 ### Added
 - Style miscellaneous errors & warnings (e.g. runtime errors, and text style errors, warnings and suggestions).
