@@ -20,7 +20,7 @@ const mixWithTopBarBackground = (percentage: number, color: string): string =>
 const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
-const textColor = palette.blackLighten2;
+const textColor = palette.blackLighten3;
 const invertedTextColor = palette.whiteDarken1;
 
 const fieldBackgroundColor = mixWithBackground(
@@ -67,9 +67,9 @@ const editorGuidelinesColor = mixWithEditorBackground(
 );
 
 const listItem = (() => {
-  const hoverColor = mixWithBackground(0.9, palette.pink);
+  const hoverColor = mixWithBackground(0.9, palette.pinkDarken1);
   const inactiveSelectionColor = mixWithBackground(0.9, palette.blackLighten3);
-  const selectionColor = mixWithBackground(0.8, palette.pink);
+  const selectionColor = mixWithBackground(0.8, palette.pinkDarken1);
 
   return {
     hover: {
@@ -319,19 +319,19 @@ export default {
   },
   banner: {
     error: {
-      backgroundColor: mixWithBackground(0.75, palette.redDarken1),
+      backgroundColor: mixWithBackground(0.8, palette.redDarken1),
       borderColor: mixWithBackground(0.5, palette.redDarken1),
     },
     info: {
-      backgroundColor: mixWithBackground(0.75, palette.blueDarken1),
+      backgroundColor: mixWithBackground(0.8, palette.blueDarken1),
       borderColor: mixWithBackground(0.5, palette.blueDarken1),
     },
     success: {
-      backgroundColor: mixWithBackground(0.75, palette.greenDarken1),
+      backgroundColor: mixWithBackground(0.8, palette.greenDarken1),
       borderColor: mixWithBackground(0.5, palette.greenDarken1),
     },
     warning: {
-      backgroundColor: mixWithBackground(0.75, palette.yellowDarken1),
+      backgroundColor: mixWithBackground(0.8, palette.yellowDarken1),
       borderColor: mixWithBackground(0.5, palette.yellowDarken1),
     },
   },
@@ -515,7 +515,7 @@ export default {
     },
     caret: {
       color: caretColor,
-      rowBackgroundColor: darken(0.05, editorBackgroundColor),
+      rowBackgroundColor: backgroundColor,
     },
     codeLens: {
       borderColor: palette.pinkDarken1,
@@ -920,18 +920,18 @@ export default {
       backgroundColor: darken(0.02, overlayBackgroundColor),
     },
     error: {
-      backgroundColor: mixWithEditorBackground(0.75, errorColor),
-      borderColor: errorColor,
+      backgroundColor: mixWithEditorBackground(0.8, errorColor),
+      borderColor: mixWithEditorBackground(0.5, errorColor),
       textColor,
     },
     info: {
-      backgroundColor: mixWithEditorBackground(0.75, infoColor),
-      borderColor: infoColor,
+      backgroundColor: mixWithEditorBackground(0.8, infoColor),
+      borderColor: mixWithEditorBackground(0.5, infoColor),
       textColor,
     },
     warning: {
-      backgroundColor: mixWithEditorBackground(0.75, warningColor),
-      borderColor: warningColor,
+      backgroundColor: mixWithEditorBackground(0.8, warningColor),
+      borderColor: mixWithEditorBackground(0.5, warningColor),
       textColor,
     },
   },
@@ -1072,10 +1072,10 @@ export default {
     textColor,
     runningIconColor: palette.whiteDarken3,
     running: {
-      backgroundColor: desaturate(0.3, darken(0.2, palette.greenDarken1)),
+      backgroundColor: desaturate(0.1, darken(0.2, palette.greenDarken1)),
     },
     stop: {
-      backgroundColor: desaturate(0.3, darken(0.2, palette.redDarken1)),
+      backgroundColor: desaturate(0.1, darken(0.2, palette.redDarken1)),
     },
     hover: { overlayColor: rgbaToHex(transparentize(0.9, backgroundColor)) },
     pressed: { overlayColor: rgbaToHex(transparentize(0.8, backgroundColor)) },
