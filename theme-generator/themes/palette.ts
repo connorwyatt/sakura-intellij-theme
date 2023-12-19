@@ -1,3 +1,21 @@
+import { Polished } from "../deps.ts";
+
+const { darken, saturate } = Polished;
+
+const darkenColor = (color: string): string => {
+  return saturate(0.1, darken(0.15, color));
+};
+
+const baseRed = "#e68a8a";
+const baseOrange = "#de9259";
+const baseYellow = "#e3c448";
+const baseGreen = "#a3d36a";
+const baseTurquoise = "#6adac5";
+const baseBlue = "#76bbd7";
+const baseIndigo = "#768dd7";
+const basePurple = "#b78ee0";
+const basePink = "#e88fb1";
+
 export const palette = {
   black: "#151d20",
   blackLighten1: "#1a2428",
@@ -8,20 +26,22 @@ export const palette = {
   whiteDarken2: "#e8eeef",
   whiteDarken3: "#dfe4e6",
   whiteDarken4: "#d2d8d9",
-  red: "#e68a8a",
-  redDarken1: "#cc5252",
-  orange: "#de9862",
-  orangeDarken1: "#c76820",
-  yellow: "#e7cd65",
-  yellowDarken1: "#cba910",
-  green: "#bbe093",
-  greenDarken1: "#6ead24",
-  turquoise: "#6adac5",
-  turquoiseDarken1: "#1ca28a",
-  blue: "#76bbd7",
-  blueDarken1: "#1d7fa4",
-  purple: "#b78ee0",
-  purpleDarken1: "#7641ad",
-  pink: "#e88fb1",
-  pinkDarken1: "#b74571",
+  red: baseRed,
+  redDarken1: darkenColor(baseRed),
+  orange: baseOrange,
+  orangeDarken1: darkenColor(baseOrange),
+  yellow: baseYellow,
+  yellowDarken1: darkenColor(baseYellow),
+  green: baseGreen,
+  greenDarken1: darkenColor(baseGreen),
+  turquoise: baseTurquoise,
+  turquoiseDarken1: darkenColor(baseTurquoise),
+  blue: baseBlue,
+  blueDarken1: darkenColor(baseBlue),
+  indigo: baseIndigo,
+  indigoDarken1: darkenColor(baseIndigo),
+  purple: basePurple,
+  purpleDarken1: darkenColor(basePurple),
+  pink: basePink,
+  pinkDarken1: darkenColor(basePink),
 };
