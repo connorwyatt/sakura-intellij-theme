@@ -466,7 +466,7 @@ export default {
   editor: {
     backgroundColor: editorBackgroundColor,
     borderColor: editorGuidelinesColor,
-    textColor,
+    textColor: editorTextColor,
     shortcutForeground: palette.pink,
     searchField: {
       backgroundColor: editorBackgroundColor,
