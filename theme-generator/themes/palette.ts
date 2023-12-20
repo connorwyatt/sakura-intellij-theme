@@ -9,7 +9,7 @@ const darkenColor = (color: string): string => {
 const baseRed = "#e68a8a";
 const baseOrange = "#de9259";
 const baseYellow = "#e3c448";
-const baseGreen = "#a3d36a";
+const baseGreen = "#97c461";
 const baseTurquoise = "#6adac5";
 const baseBlue = "#76bbd7";
 const baseIndigo = "#768dd7";
