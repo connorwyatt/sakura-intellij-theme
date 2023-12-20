@@ -224,6 +224,7 @@ const syntax = {
   kotlin: {
     colon: punctuationColor,
     doubleColon: punctuationColor,
+    nonNullAssertion: punctuationColor,
     questionMark: punctuationColor,
   },
   markedForRemoval: {
@@ -237,6 +238,11 @@ const syntax = {
   operator: punctuationColor,
   parameter: parameterColor,
   primitiveTypes: typeNameColor,
+  regexp: {
+    matchedGroups: {
+      backgroundColor: mixWithEditorBackground(0.9, palette.blueDarken1),
+    },
+  },
   runtimeError: {
     effectColor: errorColor,
     errorStripeColor: errorColor,

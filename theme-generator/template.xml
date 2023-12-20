@@ -797,7 +797,7 @@
 		</option>
 		<option name="KOTLIN_EXCLEXCL">
 			<value>
-				<option name="FOREGROUND" value="ff00ff"/>
+				<option name="FOREGROUND" value="{{editor.syntax.kotlin.nonNullAssertion}}"/>
 			</value>
 		</option>
 		<option name="KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW">

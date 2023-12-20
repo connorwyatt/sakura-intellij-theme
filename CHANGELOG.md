@@ -13,6 +13,7 @@
 
 ### Fixed
 - Fixed deprecation and marked for removal effects.
+- Fixed non-null assertion color in Kotlin.
 
 ## [0.6.0] - 2023-12-17
 ### Added
