@@ -10,6 +10,7 @@
 - Update list item colors.
 - Update table row colors.
 - Update tooltip info text and link colors.
+- Modify color palette.
 
 ### Fixed
 - Fixed deprecation and marked for removal effects.
