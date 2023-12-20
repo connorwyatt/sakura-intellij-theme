@@ -8,6 +8,7 @@
 
 ### Changed
 - Update list item colors.
+- Update table row colors.
 
 ## [0.6.0] - 2023-12-17
 ### Added

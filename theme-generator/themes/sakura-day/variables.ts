@@ -1157,11 +1157,11 @@ export default {
   },
   table: {
     backgroundColor: editorBackgroundColor,
-    alternateRowBackgroundColor: palette.redDarken1,
+    alternateRowBackgroundColor: backgroundColor,
     textColor,
     gridColor: editorGuidelinesColor,
     sortIconColor: textColor,
-    stripeColor: "#ff00ff",
+    stripeColor: backgroundColor,
     dropLine: {
       normal: {
         color: "#ff0000",
