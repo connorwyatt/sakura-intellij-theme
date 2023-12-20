@@ -1282,9 +1282,9 @@ export default {
     backgroundColor: overlayBackgroundColor,
     textColor,
     borderColor: guidelinesColor,
-    info: { textColor: "#ff0000" },
+    info: { textColor: mix(0.5, overlayBackgroundColor, textColor) },
     shortcut: { textColor: palette.pinkDarken1 },
-    link: { textColor: "#ffff00" },
+    link: { textColor: linkColor },
     actions: {
       info: {
         textColor: palette.pinkDarken1,
