@@ -11,6 +11,9 @@
 - Update table row colors.
 - Update tooltip info text and link colors.
 
+### Fixed
+- Fixed deprecation and marked for removal effects.
+
 ## [0.6.0] - 2023-12-17
 ### Added
 - Style miscellaneous errors & warnings (e.g. runtime errors, and text style errors, warnings and suggestions).
