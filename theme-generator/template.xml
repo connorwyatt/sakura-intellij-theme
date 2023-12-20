@@ -586,7 +586,7 @@
 			<value>
 				<option name="FOREGROUND" value="{{editor.syntax.deprecation.textColor}}"/>
 				<option name="EFFECT_COLOR" value="{{editor.syntax.deprecation.effectColor}}"/>
-				<option name="EFFECT_TYPE" value="2"/>
+				<option name="EFFECT_TYPE" value="3"/>
 			</value>
 		</option>
 		<option name="DIFF_CONFLICT">
@@ -850,7 +850,7 @@
 			<value>
 				<option name="FOREGROUND" value="{{editor.syntax.markedForRemoval.textColor}}"/>
 				<option name="EFFECT_COLOR" value="{{editor.syntax.markedForRemoval.effectColor}}"/>
-				<option name="EFFECT_TYPE" value="2"/>
+				<option name="EFFECT_TYPE" value="3"/>
 			</value>
 		</option>
 		<option name="MATCHED_BRACE_ATTRIBUTES">
