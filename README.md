@@ -1,11 +1,13 @@
 # Sakura Theme
 
-![Build](https://github.com/connorwyatt/intellij-themes/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/23264.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/23264.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+![Build](https://github.com/connorwyatt/sakura-intellij-theme/workflows/Build/badge.svg)
+[![Version](https://img.shields.io/jetbrains/plugin/v/23296.svg)](https://plugins.jetbrains.com/plugin/23296)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/23296.svg)](https://plugins.jetbrains.com/plugin/23296)
 
 
 <!-- Plugin description -->
+NOTE: This plugin is pre-release, there may be some parts of the UI which are not yet themed.
+
 This plugin is a theme for IntelliJ based IDEs. It is inspired by sakura trees.
 <!-- Plugin description end -->
 
