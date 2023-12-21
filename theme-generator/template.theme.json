@@ -96,7 +96,7 @@
       }
     },
     "ComboPopup": {
-      "border": "1,1,1,1,#ff0000"
+      "border": "1,1,1,1,{{comboPopup.borderColor}}"
     },
     "Component": {
       "borderColor": "{{bordersColor}}",
@@ -358,7 +358,7 @@
       "background": "{{popup.backgroundColor}}",
       "separatorForeground": "{{popup.separatorColor}}",
       "borderColor": "{{popup.borderColor}}",
-      "paintBorder": true,
+      "paintBorder": false,
       "Advertiser": {
         "background": "{{popup.advertiser.backgroundColor}}",
         "borderColor": "{{popup.advertiser.borderColor}}",
@@ -687,8 +687,8 @@
           "currentBranchBackground": "{{vcs.log.commit.currentBranch.backgroundColor}}",
           "unmatchedForeground": "{{vcs.log.commit.unmatched.textColor}}",
           "hoveredBackground": "{{vcs.log.commit.hover.backgroundColor}}",
-          "selectionBackground": "{{vcs.log.commit.selected.backgroundColor}}",
-          "selectionForeground": "{{vcs.log.commit.selected.textColor}}",
+          "selectionBackground": "{{vcs.log.commit.selected.active.backgroundColor}}",
+          "selectionForeground": "{{vcs.log.commit.selected.active.textColor}}",
           "selectionInactiveBackground": "{{vcs.log.commit.selected.inactive.backgroundColor}}",
           "selectionInactiveForeground": "{{vcs.log.commit.selected.inactive.textColor}}",
           "Reference": {

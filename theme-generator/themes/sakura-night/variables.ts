@@ -24,18 +24,18 @@ const textColor = palette.whiteDarken4;
 
 const fieldBackgroundColor = mixWithBackground(
   0.925,
-  lighten(0.15, palette.pinkDarken1),
+  lighten(0.15, palette.pink),
 );
-const fieldBorderColor = mixWithBackground(0.5, palette.pinkDarken1);
+const fieldBorderColor = mixWithBackground(0.5, palette.pink);
 const fieldTextColor = textColor;
 
 const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
 const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
 
-const checkboxBackgroundColor = palette.pinkDarken1;
+const checkboxBackgroundColor = palette.pink;
 const checkboxTickColor = palette.white;
 
-const buttonPrimaryBackgroundColor = palette.pinkDarken1;
+const buttonPrimaryBackgroundColor = palette.pink;
 const buttonPrimaryBorderColor = buttonPrimaryBackgroundColor;
 const buttonPrimaryTextColor = palette.white;
 
@@ -52,11 +52,6 @@ const fieldFocusColor = mix(
 );
 
 const caretColor = palette.pink;
-
-const errorColor = palette.red;
-const infoColor = palette.blue;
-const successColor = palette.green;
-const warningColor = palette.yellow;
 
 const guidelinesColor = mixWithBackground(0.95, palette.whiteDarken4);
 const treeLinesColor = mixWithBackground(0.8, palette.whiteDarken4);
@@ -94,10 +89,10 @@ const listItem = (() => {
 
 const editorSelectionColor = mixWithEditorBackground(
   0.75,
-  palette.pinkDarken1,
+  palette.pink,
 );
 
-const badgeBackgroundColor = palette.pinkDarken1;
+const badgeBackgroundColor = palette.pink;
 const badgeTextColor = palette.white;
 
 const tabs = {
@@ -129,7 +124,7 @@ const tagAttributeValueColor = palette.blue;
 const tagName = palette.pink;
 const templateLanguageBackgroundColor = mixWithEditorBackground(
   0.75,
-  palette.orange,
+  palette.pink,
 );
 const todoColor = palette.orange;
 const typeNameColor = palette.yellow;
@@ -138,9 +133,9 @@ const whitespaceColor = mix(0.5, editorGuidelinesColor, punctuationColor);
 const syntax = {
   attribute: metadataColor,
   badCharacter: {
-    textColor: errorColor,
-    effectColor: errorColor,
-    errorStripeColor: errorColor,
+    textColor: palette.red,
+    effectColor: palette.red,
+    errorStripeColor: palette.red,
   },
   braces: punctuationColor,
   brackets: punctuationColor,
@@ -181,26 +176,26 @@ const syntax = {
   },
   dot: punctuationColor,
   duplicateFromServer: {
-    backgroundColor: mixWithEditorBackground(0.75, warningColor),
-    errorStripeColor: warningColor,
+    backgroundColor: mixWithEditorBackground(0.75, palette.yellow),
+    errorStripeColor: palette.yellow,
   },
   entity: stringEscapeColor,
   enumCase: enumCaseColor,
   error: {
-    textColor: errorColor,
-    effectColor: errorColor,
-    errorStripeColor: errorColor,
+    textColor: palette.red,
+    effectColor: palette.red,
+    errorStripeColor: palette.red,
   },
   functionCall: instanceMethodColor,
   functionDeclaration: instanceMethodColor,
   globalVariable: globalVariableColor,
   grammarError: {
-    effectColor: warningColor,
-    errorStripeColor: warningColor,
+    effectColor: palette.yellow,
+    errorStripeColor: palette.yellow,
   },
   genericServerError: {
-    effectColor: warningColor,
-    errorStripeColor: warningColor,
+    effectColor: palette.yellow,
+    errorStripeColor: palette.yellow,
   },
   highlightedReference: {
     textColor: stringColor,
@@ -227,7 +222,7 @@ const syntax = {
     questionMark: punctuationColor,
   },
   markedForRemoval: {
-    effectColor: errorColor,
+    effectColor: palette.red,
     textColor: commentColor,
   },
   metadata: metadataColor,
@@ -243,15 +238,15 @@ const syntax = {
     },
   },
   runtimeError: {
-    effectColor: errorColor,
-    errorStripeColor: errorColor,
+    effectColor: palette.red,
+    errorStripeColor: palette.red,
   },
   semicolon: punctuationColor,
   staticField: staticFieldColor,
   staticMethod: staticMethodColor,
   string: stringColor,
   stringEscape: {
-    invalid: { textColor: stringEscapeColor, effectColor: errorColor },
+    invalid: { textColor: stringEscapeColor, effectColor: palette.red },
     valid: { textColor: stringEscapeColor },
   },
   tabs: mixWithEditorBackground(0.5, punctuationColor),
@@ -260,13 +255,13 @@ const syntax = {
     backgroundColor: templateLanguageBackgroundColor,
   },
   textStyleError: {
-    effectColor: errorColor,
+    effectColor: palette.red,
   },
   textStyleSuggestion: {
-    effectColor: infoColor,
+    effectColor: palette.blue,
   },
   textStyleWarning: {
-    effectColor: warningColor,
+    effectColor: palette.yellow,
   },
   todo: {
     textColor: todoColor,
@@ -274,17 +269,17 @@ const syntax = {
   },
   typeParameter: typeNameColor,
   typo: {
-    effectColor: warningColor,
-    errorStripeColor: warningColor,
+    effectColor: palette.yellow,
+    errorStripeColor: palette.yellow,
   },
   unusedElement: {
     backgroundColor: null,
     textColor: mixWithEditorBackground(0.5, editorTextColor),
-    effectColor: mixWithEditorBackground(0.25, warningColor),
+    effectColor: mixWithEditorBackground(0.25, palette.yellow),
   },
   warning: {
-    effectColor: warningColor,
-    errorStripeColor: warningColor,
+    effectColor: palette.yellow,
+    errorStripeColor: palette.yellow,
   },
   whitespace: whitespaceColor,
   xml: {
@@ -304,12 +299,12 @@ export default {
   textColor,
   actionButtons: {
     hover: {
-      backgroundColor: mixWithBackground(0.5, palette.pinkDarken1),
-      borderColor: mixWithBackground(0.25, palette.pinkDarken1),
+      backgroundColor: mixWithBackground(0.5, palette.pink),
+      borderColor: mixWithBackground(0.25, palette.pink),
     },
     pressed: {
-      backgroundColor: mixWithBackground(0.4, palette.pinkDarken1),
-      borderColor: mixWithBackground(0.25, palette.pinkDarken1),
+      backgroundColor: mixWithBackground(0.4, palette.pink),
+      borderColor: mixWithBackground(0.25, palette.pink),
     },
     separatorColor: guidelinesColor,
   },
@@ -426,6 +421,9 @@ export default {
         backgroundColor: fieldBackgroundColor,
       },
     },
+  },
+  comboPopup: {
+    borderColor: guidelinesColor,
   },
   completionPopup: {
     match: {
@@ -546,7 +544,7 @@ export default {
         pinkBright: lighten(0.05, saturate(0.2, palette.pink)),
         cyanBright: lighten(0.05, saturate(0.2, palette.turquoise)),
         normal: textColor,
-        error: errorColor,
+        error: palette.red,
         system: textColor,
         white: {
           textColor,
@@ -662,8 +660,8 @@ export default {
       gridLineColor: editorGuidelinesColor,
     },
     info: {
-      effectColor: infoColor,
-      errorStripeColor: infoColor,
+      effectColor: palette.blue,
+      errorStripeColor: palette.blue,
     },
     indentGuide: {
       normal: { color: editorGuidelinesColor },
@@ -801,15 +799,15 @@ export default {
       iconColor: textColor,
     },
     error: {
-      focusColor: errorColor,
+      focusColor: palette.red,
       inactive: {
-        focusColor: mixWithBackground(0.5, errorColor),
+        focusColor: mixWithBackground(0.5, palette.red),
       },
     },
     warning: {
-      focusColor: warningColor,
+      focusColor: palette.yellow,
       inactive: {
-        focusColor: mixWithBackground(0.5, warningColor),
+        focusColor: mixWithBackground(0.5, palette.yellow),
       },
     },
     infoTextColor: mixWithBackground(0.5, textColor),
@@ -834,13 +832,13 @@ export default {
       textColor: mixWithBackground(0.5, textColor),
     },
     error: {
-      textColor: errorColor,
+      textColor: palette.red,
     },
     info: {
       textColor: mixWithBackground(0.25, textColor),
     },
     success: {
-      textColor: successColor,
+      textColor: palette.green,
     },
     selected: {
       textColor,
@@ -925,18 +923,18 @@ export default {
       backgroundColor: lighten(0.02, overlayBackgroundColor),
     },
     error: {
-      backgroundColor: mixWithEditorBackground(0.5, errorColor),
-      borderColor: errorColor,
+      backgroundColor: mixWithEditorBackground(0.5, palette.red),
+      borderColor: palette.red,
       textColor,
     },
     info: {
-      backgroundColor: mixWithEditorBackground(0.5, infoColor),
-      borderColor: infoColor,
+      backgroundColor: mixWithEditorBackground(0.5, palette.blue),
+      borderColor: palette.blue,
       textColor,
     },
     warning: {
-      backgroundColor: mixWithEditorBackground(0.5, warningColor),
-      borderColor: warningColor,
+      backgroundColor: mixWithEditorBackground(0.5, palette.yellow),
+      borderColor: palette.yellow,
       textColor,
     },
   },
@@ -1063,15 +1061,15 @@ export default {
       startColor: palette.pink,
       endColor: lighten(0.15, palette.pink),
     },
-    failedColor: errorColor,
-    failedEndColor: lighten(0.1, errorColor),
-    warningColor,
-    warningEndColor: lighten(0.1, warningColor),
-    passedColor: successColor,
-    passedEndColor: lighten(0.1, successColor),
+    failedColor: palette.red,
+    failedEndColor: lighten(0.1, palette.red),
+    warningColor: palette.yellow,
+    warningEndColor: lighten(0.1, palette.yellow),
+    passedColor: palette.green,
+    passedEndColor: lighten(0.1, palette.green),
   },
   runWidget: {
-    backgroundColor: mixWithBackground(0.5, palette.pinkDarken1),
+    backgroundColor: mixWithBackground(0.5, palette.pink),
     iconColor: textColor,
     textColor,
     runningIconColor: palette.whiteDarken2,
@@ -1325,7 +1323,7 @@ export default {
         backgroundColor: listItem.hover.inactive.backgroundColor,
       },
     },
-    error: { textColor: errorColor },
+    error: { textColor: palette.red },
     modified: { textColor: palette.blue },
     selection: {
       textColor: listItem.selection.active.textColor,
@@ -1342,17 +1340,19 @@ export default {
       commit: {
         rowHeight: 28,
         currentBranch: {
-          backgroundColor: mixWithBackground(0.9, palette.pink),
+          backgroundColor: mixWithBackground(0.95, palette.blue),
         },
         hover: {
-          backgroundColor: mixWithBackground(0.8, palette.pink),
+          backgroundColor: listItem.hover.active.backgroundColor,
         },
         selected: {
-          backgroundColor: mixWithBackground(0.5, palette.pink),
-          textColor: palette.whiteDarken2,
+          active: {
+            backgroundColor: listItem.selection.active.backgroundColor,
+            textColor: listItem.selection.active.textColor,
+          },
           inactive: {
-            backgroundColor: mixWithBackground(0.75, palette.pink),
-            textColor,
+            backgroundColor: listItem.selection.inactive.backgroundColor,
+            textColor: listItem.selection.inactive.textColor,
           },
         },
         unmatched: {
