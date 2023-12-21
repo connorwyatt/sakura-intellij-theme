@@ -11,6 +11,7 @@
 - Update table row colors.
 - Update tooltip info text and link colors.
 - Modify color palette.
+- Modify Sakura Night theme.
 
 ### Fixed
 - Fixed deprecation and marked for removal effects.
