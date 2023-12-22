@@ -400,6 +400,7 @@ export const generateDarkTheme = (
       backgroundColor,
       textColor: fieldTextColor,
       disabled: {
+        backgroundColor: mixWithBackground(0.95, fieldTextColor),
         textColor: mixWithBackground(0.5, fieldTextColor),
       },
       modified: {
@@ -1075,10 +1076,10 @@ export const generateDarkTheme = (
       textColor,
       runningIconColor: palette.whiteDarken2,
       running: {
-        backgroundColor: desaturate(0.3, darken(0.2, palette.green)),
+        backgroundColor: darken(0.1, palette.green),
       },
       stop: {
-        backgroundColor: desaturate(0.3, darken(0.2, palette.red)),
+        backgroundColor: darken(0.1, palette.red),
       },
       hover: { overlayColor: rgbaToHex(transparentize(0.9, backgroundColor)) },
       pressed: {

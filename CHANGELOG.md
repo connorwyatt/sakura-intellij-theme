@@ -3,6 +3,11 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Modified run widget colors on dark themes.
+
+### Fixed
+- Fixed combo box disabled background.
 
 ## [0.8.0]
 ### Added

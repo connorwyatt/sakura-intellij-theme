@@ -400,6 +400,7 @@ export default {
     backgroundColor,
     textColor: fieldTextColor,
     disabled: {
+      backgroundColor: mixWithBackground(0.95, fieldTextColor),
       textColor: mixWithBackground(0.5, fieldTextColor),
     },
     modified: {

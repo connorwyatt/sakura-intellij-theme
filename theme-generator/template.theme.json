@@ -83,6 +83,7 @@
     "ComboBox": {
       "background": "{{comboBox.backgroundColor}}",
       "foreground": "{{comboBox.textColor}}",
+      "disabledBackground": "{{comboBox.disabled.backgroundColor}}",
       "disabledForeground": "{{comboBox.disabled.textColor}}",
       "modifiedItemForeground": "{{comboBox.modified.textColor}}",
       "selectionBackground": "{{comboBox.selected.backgroundColor}}",
