@@ -26,10 +26,13 @@ const basePurple = "#bb99e0";
 const basePink = "#e787ac";
 
 export const palette = {
-  black: "#151d20",
-  blackLighten1: "#1a2428",
-  blackLighten2: "#1f2b30",
-  blackLighten3: "#243238",
+  black: "#0e1214",
+  blackLighten1: "#11181a",
+  blackLighten2: "#151d20",
+  blackLighten3: "#1a2428",
+  blackLighten4: "#1f2b30",
+  blackLighten5: "#243238",
+  blackLighten6: "#293940",
   white: "#f5fbfc",
   whiteDarken1: "#f0f6f7",
   whiteDarken2: "#e8eeef",

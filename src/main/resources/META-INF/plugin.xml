@@ -10,6 +10,10 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuraday" path="/themes/sakura-day.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuraday.colorscheme" path="/themes/sakura-day"/>
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuradusk" path="/themes/sakura-dusk.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuradusk.colorscheme" path="/themes/sakura-dusk"/>
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuramidnight" path="/themes/sakura-midnight.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuramidnight.colorscheme" path="/themes/sakura-midnight"/>
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuranight" path="/themes/sakura-night.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuranight.colorscheme" path="/themes/sakura-night"/>
     </extensions>

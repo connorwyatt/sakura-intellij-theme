@@ -20,7 +20,7 @@ const mixWithTopBarBackground = (percentage: number, color: string): string =>
 const mixWithEditorBackground = (percentage: number, color: string): string =>
   mix(percentage, editorBackgroundColor, color);
 
-const textColor = palette.blackLighten3;
+const textColor = palette.blackLighten5;
 const invertedTextColor = palette.whiteDarken1;
 
 const fieldBackgroundColor = mixWithBackground(
@@ -54,16 +54,16 @@ const fieldFocusColor = mix(
 
 const caretColor = palette.pinkDarken1;
 
-const guidelinesColor = mixWithBackground(0.9, palette.blackLighten3);
-const treeLinesColor = mixWithBackground(0.8, palette.blackLighten3);
+const guidelinesColor = mixWithBackground(0.9, palette.blackLighten5);
+const treeLinesColor = mixWithBackground(0.8, palette.blackLighten5);
 const editorGuidelinesColor = mixWithEditorBackground(
   0.8,
-  palette.blackLighten3,
+  palette.blackLighten5,
 );
 
 const listItem = (() => {
   const hoverColor = mixWithBackground(0.9, palette.pink);
-  const inactiveSelectionColor = mixWithBackground(0.9, palette.blackLighten3);
+  const inactiveSelectionColor = mixWithBackground(0.9, palette.blackLighten5);
   const selectionColor = mixWithBackground(0.8, palette.pink);
 
   return {
@@ -101,7 +101,7 @@ const tabs = {
   underlineColor: palette.pink,
 };
 
-const editorTextColor = mixWithEditorBackground(0.25, palette.blackLighten3);
+const editorTextColor = mixWithEditorBackground(0.25, palette.blackLighten5);
 
 const commentColor = mixWithEditorBackground(0.5, editorTextColor);
 const constantColor = palette.turquoiseDarken1;
@@ -918,7 +918,7 @@ export default {
   newUIOnboardingDialog: { backgroundColor },
   notification: {
     backgroundColor: overlayBackgroundColor,
-    borderColor: mix(0.75, overlayBackgroundColor, palette.blackLighten3),
+    borderColor: mix(0.75, overlayBackgroundColor, palette.blackLighten5),
     textColor,
     hover: {
       backgroundColor: darken(0.02, overlayBackgroundColor),

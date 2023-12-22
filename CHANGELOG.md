@@ -3,6 +3,9 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added beta Sakura Dusk and Sakura Midnight themes.
+
 ### Changed
 - Tweaked color palette.
 
