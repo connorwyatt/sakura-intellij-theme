@@ -294,7 +294,7 @@ const syntax = {
 export default {
   name: themeName,
   isDark: false,
-  editorScheme: "/themes/sakura-light.xml",
+  editorScheme: "/themes/sakura-day.xml",
   backgroundColor,
   bordersColor: guidelinesColor,
   textColor,

@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [0.7.1] - 2023-12-22
+### Fixed
+- Fixed issue where editor scheme was not set correctly for Sakura Day theme.
+
 ## [0.7.0] - 2023-12-21
 ### Added
 - Added a beta Sakura Day theme.
