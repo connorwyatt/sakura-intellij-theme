@@ -3,13 +3,15 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.9.0] - 2023-12-22
 ### Changed
 - Modified run widget colors on dark themes.
 
 ### Fixed
 - Fixed combo box disabled background.
 
-## [0.8.0]
+## [0.8.0] - 2023-12-22
 ### Added
 - Added beta Sakura Dusk and Sakura Midnight themes.
 
