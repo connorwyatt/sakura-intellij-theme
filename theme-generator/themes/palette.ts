@@ -2,19 +2,28 @@ import { Polished } from "../deps.ts";
 
 const { darken, saturate } = Polished;
 
-const darkenColor = (color: string): string => {
-  return saturate(0.1, darken(0.15, color));
+const darkenColor = (
+  color: string,
+  amounts: {
+    saturateAmount?: number;
+    darkenAmount?: number;
+  } | null = null,
+): string => {
+  return saturate(
+    amounts?.saturateAmount ?? 0.1,
+    darken(amounts?.darkenAmount ?? 0.2, color),
+  );
 };
 
 const baseRed = "#e68a8a";
-const baseOrange = "#de9259";
-const baseYellow = "#e3c448";
-const baseGreen = "#97c461";
-const baseTurquoise = "#6adac5";
+const baseOrange = "#de9865";
+const baseYellow = "#e1ca75";
+const baseGreen = "#9bc26c";
+const baseTurquoise = "#79d9c7";
 const baseBlue = "#76bbd7";
 const baseIndigo = "#768dd7";
-const basePurple = "#b78ee0";
-const basePink = "#e88fb1";
+const basePurple = "#bb99e0";
+const basePink = "#e787ac";
 
 export const palette = {
   black: "#151d20",
@@ -29,19 +38,27 @@ export const palette = {
   red: baseRed,
   redDarken1: darkenColor(baseRed),
   orange: baseOrange,
-  orangeDarken1: darkenColor(baseOrange),
+  orangeDarken1: darkenColor(baseOrange, {
+    darkenAmount: 0.1,
+  }),
   yellow: baseYellow,
-  yellowDarken1: darkenColor(baseYellow),
+  yellowDarken1: darkenColor(baseYellow, { darkenAmount: 0.15 }),
   green: baseGreen,
-  greenDarken1: darkenColor(baseGreen),
+  greenDarken1: darkenColor(baseGreen, { darkenAmount: 0.15 }),
   turquoise: baseTurquoise,
   turquoiseDarken1: darkenColor(baseTurquoise),
   blue: baseBlue,
-  blueDarken1: darkenColor(baseBlue),
+  blueDarken1: darkenColor(baseBlue, { darkenAmount: 0.15 }),
   indigo: baseIndigo,
   indigoDarken1: darkenColor(baseIndigo),
   purple: basePurple,
-  purpleDarken1: darkenColor(basePurple),
+  purpleDarken1: darkenColor(basePurple, {
+    saturateAmount: 0.025,
+    darkenAmount: 0.15,
+  }),
   pink: basePink,
-  pinkDarken1: darkenColor(basePink),
+  pinkDarken1: darkenColor(basePink, {
+    saturateAmount: 0.05,
+    darkenAmount: 0.1,
+  }),
 };

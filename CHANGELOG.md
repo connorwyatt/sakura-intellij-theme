@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Tweaked color palette.
 
 ## [0.7.1] - 2023-12-22
 ### Fixed
