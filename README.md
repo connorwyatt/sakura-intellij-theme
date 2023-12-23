@@ -1,8 +1,14 @@
 # Sakura Theme
 
-![Build](https://github.com/connorwyatt/sakura-intellij-theme/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/23296.svg)](https://plugins.jetbrains.com/plugin/23296)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/23296.svg)](https://plugins.jetbrains.com/plugin/23296)
+![Build](https://img.shields.io/github/actions/workflow/status/connorwyatt/sakura-intellij-theme/build.yml?label=Build)
+![Release](https://img.shields.io/github/v/release/connorwyatt/sakura-intellij-theme?label=Latest%20GitHub%20Release&filter=*)
+![Last Released](https://img.shields.io/github/release-date-pre/connorwyatt/sakura-intellij-theme?label=Last%20Released)
+
+**JetBrains Marketplace Statistics**
+
+[![Version](https://img.shields.io/jetbrains/plugin/v/23296.svg?label=Plugin%20Version)](https://plugins.jetbrains.com/plugin/23296)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/23296.svg?label=Plugin%20Downloads)](https://plugins.jetbrains.com/plugin/23296)
+[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/23296?label=Plugin%20Rating)](https://plugins.jetbrains.com/plugin/23296)
 
 
 <!-- Plugin description -->
@@ -54,6 +60,7 @@ There are 4 variants (from lightest to darkest):
 
 - [ ] Rework colors in Markdown files.
 - [ ] Check colors in C# files.
+- [ ] Check colors in Rust files.
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
