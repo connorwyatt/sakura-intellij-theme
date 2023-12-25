@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [0.10.0] - 2023-12-25
+### Changed
+- Modified kotlin modifiers color.
+
 ## [0.9.0] - 2023-12-22
 ### Changed
 - Modified run widget colors on dark themes.
