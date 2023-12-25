@@ -227,7 +227,7 @@ export const generateDarkTheme = (
       textColor: commentColor,
     },
     metadata: metadataColor,
-    modifiers: mixWithEditorBackground(0.25, keywordColor),
+    modifiers: keywordColor,
     namedArgument: metadataColor,
     number: numberColor,
     operator: punctuationColor,
