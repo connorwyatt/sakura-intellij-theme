@@ -236,7 +236,17 @@
     "MainToolbar": {
       "background": "{{mainToolbar.active.backgroundColor}}",
       "inactiveBackground": "{{mainToolbar.inactive.backgroundColor}}",
-      "separatorColor": "{{mainToolbar.separatorColor}}"
+      "separatorColor": "{{mainToolbar.separatorColor}}",
+      "Dropdown": {
+        "background": "{{mainToolbar.dropdown.backgroundColor}}",
+        "hoverBackground": "{{mainToolbar.dropdown.hover.backgroundColor}}",
+        "pressedBackground": "{{mainToolbar.dropdown.pressed.backgroundColor}}"
+      },
+      "Icon": {
+        "background": "{{mainToolbar.icon.backgroundColor}}",
+        "hoverBackground": "{{mainToolbar.icon.hover.backgroundColor}}",
+        "pressedBackground": "{{mainToolbar.icon.pressed.backgroundColor}}"
+      }
     },
     "MainWindow": {
       "Tab": {

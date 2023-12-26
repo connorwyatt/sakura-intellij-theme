@@ -5,6 +5,7 @@
 ## [Unreleased]
 ### Changed
 - Make inactive main toolbar background color match active background color.
+- Style main toolbar dropdowns and icons.
 
 ## [0.10.0] - 2023-12-25
 ### Changed

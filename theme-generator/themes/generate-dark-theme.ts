@@ -883,6 +883,24 @@ export const generateDarkTheme = (
         backgroundColor: topBarBackgroundColor,
       },
       separatorColor: guidelinesColor,
+      dropdown: {
+        backgroundColor: topBarBackgroundColor,
+        hover: {
+          backgroundColor: mixWithTopBarBackground(0.5, palette.pink),
+        },
+        pressed: {
+          backgroundColor: mixWithTopBarBackground(0.6, palette.pink),
+        },
+      },
+      icon: {
+        backgroundColor: topBarBackgroundColor,
+        hover: {
+          backgroundColor: mixWithTopBarBackground(0.5, palette.pink),
+        },
+        pressed: {
+          backgroundColor: mixWithTopBarBackground(0.6, palette.pink),
+        },
+      },
       tab: {
         inactive: {
           backgroundColor: topBarBackgroundColor,
