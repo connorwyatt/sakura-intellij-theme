@@ -9,7 +9,7 @@
 - Modify selection colors.
 
 ### Fixed
-- Fixed focus color in tabbed panes.
+- Fixed focus color in tabbed panes. (Fixes https://github.com/connorwyatt/sakura-intellij-theme/issues/13)
 
 ## [0.10.0] - 2023-12-25
 ### Changed
