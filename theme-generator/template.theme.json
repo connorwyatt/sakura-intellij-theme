@@ -234,7 +234,8 @@
     },
     "MainMenu": {},
     "MainToolbar": {
-      "background": "{{mainToolbar.backgroundColor}}",
+      "background": "{{mainToolbar.active.backgroundColor}}",
+      "inactiveBackground": "{{mainToolbar.inactive.backgroundColor}}",
       "separatorColor": "{{mainToolbar.separatorColor}}"
     },
     "MainWindow": {

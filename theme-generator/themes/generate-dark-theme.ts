@@ -876,7 +876,12 @@ export const generateDarkTheme = (
       },
     },
     mainToolbar: {
-      backgroundColor: topBarBackgroundColor,
+      active: {
+        backgroundColor: topBarBackgroundColor,
+      },
+      inactive: {
+        backgroundColor: topBarBackgroundColor,
+      },
       separatorColor: guidelinesColor,
       tab: {
         inactive: {
