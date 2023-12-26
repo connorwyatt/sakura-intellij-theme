@@ -8,6 +8,9 @@
 - Style main toolbar dropdowns and icons.
 - Modify selection colors.
 
+### Fixed
+- Fixed focus color in tabbed panes.
+
 ## [0.10.0] - 2023-12-25
 ### Changed
 - Modified kotlin modifiers color.

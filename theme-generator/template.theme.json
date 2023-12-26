@@ -537,7 +537,7 @@
       "background": "{{tabbedPane.backgroundColor}}",
       "foreground": "{{tabbedPane.textColor}}",
       "focus": "#00ff00",
-      "focusColor": "#ff00ff",
+      "focusColor": "{{tabbedPane.hoverColor}}",
       "contentAreaColor": "{{tabbedPane.contentAreaColor}}",
       "hoverColor": "{{tabbedPane.hoverColor}}",
       "underlineColor": "{{tabbedPane.underlineColor}}"
