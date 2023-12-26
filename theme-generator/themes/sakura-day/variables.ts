@@ -62,9 +62,9 @@ const editorGuidelinesColor = mixWithEditorBackground(
 );
 
 const listItem = (() => {
-  const hoverColor = mixWithBackground(0.9, palette.pink);
-  const inactiveSelectionColor = mixWithBackground(0.9, palette.blackLighten5);
-  const selectionColor = mixWithBackground(0.8, palette.pink);
+  const hoverColor = mixWithBackground(0.8, palette.pink);
+  const inactiveSelectionColor = mixWithBackground(0.8, palette.blackLighten5);
+  const selectionColor = mixWithBackground(0.6, palette.pink);
 
   return {
     hover: {
