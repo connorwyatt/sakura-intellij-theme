@@ -1296,6 +1296,9 @@ export const generateDarkTheme = (
         borderColor: guidelinesColor,
       },
     },
+    titledBorder: {
+      titleColor: textColor,
+    },
     toggleButton: {
       backgroundColor,
       textColor: "#00ffff",

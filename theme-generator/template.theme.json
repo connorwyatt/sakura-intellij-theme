@@ -612,7 +612,7 @@
       }
     },
     "TitledBorder": {
-      "titleColor": "#ff00ff"
+      "titleColor": "{{titledBorder.titleColor}}"
     },
     "TitlePane": {
       "background": "#00ffff",
