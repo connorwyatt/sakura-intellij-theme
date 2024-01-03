@@ -670,7 +670,7 @@ export const generateDarkTheme = (
         selected: { color: editorSelectionColor },
       },
       injectedLanguageFragment: {
-        backgroundColor: mixWithEditorBackground(0.8, palette.orange),
+        backgroundColor: mixWithEditorBackground(0.8, palette.blue),
       },
       inlay: {
         default: {

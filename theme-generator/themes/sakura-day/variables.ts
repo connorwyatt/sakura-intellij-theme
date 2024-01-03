@@ -670,7 +670,7 @@ export default {
       selected: { color: editorSelectionColor },
     },
     injectedLanguageFragment: {
-      backgroundColor: mixWithEditorBackground(0.8, palette.orangeDarken1),
+      backgroundColor: mixWithEditorBackground(0.8, palette.blueDarken1),
     },
     inlay: {
       default: {

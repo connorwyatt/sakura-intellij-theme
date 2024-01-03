@@ -5,6 +5,7 @@
 ## [Unreleased]
 ### Changed
 - Update top bar colors.
+- Changed injected language fragment color to blue.
 
 ### Fixed
 - Fixed inactive text in text areas (e.g. GitHub copilot tool window).
