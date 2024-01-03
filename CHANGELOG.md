@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Fixed
+- Fixed inactive text in text areas (e.g. GitHub copilot tool window).
 
 ## [0.11.0] - 2023-12-27
 ### Changed

@@ -580,8 +580,8 @@
       "foreground": "{{textArea.textColor}}",
       "selectionBackground": "{{textArea.selection.backgroundColor}}",
       "selectionForeground": "{{textArea.selection.textColor}}",
-      "inactiveBackground": "#00ff00",
-      "inactiveForeground": "#ff00ff",
+      "inactiveBackground": "{{textArea.inactive.backgroundColor}}",
+      "inactiveForeground": "{{textArea.inactive.textColor}}",
       "caretForeground": "{{textArea.caretColor}}"
     },
     "TextComponent": {

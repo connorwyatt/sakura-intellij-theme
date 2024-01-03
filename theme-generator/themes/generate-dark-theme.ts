@@ -1272,6 +1272,10 @@ export const generateDarkTheme = (
         backgroundColor: editorSelectionColor,
         textColor,
       },
+      inactive: {
+        backgroundColor: editorBackgroundColor,
+        textColor: mixWithEditorBackground(0.5, textColor),
+      },
     },
     textField: {
       backgroundColor: fieldBackgroundColor,
