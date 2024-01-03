@@ -1289,6 +1289,9 @@ export default {
       textColor: listItem.selection.active.textColor,
     },
   },
+  textPane: {
+    textColor,
+  },
   tipOfTheDay: {
     image: {
       borderColor: guidelinesColor,

@@ -12,6 +12,7 @@
 - Fixed validation tooltip colors.
 - Fixed info text color in list items.
 - Fixed viewport colors.
+- Fixed some bright colors found in some settings menus.
 
 ## [0.11.0] - 2023-12-27
 ### Changed

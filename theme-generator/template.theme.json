@@ -599,7 +599,7 @@
     },
     "TextPane": {
       "background": "#00ffff",
-      "foreground": "#ff0000",
+      "foreground": "{{textPane.textColor}}",
       "caretForeground": "#ff00ff",
       "inactiveBackground": "#ffff00",
       "inactiveForeground": "#0000ff",
