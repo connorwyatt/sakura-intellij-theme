@@ -1366,6 +1366,16 @@ export const generateDarkTheme = (
         },
       },
     },
+    validationTooltip: {
+      error: {
+        backgroundColor: mixWithBackground(0.75, palette.red),
+        borderColor: mixWithBackground(0.5, palette.red),
+      },
+      warning: {
+        backgroundColor: mixWithBackground(0.75, palette.yellow),
+        borderColor: mixWithBackground(0.5, palette.yellow),
+      },
+    },
     vcs: {
       log: {
         commit: {

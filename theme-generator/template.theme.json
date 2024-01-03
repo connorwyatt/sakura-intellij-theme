@@ -675,10 +675,10 @@
     },
     "UiDesigner": {},
     "ValidationTooltip": {
-      "errorBackground": "#ff0000",
-      "errorBorderColor": "#aa0000",
-      "warningBackground": "#ffff00",
-      "warningBorderColor": "#aaaa00"
+      "errorBackground": "{{validationTooltip.error.backgroundColor}}",
+      "errorBorderColor": "{{validationTooltip.error.borderColor}}",
+      "warningBackground": "{{validationTooltip.warning.backgroundColor}}",
+      "warningBorderColor": "{{validationTooltip.warning.borderColor}}"
     },
     "VersionControl": {
       "GitLog": {
