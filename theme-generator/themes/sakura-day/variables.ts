@@ -1420,6 +1420,10 @@ export default {
       textColor,
     },
   },
+  viewport: {
+    backgroundColor: overlayBackgroundColor,
+    textColor,
+  },
   welcomeScreen: {
     backgroundColor,
     borderColor: guidelinesColor,

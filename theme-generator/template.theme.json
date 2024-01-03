@@ -721,8 +721,8 @@
       }
     },
     "Viewport": {
-      "background": "#bada55",
-      "foreground": "#302099"
+      "background": "{{viewport.backgroundColor}}",
+      "foreground": "{{viewport.textColor}}"
     },
     "WelcomeScreen": {
       "background": "{{welcomeScreen.backgroundColor}}",

@@ -11,6 +11,7 @@
 - Fixed inactive text in text areas (e.g. GitHub copilot tool window).
 - Fixed validation tooltip colors.
 - Fixed info text color in list items.
+- Fixed viewport colors.
 
 ## [0.11.0] - 2023-12-27
 ### Changed
