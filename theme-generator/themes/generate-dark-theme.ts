@@ -812,7 +812,7 @@ export const generateDarkTheme = (
           focusColor: mixWithBackground(0.5, palette.yellow),
         },
       },
-      infoTextColor: mixWithBackground(0.5, textColor),
+      infoTextColor: mixWithBackground(0.25, textColor),
     },
     fileColors: {
       blue: mixWithBackground(0.9, saturate(0.5, palette.blue)),
