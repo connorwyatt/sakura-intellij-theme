@@ -904,7 +904,7 @@ export const generateDarkTheme = (
       tab: {
         inactive: {
           backgroundColor: topBarBackgroundColor,
-          textColor: mixWithTopBarBackground(0.75, textColor),
+          textColor: mixWithTopBarBackground(0.5, textColor),
         },
         selected: {
           backgroundColor,
@@ -913,7 +913,7 @@ export const generateDarkTheme = (
           backgroundColor: mixWithTopBarBackground(0.5, backgroundColor),
           textColor: mixWithTopBarBackground(0.25, textColor),
         },
-        separatorColor: guidelinesColor,
+        separatorColor: topBarBackgroundColor,
       },
     },
     menu: {

@@ -3,6 +3,9 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Update top bar colors.
+
 ### Fixed
 - Fixed inactive text in text areas (e.g. GitHub copilot tool window).
 
