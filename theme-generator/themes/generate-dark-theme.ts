@@ -1282,7 +1282,7 @@ export const generateDarkTheme = (
       textColor: fieldTextColor,
       caretColor,
       shadowColor: mixWithBackground(0.9, fieldTextColor),
-      highlightColor: "#ff0000",
+      highlightColor: palette.blue,
       inactive: {
         textColor: mixWithBackground(0.5, fieldTextColor),
       },

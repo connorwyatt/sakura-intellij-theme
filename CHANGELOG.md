@@ -9,7 +9,8 @@
 
 ### Fixed
 - Fixed magenta console color.
-- Fixed debugger variable colors
+- Fixed debugger variable colors.
+- Fixed highlight color in text fields.
 
 ## [0.12.0] - 2024-01-03
 ### Changed

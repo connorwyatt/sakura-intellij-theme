@@ -1280,7 +1280,7 @@ export default {
     textColor: fieldTextColor,
     caretColor,
     shadowColor: mixWithBackground(0.9, fieldTextColor),
-    highlightColor: "#ff0000",
+    highlightColor: palette.blueDarken1,
     inactive: {
       textColor: mixWithBackground(0.5, fieldTextColor),
     },
