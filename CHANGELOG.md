@@ -7,6 +7,9 @@
 - Modified constants color.
 - Increase visibility of docs.
 
+### Fixed
+- Fixed magenta console color.
+
 ## [0.12.0] - 2024-01-03
 ### Changed
 - Update top bar colors.
