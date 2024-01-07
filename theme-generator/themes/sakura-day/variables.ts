@@ -104,7 +104,7 @@ const tabs = {
 const editorTextColor = mixWithEditorBackground(0.25, palette.blackLighten5);
 
 const commentColor = mixWithEditorBackground(0.5, editorTextColor);
-const constantColor = palette.turquoiseDarken1;
+const constantColor = palette.blueDarken1;
 const enumCaseColor = palette.greenDarken1;
 const globalVariableColor = palette.blueDarken1;
 const identifierColor = editorTextColor;

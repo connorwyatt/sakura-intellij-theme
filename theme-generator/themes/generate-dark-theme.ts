@@ -104,7 +104,7 @@ export const generateDarkTheme = (
   const editorTextColor = palette.whiteDarken4;
 
   const commentColor = mixWithEditorBackground(0.25, editorTextColor);
-  const constantColor = palette.turquoise;
+  const constantColor = palette.blue;
   const enumCaseColor = palette.green;
   const globalVariableColor = palette.blue;
   const identifierColor = editorTextColor;
