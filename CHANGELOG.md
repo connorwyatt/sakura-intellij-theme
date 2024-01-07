@@ -6,6 +6,7 @@
 ### Changed
 - Modified constants color.
 - Increase visibility of docs.
+- Tweak day theme colors.
 
 ### Fixed
 - Fixed magenta console color.

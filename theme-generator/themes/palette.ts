@@ -45,9 +45,15 @@ export const palette = {
     darkenAmount: 0.1,
   }),
   yellow: baseYellow,
-  yellowDarken1: darkenColor(baseYellow, { darkenAmount: 0.15 }),
+  yellowDarken1: darkenColor(baseYellow, {
+    darkenAmount: 0.2,
+    saturateAmount: 0.5,
+  }),
   green: baseGreen,
-  greenDarken1: darkenColor(baseGreen, { darkenAmount: 0.15 }),
+  greenDarken1: darkenColor(baseGreen, {
+    darkenAmount: 0.15,
+    saturateAmount: 0.15,
+  }),
   turquoise: baseTurquoise,
   turquoiseDarken1: darkenColor(baseTurquoise),
   blue: baseBlue,
@@ -56,7 +62,7 @@ export const palette = {
   indigoDarken1: darkenColor(baseIndigo),
   purple: basePurple,
   purpleDarken1: darkenColor(basePurple, {
-    saturateAmount: 0.025,
+    saturateAmount: 0.1,
     darkenAmount: 0.15,
   }),
   pink: basePink,
