@@ -163,11 +163,11 @@ export const generateDarkTheme = (
     },
     docs: {
       comment: {
-        textColor: mixWithEditorBackground(0.25, stringColor),
+        textColor: stringColor,
         tag: {
-          textColor: mixWithEditorBackground(0.25, tagAttributeNameColor),
+          textColor: tagAttributeNameColor,
           value: {
-            textColor: mixWithEditorBackground(0.25, tagAttributeValueColor),
+            textColor: tagAttributeValueColor,
           },
         },
       },
