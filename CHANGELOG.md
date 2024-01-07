@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.13.0] - 2024-01-07
 ### Changed
 - Modified constants color.
 - Increase visibility of docs.
