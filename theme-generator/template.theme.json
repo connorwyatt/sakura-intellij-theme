@@ -179,7 +179,8 @@
     },
     "EditorTabs": {
       "background": "{{editor.tabs.tab.inactive.backgroundColor}}",
-      "underlinedTabBackground": "{{editor.tabs.tab.active.backgroundColor}}"
+      "underlinedTabBackground": "{{editor.tabs.tab.active.backgroundColor}}",
+      "underlineColor": "{{editor.tabs.tab.active.underlineColor}}"
     },
     "FileColor": {
       "Blue": "{{fileColors.blue}}",

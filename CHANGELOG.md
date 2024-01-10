@@ -5,6 +5,7 @@
 ## [Unreleased]
 ### Fixed
 - Fixed documentation markup color.
+- Fixed editor tab underline color.
 
 ## [0.13.0] - 2024-01-07
 ### Changed

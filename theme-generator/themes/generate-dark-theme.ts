@@ -760,6 +760,7 @@ export const generateDarkTheme = (
           inactive: { backgroundColor: editorBackgroundColor },
           active: {
             backgroundColor: null,
+            underlineColor: tabs.underlineColor,
           },
           modifiedIconColor: palette.pink,
         },
