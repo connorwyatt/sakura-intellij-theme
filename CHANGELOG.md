@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.14.0] - 2024-01-10
 ### Fixed
 - Fixed documentation markup color.
 - Fixed editor tab underline color.
