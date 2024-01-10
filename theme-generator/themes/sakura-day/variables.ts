@@ -172,7 +172,7 @@ const syntax = {
       },
     },
     markup: {
-      textColor: mixWithEditorBackground(0.25, tagName),
+      textColor: tagName,
     },
   },
   dot: punctuationColor,
