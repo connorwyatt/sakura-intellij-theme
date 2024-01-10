@@ -6,6 +6,7 @@
 ### Fixed
 - Fixed documentation markup color.
 - Fixed editor tab underline color.
+- Fixed main window tab border color.
 
 ## [0.13.0] - 2024-01-07
 ### Changed

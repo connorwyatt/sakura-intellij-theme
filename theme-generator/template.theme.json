@@ -254,6 +254,7 @@
         "background": "{{mainToolbar.tab.inactive.backgroundColor}}",
         "foreground": "{{mainToolbar.tab.inactive.textColor}}",
         "selectedBackground": "{{mainToolbar.tab.selected.backgroundColor}}",
+        "borderColor": "{{mainToolbar.tab.separatorColor}}",
         "separatorColor": "{{mainToolbar.tab.separatorColor}}",
         "hoverBackground": "{{mainToolbar.tab.hover.backgroundColor}}",
         "hoverForeground": "{{mainToolbar.tab.hover.textColor}}"
