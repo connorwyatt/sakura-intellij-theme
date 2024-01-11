@@ -6,6 +6,9 @@
 ### Changed
 - Improved project tab colors.
 
+### Fixed
+- Fixed "more" text color in search everywhere.
+
 ## [0.14.0] - 2024-01-10
 ### Fixed
 - Fixed documentation markup color.

@@ -1121,6 +1121,9 @@ export default {
       backgroundColor: overlayBackgroundColor,
       textColor,
     },
+    moreText: {
+      textColor: linkColor,
+    },
   },
   searchField: {
     errorBackgroundColor: mix(0.5, fieldBackgroundColor, palette.red),

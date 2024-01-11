@@ -468,7 +468,7 @@
       },
       "List": {
         "separatorColor": "#00ffff",
-        "separatorForeground": "#ffff00",
+        "separatorForeground": "{{searchEverywhere.moreText.textColor}}",
         "settingsBackground": "#ff0000"
       },
       "SearchField": {
