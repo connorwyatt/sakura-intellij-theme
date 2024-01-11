@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Improved project tab colors.
 
 ## [0.14.0] - 2024-01-10
 ### Fixed

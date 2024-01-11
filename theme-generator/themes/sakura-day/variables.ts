@@ -914,7 +914,7 @@ export default {
         backgroundColor: mixWithTopBarBackground(0.5, backgroundColor),
         textColor: mixWithTopBarBackground(0.25, textColor),
       },
-      separatorColor: topBarBackgroundColor,
+      separatorColor: guidelinesColor,
     },
   },
   menu: {
