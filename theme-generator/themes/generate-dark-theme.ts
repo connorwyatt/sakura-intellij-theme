@@ -918,6 +918,10 @@ export const generateDarkTheme = (
         separatorColor: topBarBackgroundColor,
       },
     },
+    memoryIndicator: {
+      allocated: { backgroundColor: mixWithBackground(0.75, palette.pink) },
+      used: { backgroundColor: mixWithBackground(0.5, palette.pink) },
+    },
     menu: {
       backgroundColor: overlayBackgroundColor,
       textColor,

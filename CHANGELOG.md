@@ -3,6 +3,9 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Styled memory indicator.
+
 ### Fixed
 - Fixed separators in main toolbar tabs.
 
