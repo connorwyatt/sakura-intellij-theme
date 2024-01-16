@@ -636,23 +636,23 @@ export const generateDarkTheme = (
         standard: {
           backgroundColor: mixWithEditorBackground(
             0.9,
-            palette.pink,
+            editorTextColor,
           ),
-          effectColor: mixWithEditorBackground(0.5, palette.pink),
+          effectColor: mixWithEditorBackground(0.5, editorTextColor),
           errorStripeColor: mixWithEditorBackground(
             0.5,
-            palette.pink,
+            editorTextColor,
           ),
         },
         write: {
           backgroundColor: mixWithEditorBackground(
             0.75,
-            palette.pink,
+            editorTextColor,
           ),
-          effectColor: mixWithEditorBackground(0.25, palette.pink),
+          effectColor: mixWithEditorBackground(0.25, editorTextColor),
           errorStripeColor: mixWithEditorBackground(
             0.25,
-            palette.pink,
+            editorTextColor,
           ),
         },
       },
