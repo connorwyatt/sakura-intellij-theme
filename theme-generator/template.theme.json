@@ -260,7 +260,10 @@
         "hoverForeground": "{{mainToolbar.tab.hover.textColor}}"
       }
     },
-    "MemoryIndicator": {},
+    "MemoryIndicator": {
+      "allocatedBackground": "{{memoryIndicator.allocated.backgroundColor}}",
+      "usedBackground": "{{memoryIndicator.used.backgroundColor}}"
+    },
     "Menu": {
       "foreground": "{{menu.textColor}}",
       "background": "{{menu.backgroundColor}}",
