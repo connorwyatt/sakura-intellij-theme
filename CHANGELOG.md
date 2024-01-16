@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Fixed
+- Fixed separators in main toolbar tabs.
 
 ## [0.15.0] - 2024-01-11
 ### Changed
