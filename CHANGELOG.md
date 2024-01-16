@@ -6,6 +6,9 @@
 ### Added
 - Styled memory indicator.
 
+### Changed
+- Changed color of identifiers under caret from pink to white.
+
 ### Fixed
 - Fixed separators in main toolbar tabs.
 
