@@ -38,7 +38,7 @@ jobs:
           deno-version: v1.x
 
       - name: Cache Deno
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ hashFiles('theme-generator/deno.lock') }}
           path: ${{ vars.DENO_DIR }}
@@ -180,7 +180,7 @@ jobs:
           deno-version: v1.x
 
       - name: Cache Deno
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ hashFiles('theme-generator/deno.lock') }}
           path: ${{ env.DENO_DIR }}
@@ -190,7 +190,7 @@ jobs:
         run: deno run --allow-all ./main.ts
 
       - name: Setup Plugin Verifier IDEs Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ needs.build.outputs.pluginVerifierHomeDir }}/ides
           key: plugin-verifier-${{ hashFiles('build/listProductsReleases.txt') }}
