@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.17.0] - 2024-02-02
 ### Added
 - Styled suggestion effect color.
 
