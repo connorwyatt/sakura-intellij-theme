@@ -3,6 +3,9 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Styled suggestion effect color.
+
 ### Changed
 - Fixed "got it tooltip" background color.
 

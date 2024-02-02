@@ -905,7 +905,7 @@
 		<option name="String" baseAttributes="DEFAULT_STRING"/>
 		<option name="SUGGESTION">
 			<value>
-				<option name="EFFECT_COLOR" value="{{editor.backgroundColor}}"/>
+				<option name="EFFECT_COLOR" value="{{editor.syntax.suggestion.effectColor}}"/>
 				<option name="EFFECT_TYPE" value="2"/>
 			</value>
 		</option>

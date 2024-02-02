@@ -250,6 +250,9 @@ export const generateDarkTheme = (
       invalid: { textColor: stringEscapeColor, effectColor: palette.red },
       valid: { textColor: stringEscapeColor },
     },
+    suggestion: {
+      effectColor: palette.blue,
+    },
     tabs: mixWithEditorBackground(0.5, punctuationColor),
     tag: punctuationColor,
     templateLanguage: {

@@ -250,6 +250,9 @@ const syntax = {
     invalid: { textColor: stringEscapeColor, effectColor: palette.redDarken1 },
     valid: { textColor: stringEscapeColor },
   },
+  suggestion: {
+    effectColor: palette.blueDarken1,
+  },
   tabs: mixWithEditorBackground(0.5, punctuationColor),
   tag: punctuationColor,
   templateLanguage: {
