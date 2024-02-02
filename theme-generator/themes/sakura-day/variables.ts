@@ -824,6 +824,9 @@ export default {
     violet: mixWithBackground(0.9, saturate(0.5, palette.purpleDarken1)),
     yellow: mixWithBackground(0.9, saturate(0.5, palette.yellowDarken1)),
   },
+  gotItTooltip: {
+    backgroundColor: overlayBackgroundColor,
+  },
   group: {
     separatorColor: guidelinesColor,
     disabled: { separatorColor: mixWithBackground(0.5, guidelinesColor) },

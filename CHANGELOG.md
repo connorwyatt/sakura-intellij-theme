@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Fixed "got it tooltip" background color.
 
 ## [0.16.0] - 2024-01-16
 ### Added

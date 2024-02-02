@@ -824,6 +824,9 @@ export const generateDarkTheme = (
       violet: mixWithBackground(0.9, saturate(0.5, palette.purple)),
       yellow: mixWithBackground(0.9, saturate(0.5, palette.yellow)),
     },
+    gotItTooltip: {
+      backgroundColor: overlayBackgroundColor,
+    },
     group: {
       separatorColor: guidelinesColor,
       disabled: { separatorColor: mixWithBackground(0.5, guidelinesColor) },

@@ -193,7 +193,7 @@
     },
     "FormattedTextField": {},
     "GotItTooltip": {
-      "background": "#00ff00"
+      "background": "{{gotItTooltip.backgroundColor}}"
     },
     "Group": {
       "separatorColor": "{{group.separatorColor}}",
