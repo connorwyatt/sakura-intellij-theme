@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.18.0] - 2024-03-17
 ### Added
 - Styled terminal commands to run using IDE.
 
