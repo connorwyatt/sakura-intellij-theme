@@ -920,6 +920,12 @@
 				<option name="FOREGROUND" value="#ff00ff"/>
 			</value>
 		</option>
+		<option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+			<value>
+				<option name="BACKGROUND" value="{{editor.console.input.runUsingIDE.backgroundColor}}" />
+				<option name="FOREGROUND" value="{{editor.console.input.runUsingIDE.textColor}}" />
+			</value>
+		</option>
 		<option name="TEXT">
 			<value>
 				<option name="BACKGROUND" value="{{editor.backgroundColor}}"/>

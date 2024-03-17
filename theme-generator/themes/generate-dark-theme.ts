@@ -557,6 +557,10 @@ export const generateDarkTheme = (
         },
         input: {
           user: textColor,
+          runUsingIDE: {
+            backgroundColor: mixWithEditorBackground(0.75, palette.turquoise),
+            textColor,
+          },
         },
         rangeToExecute: {
           effectColor: palette.pink,

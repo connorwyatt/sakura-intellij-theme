@@ -557,6 +557,13 @@ export default {
       },
       input: {
         user: textColor,
+        runUsingIDE: {
+          backgroundColor: mixWithEditorBackground(
+            0.8,
+            palette.turquoiseDarken1,
+          ),
+          textColor,
+        },
       },
       rangeToExecute: {
         effectColor: palette.pinkDarken1,
