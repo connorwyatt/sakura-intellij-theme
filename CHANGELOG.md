@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added Ruby support.
 
 ## [0.18.0] - 2024-03-17
 ### Added
