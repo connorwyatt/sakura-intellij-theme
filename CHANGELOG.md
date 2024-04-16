@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Fixed
+- Removed `pluginUntilBuild` so that the plugin can be used with all future versions of the IDE.
 
 ## [0.19.0] - 2024-03-17
 ### Added
