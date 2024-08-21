@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.21.0] - 2024-08-21
 ### Fixed
 - Fixed some issues where testing colors were visible.
 
