@@ -958,6 +958,9 @@ export default {
       textColor: listItem.selection.active.textColor,
     },
   },
+  navBar: {
+    borderColor: guidelinesColor,
+  },
   newUIOnboardingDialog: { backgroundColor },
   notification: {
     backgroundColor: overlayBackgroundColor,
@@ -1321,6 +1324,12 @@ export default {
   },
   titledBorder: {
     titleColor: textColor,
+  },
+  titlePane: {
+    backgroundColor,
+    button: {
+      hoverColor: fieldFocusColor,
+    },
   },
   toggleButton: {
     backgroundColor,

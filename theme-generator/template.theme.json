@@ -286,7 +286,7 @@
       "selectionBackground": "{{menuItem.selection.backgroundColor}}"
     },
     "NavBar": {
-      "borderColor": "#00ff00"
+      "borderColor": "{{navBar.borderColor}}"
     },
     "NewUiOnboarding": {
       "Dialog": {
@@ -620,9 +620,9 @@
       "titleColor": "{{titledBorder.titleColor}}"
     },
     "TitlePane": {
-      "background": "#00ffff",
+      "background": "{{titlePane.backgroundColor}}",
       "Button": {
-        "hoverBackground": "#ffff00"
+        "hoverBackground": "{{titlePane.button.hoverColor}}"
       }
     },
     "ToggleButton": {
