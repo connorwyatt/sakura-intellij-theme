@@ -809,8 +809,8 @@
 		<option name="KOTLIN_MUTABLE_VARIABLE">
 			<value>
 				<option name="FONT_TYPE" value="2"/>
-				<option name="EFFECT_COLOR" value="{{editor.syntax.localVariable}}"/>
-				<option name="EFFECT_TYPE" value="2"/>
+				<option name="EFFECT_COLOR" value="{{editor.syntax.mutableVariable.effectColor}}"/>
+				<option name="EFFECT_TYPE" value="1"/>
 			</value>
 		</option>
 		<option name="KOTLIN_NAMED_ARGUMENT">

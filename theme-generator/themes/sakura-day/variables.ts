@@ -228,6 +228,9 @@ const syntax = {
   },
   metadata: metadataColor,
   modifiers: keywordColor,
+  mutableVariable: {
+    effectColor: mixWithEditorBackground(0.5, localVariableColor),
+  },
   namedArgument: metadataColor,
   number: numberColor,
   operator: punctuationColor,
