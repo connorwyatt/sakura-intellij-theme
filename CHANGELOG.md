@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Fixed
+- Fixed mutable variable effect and color.
 
 ## [0.21.0] - 2024-08-21
 ### Fixed
