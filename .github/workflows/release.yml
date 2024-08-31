@@ -35,7 +35,7 @@ jobs:
           deno-version: v1.x
 
       - name: Cache Deno
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ hashFiles('theme-generator/deno.lock') }}
           path: ${{ vars.DENO_DIR }}
