@@ -24,6 +24,8 @@ There are 4 variants (from lightest to darkest):
 - Sakura Dusk
 - Sakura Night
 - Sakura Midnight
+
+Each of these variants have a few sub-variant that saturates the colors, and in the case of the dark themes there is a sub-variant to desaturate the background.
 <!-- Plugin description end -->
 
 ## Installation
@@ -55,12 +57,6 @@ There are 4 variants (from lightest to darkest):
 ### Sakura Midnight Theme
 
 ![Sakura Midnight Theme](./images/sakura-midnight-theme.png)
-
-## Roadmap
-
-- [ ] Rework colors in Markdown files.
-- [ ] Check colors in C# files.
-- [ ] Check colors in Rust files.
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].

@@ -1,8 +1,8 @@
 import { generateDarkTheme } from "../generate-dark-theme.ts";
 import { palette } from "../palette.ts";
 
-const themeName = "Sakura Midnight";
-const editorScheme = "/themes/sakura-midnight.xml";
+const themeName = "Sakura Midnight Saturated";
+const editorScheme = "/themes/sakura-midnight-saturated.xml";
 
 const backgroundColor = palette.blueBlackLighten1;
 const overlayBackgroundColor = palette.blueBlackLighten2;
@@ -16,13 +16,13 @@ export default generateDarkTheme(
   overlayBackgroundColor,
   topBarBackgroundColor,
   editorBackgroundColor,
-  palette.red,
-  palette.orange,
-  palette.yellow,
-  palette.green,
-  palette.turquoise,
-  palette.blue,
-  palette.indigo,
-  palette.purple,
-  palette.pink,
+  palette.saturatedRed,
+  palette.saturatedOrange,
+  palette.saturatedYellow,
+  palette.saturatedGreen,
+  palette.saturatedTurquoise,
+  palette.saturatedBlue,
+  palette.saturatedIndigo,
+  palette.saturatedPurple,
+  palette.saturatedPink,
 );

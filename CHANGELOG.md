@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added sub-variants for saturated colors and desaturated dark mode backgrounds.
 
 ## [0.22.0] - 2024-08-31
 ### Fixed
