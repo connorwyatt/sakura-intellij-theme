@@ -11,8 +11,14 @@
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuraday" path="/themes/sakura-day.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuraday.colorscheme" path="/themes/sakura-day"/>
 
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuradaywhite" path="/themes/sakura-day-white.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuradaywhite.colorscheme" path="/themes/sakura-day-white"/>
+
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuradaysaturated" path="/themes/sakura-day-saturated.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuradaysaturated.colorscheme" path="/themes/sakura-day-saturated"/>
+
+        <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuradaywhitesaturated" path="/themes/sakura-day-white-saturated.theme.json" />
+        <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuradaywhitesaturated.colorscheme" path="/themes/sakura-day-white-saturated"/>
 
         <themeProvider id="com.github.connorwyatt.sakuraintellijtheme.sakuradusk" path="/themes/sakura-dusk.theme.json" />
         <bundledColorScheme id="com.github.connorwyatt.sakuraintellijtheme.sakuradusk.colorscheme" path="/themes/sakura-dusk"/>

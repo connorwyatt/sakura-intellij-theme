@@ -3,6 +3,12 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Added
+- Added sub-variants for desaturated light mode backgrounds.
+- Use indigo for metadata (e.g. annotations).
+
+### Fixed
+- Fixed some colors in themes.
 
 ## [0.23.0] - 2024-10-19
 ### Added

@@ -1,15 +1,22 @@
 import { rgbaToHex } from "../utilities.ts";
 import { Polished } from "../deps.ts";
 
-const { darken, lighten, mix, saturate, transparentize } = Polished;
+const { darken, desaturate, lighten, mix, saturate, transparentize } = Polished;
 
-export const generateDarkTheme = (
+export const generateLightTheme = (
   themeName: string,
   editorScheme: string,
   backgroundColor: string,
   overlayBackgroundColor: string,
   topBarBackgroundColor: string,
   editorBackgroundColor: string,
+  black: string,
+  blackLighten1: string,
+  blackLighten2: string,
+  blackLighten3: string,
+  blackLighten4: string,
+  blackLighten5: string,
+  blackLighten6: string,
   white: string,
   whiteDarken1: string,
   whiteDarken2: string,
@@ -34,7 +41,8 @@ export const generateDarkTheme = (
   const mixWithEditorBackground = (percentage: number, color: string): string =>
     mix(percentage, editorBackgroundColor, color);
 
-  const textColor = whiteDarken4;
+  const textColor = blackLighten5;
+  const invertedTextColor = white;
 
   const fieldBackgroundColor = mixWithBackground(0.925, lighten(0.15, pink));
   const fieldBorderColor = mixWithBackground(0.5, pink);
@@ -64,13 +72,13 @@ export const generateDarkTheme = (
 
   const caretColor = pink;
 
-  const guidelinesColor = mixWithBackground(0.95, whiteDarken4);
-  const treeLinesColor = mixWithBackground(0.8, whiteDarken4);
-  const editorGuidelinesColor = mixWithEditorBackground(0.9, whiteDarken4);
+  const guidelinesColor = mixWithBackground(0.9, blackLighten5);
+  const treeLinesColor = mixWithBackground(0.8, blackLighten5);
+  const editorGuidelinesColor = mixWithEditorBackground(0.8, blackLighten5);
 
   const listItem = (() => {
     const hoverColor = mixWithBackground(0.8, pink);
-    const inactiveSelectionColor = mixWithBackground(0.8, white);
+    const inactiveSelectionColor = mixWithBackground(0.8, blackLighten5);
     const selectionColor = mixWithBackground(0.6, pink);
 
     return {
@@ -105,9 +113,9 @@ export const generateDarkTheme = (
     underlineColor: pink,
   };
 
-  const editorTextColor = whiteDarken4;
+  const editorTextColor = mixWithEditorBackground(0.25, blackLighten5);
 
-  const commentColor = mixWithEditorBackground(0.25, editorTextColor);
+  const commentColor = mixWithEditorBackground(0.5, editorTextColor);
   const constantColor = blue;
   const enumCaseColor = green;
   const globalVariableColor = blue;
@@ -119,7 +127,7 @@ export const generateDarkTheme = (
   const metadataColor = indigo;
   const numberColor = purple;
   const parameterColor = editorTextColor;
-  const punctuationColor = mixWithEditorBackground(0.25, editorTextColor);
+  const punctuationColor = mixWithEditorBackground(0.5, editorTextColor);
   const staticFieldColor = instanceFieldColor;
   const staticMethodColor = instanceMethodColor;
   const stringColor = green;
@@ -127,7 +135,7 @@ export const generateDarkTheme = (
   const tagAttributeNameColor = yellow;
   const tagAttributeValueColor = blue;
   const tagName = pink;
-  const templateLanguageBackgroundColor = mixWithEditorBackground(0.75, pink);
+  const templateLanguageBackgroundColor = mixWithEditorBackground(0.9, pink);
   const todoColor = orange;
   const typeNameColor = yellow;
   const whitespaceColor = mix(0.5, editorGuidelinesColor, punctuationColor);
@@ -300,19 +308,19 @@ export const generateDarkTheme = (
 
   return {
     name: themeName,
-    isDark: true,
+    isDark: false,
     editorScheme,
     backgroundColor,
     bordersColor: guidelinesColor,
     textColor,
     actionButtons: {
       hover: {
-        backgroundColor: mixWithBackground(0.5, pink),
-        borderColor: mixWithBackground(0.25, pink),
+        backgroundColor: mixWithBackground(0.75, pink),
+        borderColor: mixWithBackground(0.5, pink),
       },
       pressed: {
-        backgroundColor: mixWithBackground(0.4, pink),
-        borderColor: mixWithBackground(0.25, pink),
+        backgroundColor: mixWithBackground(0.65, pink),
+        borderColor: mixWithBackground(0.5, pink),
       },
       separatorColor: guidelinesColor,
     },
@@ -327,19 +335,19 @@ export const generateDarkTheme = (
     },
     banner: {
       error: {
-        backgroundColor: mixWithBackground(0.75, red),
+        backgroundColor: mixWithBackground(0.8, red),
         borderColor: mixWithBackground(0.5, red),
       },
       info: {
-        backgroundColor: mixWithBackground(0.75, blue),
+        backgroundColor: mixWithBackground(0.8, blue),
         borderColor: mixWithBackground(0.5, blue),
       },
       success: {
-        backgroundColor: mixWithBackground(0.75, green),
+        backgroundColor: mixWithBackground(0.8, green),
         borderColor: mixWithBackground(0.5, green),
       },
       warning: {
-        backgroundColor: mixWithBackground(0.75, yellow),
+        backgroundColor: mixWithBackground(0.8, yellow),
         borderColor: mixWithBackground(0.5, yellow),
       },
     },
@@ -518,7 +526,7 @@ export const generateDarkTheme = (
       },
       caret: {
         color: caretColor,
-        rowBackgroundColor: lighten(0.05, editorBackgroundColor),
+        rowBackgroundColor: backgroundColor,
       },
       codeLens: {
         borderColor: pink,
@@ -553,7 +561,7 @@ export const generateDarkTheme = (
         input: {
           user: textColor,
           runUsingIDE: {
-            backgroundColor: mixWithEditorBackground(0.75, turquoise),
+            backgroundColor: mixWithEditorBackground(0.8, turquoise),
             textColor,
           },
         },
@@ -909,8 +917,8 @@ export const generateDarkTheme = (
       },
     },
     memoryIndicator: {
-      allocated: { backgroundColor: mixWithBackground(0.75, pink) },
-      used: { backgroundColor: mixWithBackground(0.5, pink) },
+      allocated: { backgroundColor: mixWithBackground(0.5, pink) },
+      used: { backgroundColor: mixWithBackground(0.25, pink) },
     },
     menu: {
       backgroundColor: overlayBackgroundColor,
@@ -941,32 +949,32 @@ export const generateDarkTheme = (
     newUIOnboardingDialog: { backgroundColor },
     notification: {
       backgroundColor: overlayBackgroundColor,
-      borderColor: guidelinesColor,
+      borderColor: mix(0.75, overlayBackgroundColor, blackLighten5),
       textColor,
       hover: {
-        backgroundColor: lighten(0.02, overlayBackgroundColor),
+        backgroundColor: darken(0.02, overlayBackgroundColor),
       },
       error: {
-        backgroundColor: mixWithEditorBackground(0.5, red),
-        borderColor: red,
+        backgroundColor: mixWithEditorBackground(0.8, red),
+        borderColor: mixWithEditorBackground(0.5, red),
         textColor,
       },
       info: {
-        backgroundColor: mixWithEditorBackground(0.5, blue),
-        borderColor: blue,
+        backgroundColor: mixWithEditorBackground(0.8, blue),
+        borderColor: mixWithEditorBackground(0.5, blue),
         textColor,
       },
       warning: {
-        backgroundColor: mixWithEditorBackground(0.5, yellow),
-        borderColor: yellow,
+        backgroundColor: mixWithEditorBackground(0.8, yellow),
+        borderColor: mixWithEditorBackground(0.5, yellow),
         textColor,
       },
     },
     objects: {
       blue: blue,
-      blackText: whiteDarken2,
+      blackText: whiteDarken3,
       green: green,
-      grey: mixWithBackground(0.5, textColor),
+      grey: mixWithBackground(0.25, textColor),
       pink: pink,
       purple: purple,
       red: red,
@@ -1087,15 +1095,15 @@ export const generateDarkTheme = (
       passedEndColor: lighten(0.1, green),
     },
     runWidget: {
-      backgroundColor: mixWithBackground(0.5, pink),
+      backgroundColor: mixWithBackground(0.75, pink),
       iconColor: textColor,
       textColor,
-      runningIconColor: whiteDarken2,
+      runningIconColor: whiteDarken3,
       running: {
-        backgroundColor: darken(0.1, green),
+        backgroundColor: green,
       },
       stop: {
-        backgroundColor: darken(0.1, red),
+        backgroundColor: red,
       },
       hover: { overlayColor: rgbaToHex(transparentize(0.9, backgroundColor)) },
       pressed: {
@@ -1320,7 +1328,7 @@ export const generateDarkTheme = (
       button: {
         selected: {
           backgroundColor: mixWithBackground(0.25, pink),
-          iconColor: textColor,
+          iconColor: invertedTextColor,
         },
         hover: {
           backgroundColor: mixWithBackground(0.5, pink),
@@ -1441,10 +1449,10 @@ export const generateDarkTheme = (
       projects: {
         backgroundColor: "#ff8080",
         actions: {
-          backgroundColor: "#ffaaff",
+          backgroundColor: mixWithBackground(0.25, pink),
           selection: {
-            backgroundColor: "#338080",
-            borderColor: "#803333",
+            backgroundColor: mixWithBackground(0.5, pink),
+            borderColor: mixWithBackground(0.25, pink),
           },
         },
         selection: {
