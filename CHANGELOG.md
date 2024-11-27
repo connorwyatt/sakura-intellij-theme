@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+### Changed
+- Changed metadata color to yellow.
 
 ## [0.24.0] - 2024-11-27
 ### Added
