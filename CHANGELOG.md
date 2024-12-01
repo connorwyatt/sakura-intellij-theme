@@ -3,6 +3,8 @@
 # Sakura Intellij Theme Changelog
 
 ## [Unreleased]
+
+## [0.26.0] - 2024-12-01
 ### Fixed
 - Fixed magic member color so that it matches the constant color.
 - Fixed some colors in themes.
