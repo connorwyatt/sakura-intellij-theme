@@ -1441,10 +1441,10 @@ export const generateDarkTheme = (
       projects: {
         backgroundColor: "#ff8080",
         actions: {
-          backgroundColor: "#ffaaff",
+          backgroundColor: mixWithBackground(0.25, pink),
           selection: {
-            backgroundColor: "#338080",
-            borderColor: "#803333",
+            backgroundColor: mixWithBackground(0.5, pink),
+            borderColor: mixWithBackground(0.25, pink),
           },
         },
         selection: {

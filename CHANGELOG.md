@@ -5,6 +5,7 @@
 ## [Unreleased]
 ### Fixed
 - Fixed magic member color so that it matches the constant color.
+- Fixed some colors in themes.
 
 ### Changed
 - Improved checkbox legibility in dark variants.
