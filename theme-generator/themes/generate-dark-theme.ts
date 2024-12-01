@@ -43,7 +43,7 @@ export const generateDarkTheme = (
   const disabledFieldBorderColor = mixWithBackground(0.5, fieldBorderColor);
   const disabledFieldTextColor = mixWithBackground(0.5, fieldTextColor);
 
-  const checkboxBackgroundColor = pink;
+  const checkboxBackgroundColor = mixWithBackground(0.25, pink);
   const checkboxTickColor = white;
 
   const buttonPrimaryBackgroundColor = pink;

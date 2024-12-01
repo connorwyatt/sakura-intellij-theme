@@ -6,6 +6,9 @@
 ### Fixed
 - Fixed magic member color so that it matches the constant color.
 
+### Changed
+- Improved checkbox legibility in dark variants.
+
 ## [0.25.0] - 2024-11-27
 ### Changed
 - Changed metadata color to yellow.
