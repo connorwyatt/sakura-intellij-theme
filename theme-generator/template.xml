@@ -843,7 +843,7 @@
 		</option>
 		<option name="MAGIC_MEMBER_ACCESS">
 			<value>
-				<option name="FOREGROUND" value="#0000ff"/>
+                <option name="FOREGROUND" value="{{editor.syntax.constant}}"/>
 			</value>
 		</option>
 		<option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
