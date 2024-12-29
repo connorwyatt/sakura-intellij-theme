@@ -10,6 +10,9 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/23296.svg?label=Plugin%20Downloads)](https://plugins.jetbrains.com/plugin/23296)
 [![Rating](https://img.shields.io/jetbrains/plugin/r/rating/23296?label=Plugin%20Rating)](https://plugins.jetbrains.com/plugin/23296)
 
+## Notice
+
+I'm no longer using JetBrains products, so it is unlikely that I will be maintaining this theme from this point forward. Instead I will be building a [Neovim version](https://github.com/connorwyatt/sakura.nvim) of this theme which will be maintained.
 
 <!-- Plugin description -->
 _NOTE: This plugin is pre-release, there may be some parts of the UI which are not yet themed. Please add an issue if you
